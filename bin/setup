@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+# Make sure NPM is installed
+if ! type npm > /dev/null; then
+ echo -e "Installing NPM..."
+ curl -L https://npmjs.org/install.sh | sh
+fi
+
+# Set up NPM dependencies
+echo -e "Installing Dependencies..."
+npm install
