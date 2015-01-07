@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+# Export the environment variables
+export $(cat .env | xargs)
+
+# Deploy
+gulp deploy
