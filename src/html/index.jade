@@ -1,0 +1,17 @@
+include helpers
+
+doctype html
+html
+  head
+    meta( charset='utf-8' )
+    meta( http-equiv='X-UA-Compatible', content='IE=edge,chrome=1' )
+    title See Artsy's 2014 Year in Review
+    link( rel='stylesheet', href= assets('stylesheets/application.css') )
+    script( src= assets('javascripts/application.js') )
+    script( src='//fast.fonts.net/jsapi/f7f47a40-b25b-44ee-9f9c-cfdfc8bb2741.js' )
+  body
+    include partials/header
+    include partials/intro
+    include partials/marketplace
+    include partials/education
+    include partials/global

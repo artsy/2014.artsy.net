@@ -1,29 +1,16 @@
 var fs = require('fs');
 var gulp = require('gulp');
-var handlebars = require('gulp-compile-handlebars');
-var rename = require('gulp-rename');
+var jade = require('gulp-jade');
 
-var options = {
-  batch: ['src/html/partials'],
-  helpers: {
-    assetPath: function(path, context) {
-      var revPath = context.data.root[path];
-      return revPath ? revPath : path;
-    }
-  }
-};
-
-gulp.task('template:production', ['rev:clean'], function() {
-  var manifest = JSON.parse(fs.readFileSync('build/rev-manifest.json', 'utf8'));
-  return gulp.src('src/html/index.hbs')
-    .pipe(handlebars(manifest, options))
-    .pipe(rename('index.html'))
+gulp.task('template:development', function() {
+  gulp.src('src/html/index.jade')
+    .pipe(jade())
     .pipe(gulp.dest('build'));
 });
 
-gulp.task('template:development', function() {
-  return gulp.src('src/html/index.hbs')
-    .pipe(handlebars({}, options))
-    .pipe(rename('index.html'))
+gulp.task('template:production', ['rev:clean'], function() {
+  var manifest = JSON.parse(fs.readFileSync('build/rev-manifest.json', 'utf8'));
+  gulp.src('src/html/index.jade')
+    .pipe(jade({ locals: { assets: manifest } }))
     .pipe(gulp.dest('build'));
 });
