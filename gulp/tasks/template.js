@@ -21,7 +21,7 @@ gulp.task('template:production', ['rev:clean'], function() {
     .pipe(gulp.dest('build'));
 });
 
-gulp.task('template:development', ['build:js', 'build:css', 'build:images'], function() {
+gulp.task('template:development', function() {
   return gulp.src('src/html/index.hbs')
     .pipe(handlebars({}, options))
     .pipe(rename('index.html'))
