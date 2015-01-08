@@ -1,0 +1,24 @@
+@import 'common'
+
+.marketplace-frame
+  padding (unit * 4)
+
+.artwork-columns
+  position absolute
+  top 50%
+  left 0
+  padding (unit / 2) (unit / 4)
+  transform translateY(-50%)
+  z-index 0
+
+.artwork-column
+  float left
+  width 25%
+  &:last-child
+    margin-right 0
+
+.artwork
+  display block
+  width 100%
+  block-margins(unit / 2)
+  padding 0 (unit / 4)

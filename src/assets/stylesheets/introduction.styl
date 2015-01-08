@@ -1,0 +1,19 @@
+@import 'common'
+
+.intro-chevron
+  position absolute
+  width (unit * 2)
+  bottom @width
+  left 50%
+  height @width
+  margin-left -(@width / 2)
+  z-index 1
+  border 2px solid white
+  border-width 0 2px 2px 0
+  transform rotate(45deg)
+
+.frame-1--backdrop
+  backdrop('../images/intro_bg01.jpg')
+
+.frame-2--backdrop
+  backdrop('../images/intro_bg02.jpg')
