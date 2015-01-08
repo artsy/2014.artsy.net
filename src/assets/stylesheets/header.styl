@@ -1,0 +1,37 @@
+@import 'common'
+
+header-line-height = (unit * 2)
+
+.header
+  position fixed
+  top 0
+  right 0
+  left 0
+  padding unit
+  z-index z-header
+  line-height header-line-height
+  vertical-align middle
+  transform translateZ(0)
+
+.header--logo
+  float left
+  height header-line-height
+  > img
+    display inline-block
+    height 100%
+
+.header--year
+.header--headline
+  avant-garde()
+  // Why o why is the baseline on this font so weird
+  vertical-align -2px
+
+.header--year
+  margin-left unit
+  display inline-block
+  font-size 18px
+
+.header--headline
+  float right
+  margin 0 unit
+  font-size 16px

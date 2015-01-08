@@ -4,6 +4,7 @@ var handlebars = require('gulp-compile-handlebars');
 var rename = require('gulp-rename');
 
 var options = {
+  batch: ['src/html/partials'],
   helpers: {
     assetPath: function(path, context) {
       var revPath = context.data.root[path];

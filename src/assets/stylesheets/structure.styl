@@ -1,12 +1,45 @@
 @import 'common'
 
 .frame
-  display flex
-  height 100%
+  position fixed
   width 100%
-  align-items center
-  background-color grey-color
-  > p
-    width 40%
+  height 100%
+  background-color black
+
+.frame--subheadline
+  avant-garde()
+  font-size 16px
+  position absolute
+  top (unit * 2)
+  right (unit * 2)
+  z-index 1
+
+.frame--text
+  position absolute
+  width 100%
+  top 50%
+  margin auto
+  font-size 40px
+  line-height 1.2
+  span
+    display block
+    width 50%
     margin auto
-    font-size 26px
+    transform translateY(-50%)
+
+.frame--body
+  position absolute
+  width 50%
+  top 50%
+.frame--body-wrap
+  transform translateY(-50%)
+
+.frame--headline
+  garamond()
+  font-size 40px
+  line-height 1.2
+  margin-bottom (unit * 2)
+
+.frame--description
+  font-size 24px
+  margin unit 0

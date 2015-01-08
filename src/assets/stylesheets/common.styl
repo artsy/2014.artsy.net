@@ -1,7 +1,15 @@
 @import 'nib'
 
+// Units
+base-unit = 20px
+unit = base-unit
+
+// Z-map
+z-header = 100
+
 // Colors
-grey-color = #666
+gray-color = #666
+purple-color = #6a0bc1
 
 // Mixins
 antialiased()
@@ -11,9 +19,24 @@ antialiased()
 avant-garde()
   font-family 'ITC Avant Garde Gothic W04', 'Avant Garde', sans-serif
   text-transform uppercase
-  letter-spacing 1px
+  letter-spacing 2px
   antialiased()
 
 garamond()
   font-family 'Adobe Garamond W08', 'Garamond', serif
   antialiased()
+
+backdrop(url)
+  position absolute
+  top 0
+  right 0
+  bottom 0
+  left 0
+  background black url(url) center center repeat
+
+block-margins(margin-size = 20px)
+  margin margin-size 0
+  &:first-child
+    margin-top 0
+  &:last-child
+    margin-bottom 0
