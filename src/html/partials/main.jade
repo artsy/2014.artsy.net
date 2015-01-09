@@ -1,0 +1,29 @@
+- main = locals.copy.sections.main
+
+mixin frame(n, options)
+  .frame( id="frame-#{n}" ): .frame--body
+    block
+    .frame--subheadline= options.subheadline
+    .frame--vcenter.span-2: .frame--vcenter-wrap
+      .frame--headline
+        != options.headline
+      .frame--description
+        != options.description
+
++frame(1, main[0])
+  //- Nothing
+
++frame(2, main[1])
+  #columns: include columns
+
++frame(3, main[2])
+  //- Nothing
+
++frame(4, main[3])
+  //- Nothing
+
++frame(5, main[4])
+  //- Nothing
+
++frame(6, main[5])
+  //- Nothing

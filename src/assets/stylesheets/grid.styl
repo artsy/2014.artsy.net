@@ -1,0 +1,22 @@
+@import 'common'
+
+.grid
+  display none
+  position fixed
+  top 0
+  left grid-offset
+  right grid-offset
+  bottom 0
+  pointer-events none
+  z-index z-max
+
+.grid-col
+  width (100% / grid-cols)
+  float left
+  height 100%
+  border 1px solid purple-color
+  border-width 0 1px
+
+for n in (1..grid-cols)
+  .span-{n}
+    width grid-span(n)

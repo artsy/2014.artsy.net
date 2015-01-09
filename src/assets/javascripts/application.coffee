@@ -1,9 +1,8 @@
 $ = require 'jquery'
 Scroll = require './scroll'
-{ isTouch } = require './device'
 
 $ ->
-  if isTouch()
-    $('body').addClass 'is-touch'
-  else
-    scroll = new Scroll
+  # Grid debugger
+  $(document).on 'keypress', (e) -> $('.grid').toggle() if e.which is 103
+
+  new Scroll

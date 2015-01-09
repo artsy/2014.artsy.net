@@ -1,35 +1,28 @@
-#frame-1.frame.introduction-frame
-  #backdrop-6.frame--backdrop: img( src= assets('images/intro_bg06.jpg') )
-  #backdrop-5.frame--backdrop: img( src= assets('images/intro_bg05.jpg') )
-  #backdrop-4.frame--backdrop: img( src= assets('images/intro_bg04.jpg') )
-  #backdrop-3.frame--backdrop: img( src= assets('images/intro_bg03.jpg') )
-  #backdrop-2.frame--backdrop: img( src= assets('images/intro_bg02.jpg') )
-  #backdrop-1.frame--backdrop: img( src= assets('images/intro_bg01.jpg') )
+- introduction = locals.copy.sections.introduction
+
+#frame-0.frame
+  for image, i in introduction.images.reverse()
+    //- Invert stacking order
+    .frame--backdrop( id="backdrop-#{(introduction.images.length - 1) - i}" )
+      img( src= assets(image) )
 
   .frame--body
+    for caption, i in introduction.captions
+      .frame--caption( id="caption-#{i}" )
+        .frame--vcenter: .frame--vcenter-wrap
+          != caption
 
-    #caption-1.frame--caption
-      | We set out with a mission to make art as popular as music
-    #caption-2.frame--caption
-      | To fulfill this mission we are building the largest public database of art for educational use&hellip;
-    #caption-3.frame--caption
-      | &hellip;and making it possible to find and collect artworks from galleries around the world—all in one place
-    #caption-4.frame--caption
-      | Here is how we did in 2014
-
-    #credit-1.frame--credit
-      p
-        | Édouard Manet
-        br
-        em Luncheon on the Grass (Le Déjeuner sur l'herbe)
-        | , 1863
-        br
-        | Musée d'Orsay, Paris
-
-    #credit-2.frame--credit
-      p
-        | Marco Tirelli
-        br
-        | Axel Vervoordt Gallery
+    for credit, i in introduction.credits
+      .frame--credit( id="credit-#{i}" )
+        = credit.name
+        if credit.title
+          = ' '
+          em
+            = credit.title
+          if credit.year
+            | , #{credit.year}.
+        if credit.place
+          = ' '
+          = credit.place
 
   .intro-chevron &nbsp;
