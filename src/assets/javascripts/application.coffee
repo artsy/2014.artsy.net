@@ -1,11 +1,8 @@
 $ = require 'jquery'
-kubrick = require 'kubrick-js'
-timeline = require './timeline'
-{ isTouch } = require './device'
+Scroll = require './scroll'
 
 $ ->
-  if isTouch()
-    $('body').addClass 'is-touch'
-  else
-    kubrick timeline
-    $('body').addClass 'is-scroll'
+  # Grid debugger
+  $(document).on 'keypress', (e) -> $('.grid').toggle() if e.which is 103
+
+  new Scroll

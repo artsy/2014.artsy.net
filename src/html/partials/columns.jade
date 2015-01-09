@@ -1,13 +1,5 @@
 .artwork-columns
-  .artwork-column.column-1
-    for i in [0, 0, 0, 0, 0, 0, 0]
-      img.artwork( src='http://placehold.it/350x450' )
-  .artwork-column.column-2
-    for i in [0, 0, 0, 0, 0, 0, 0]
-      img.artwork( src='http://placehold.it/350x450' )
-  .artwork-column.column-3
-    for i in [0, 0, 0, 0, 0, 0, 0]
-      img.artwork( src='http://placehold.it/350x450' )
-  .artwork-column.column-4
-    for i in [0, 0, 0, 0, 0, 0, 0]
-      img.artwork( src='http://placehold.it/350x450' )
+  for x, n in new Array(4)
+    .artwork-column( class="column-#{n}" )
+      for i in new Array(7)
+        .artwork

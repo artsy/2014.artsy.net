@@ -3,9 +3,15 @@
 // Units
 base-unit = 20px
 unit = base-unit
+grid-cols = 5
+grid-offset = (unit * 4)
+
+grid-span(n)
+  ((100% / grid-cols) * n)
 
 // Z-map
 z-header = 100
+z-max = 2147483647 // Largest positive signed 32-bit integer
 
 // Colors
 gray-color = #666
@@ -24,15 +30,8 @@ avant-garde()
 
 garamond()
   font-family 'Adobe Garamond W08', 'Garamond', serif
+  line-height 1.2
   antialiased()
-
-backdrop(url)
-  position absolute
-  top 0
-  right 0
-  bottom 0
-  left 0
-  background black url(url) center center repeat
 
 block-margins(margin-size = 20px)
   margin margin-size 0
@@ -40,3 +39,17 @@ block-margins(margin-size = 20px)
     margin-top 0
   &:last-child
     margin-bottom 0
+
+occupy()
+  position absolute
+  top 0
+  right 0
+  bottom 0
+  left 0
+
+gradient-overlay()
+  &:after
+    display block
+    content ''
+    background linear-gradient(transparent, rgba(black, 0.5))
+    occupy()

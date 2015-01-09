@@ -1,0 +1,64 @@
+{
+  "sections": {
+    "introduction": {
+      "images": [
+        "images/introduction_0.jpg",
+        "images/introduction_1.jpg",
+        "images/introduction_2.jpg",
+        "images/introduction_3.jpg"
+      ],
+      "captions": [
+        "We set out with a mission to make all the world’s art freely accessible to anyone with an Internet connection",
+        "To fulfill this mission we are building the largest public database of art for educational use&hellip;",
+        "&hellip;and making it possible to find and collect art and design from galleries around the world—all in one place.",
+        "Here’s how we did in 2014"
+      ],
+      "credits": [
+        {
+          "name": "Édouard Manet",
+          "title": "Luncheon on the Grass (Le Déjeuner sur l'herbe)",
+          "year": "1863",
+          "place": "Musée d'Orsay, Paris"
+        },
+        {
+          "name": "Marco Tirelli",
+          "title": null,
+          "year": null,
+          "place": "Axel Vervoordt Gallery"
+        }
+      ]
+    },
+    "main": [
+      {
+        "subheadline": "A Growing Marketplace",
+        "headline": "We made 10&times; the introductions between galleries and collectors from all over the world than 2013",
+        "description": "In June, Artsy celebrated the 55th Venice Biennale with an in-depth look at 77 national pavilions and exhibitions, from Angola to Uruguay. We created a place to explore and learn about one of the art world’s most important events."
+      },
+      {
+        "subheadline": "A Growing Marketplace",
+        "headline": "Our gallery partners added over 100,000 for-sale works in 2014",
+        "description": "We created a place to explore and learn about one of the art world’s most important events."
+      },
+      {
+        "subheadline": "A Growing Marketplace",
+        "headline": "In 2014 we connected ×,×××,××× more users",
+        "description": null
+      },
+      {
+        "subheadline": "A Growing Marketplace",
+        "headline": "The average distance between galleries and collectors was 3200 miles",
+        "description": null
+      },
+      {
+        "subheadline": "A Growing Marketplace",
+        "headline": "Interactive Art Fairs",
+        "description": "In June, Artsy celebrated the 55th Venice Biennale with an in-depth look at 77 national pavilions and exhibitions, from Angola to Uruguay. We created a place to explore and learn about one of the art world’s most important events."
+      },
+      {
+        "subheadline": "A Growing Marketplace",
+        "headline": "The Art Genome Grows",
+        "description": "In June, Artsy celebrated the 55th Venice Biennale with an in-depth look at 77 national pavilions and exhibitions, from Angola to Uruguay. We created a place to explore and learn about one of the art world’s most important events."
+      }
+    ]
+  }
+}

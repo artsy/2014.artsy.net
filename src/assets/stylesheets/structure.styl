@@ -6,40 +6,45 @@
   height 100%
   background-color black
 
+.frame--body
+  position absolute
+  top (grid-offset / 2)
+  right grid-offset
+  bottom (grid-offset / 2)
+  left grid-offset
+
 .frame--subheadline
   avant-garde()
   font-size 16px
   position absolute
-  top (unit * 2)
-  right (unit * 2)
-  z-index 1
+  top 0
+  right 0
 
-.frame--text
+.frame--caption
   position absolute
-  width 100%
-  top 50%
-  margin auto
+  top 20%
+  bottom 20%
+  left 0
+  width grid-span(3)
   font-size 40px
-  line-height 1.2
-  span
-    display block
-    width 50%
-    margin auto
-    transform translateY(-50%)
 
-.frame--body
+.frame--credit
   position absolute
-  width 50%
+  bottom (unit * 2)
+  left 0
+  width grid-span(2)
+  opacity 0
+
+.frame--vcenter
+  position absolute
   top 50%
-.frame--body-wrap
+.frame--vcenter-wrap
   transform translateY(-50%)
 
 .frame--headline
-  garamond()
+  margin-bottom (unit * 2)
   font-size 40px
   line-height 1.2
-  margin-bottom (unit * 2)
 
 .frame--description
   font-size 24px
-  margin unit 0

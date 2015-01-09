@@ -10,7 +10,7 @@
     "coffeeify": "~0.6.0",
     "connect": "~2.14.3",
     "gulp-changed": "~0.3.0",
-    "gulp-notify": "~1.2.4",
+    "gulp-notify": "^2.1.0",
     "gulp-open": "~0.2.8",
     "gulp-stylus": "~1.0.2",
     "gulp-awspublish": "0.0.23",

@@ -1,0 +1,28 @@
+- introduction = locals.copy.sections.introduction
+
+#frame-0.frame
+  for image, i in introduction.images.reverse()
+    //- Invert stacking order
+    .frame--backdrop( id="backdrop-#{(introduction.images.length - 1) - i}" )
+      img( src= assets(image) )
+
+  .frame--body
+    for caption, i in introduction.captions
+      .frame--caption( id="caption-#{i}" )
+        .frame--vcenter: .frame--vcenter-wrap
+          != caption
+
+    for credit, i in introduction.credits
+      .frame--credit( id="credit-#{i}" )
+        = credit.name
+        if credit.title
+          = ' '
+          em
+            = credit.title
+          if credit.year
+            | , #{credit.year}.
+        if credit.place
+          = ' '
+          = credit.place
+
+  .intro-chevron &nbsp;
