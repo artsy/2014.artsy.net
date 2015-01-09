@@ -1,37 +1,61 @@
 @import 'common'
 
+.grid
+  position fixed
+  top 0
+  left grid-offset
+  right grid-offset
+  bottom 0
+  pointer-events none
+  z-index z-max
+
+.grid-col
+  width (100% / grid-cols)
+  float left
+  height 100%
+  border 1px solid purple-color
+  border-width 0 1px
+
 .frame
   position fixed
   width 100%
   height 100%
   background-color black
 
+.frame--body
+  position absolute
+  top (grid-offset / 2)
+  right grid-offset
+  bottom (grid-offset / 2)
+  left grid-offset
+
+.frame--caption
+  position absolute
+  bottom 20%
+  left 0
+  width grid-span(3)
+  font-size 40px
+
 .frame--subheadline
   avant-garde()
   font-size 16px
   position absolute
   top (unit * 2)
-  right (unit * 2)
+  right grid-offset
   z-index 1
 
-.frame--text
+.frame--credit
   position absolute
-  width 100%
-  top 50%
-  margin auto
-  font-size 40px
-  line-height 1.2
-  span
-    display block
-    width 50%
-    margin auto
-    transform translateY(-50%)
+  bottom 20%
+  right 0
+  width grid-span(1)
+  opacity 0
 
-.frame--body
+.frame--vcenter
   position absolute
   width 50%
   top 50%
-.frame--body-wrap
+.frame--vcenter-wrap
   transform translateY(-50%)
 
 .frame--headline

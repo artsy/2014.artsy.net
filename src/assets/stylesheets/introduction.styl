@@ -1,5 +1,12 @@
 @import 'common'
 
+#caption-2
+#caption-3
+#caption-4
+  opacity 0
+#caption-1
+  opacity 1
+
 .intro-chevron
   position absolute
   width (unit * 2)
@@ -12,8 +19,12 @@
   border-width 0 2px 2px 0
   transform rotate(45deg)
 
-.frame-1--backdrop
-  backdrop('../images/intro_bg01.jpg')
-
-.frame-2--backdrop
-  backdrop('../images/intro_bg02.jpg')
+.frame--backdrop
+  occupy()
+  gradient-overlay()
+  > img
+    display block
+    width 100%
+    margin-top 25%
+    margin-left 50%
+    transform translate(-50%, -50%) scale(1)

@@ -4,7 +4,7 @@ module.exports = [
     duration: '100%'
     actors: [
       { element: '.frame--subheadline', opacity: [0, 1], translateY: [50, 0] }
-      { element: '.frame--body', opacity: [0, 2], translateY: [25, 0] }
+      { element: '.frame--vcenter', opacity: [0, 2], translateY: [25, 0] }
     ]
   }
   {
@@ -15,18 +15,19 @@ module.exports = [
     stage: '#frame-5' # Out
     duration: '100%'
     actors: [
-      { element: '.frame--body', opacity: [2, 0], translateY: [0, -25] }
+      { element: '.frame--vcenter', opacity: [2, 0], translateY: [0, -25] }
     ]
   }
   {
     stage: '#frame-6' # In
     duration: '100%'
     actors: [
-      { element: '.frame--body', opacity: [0, 2], translateY: [25, 0] }
-      { element: '.column-1', opacity: [0, 1], translateY: [25, 0] }
-      { element: '.column-2', opacity: [0, 1], translateY: [-25, 0] }
-      { element: '.column-3', opacity: [0, 1], translateY: [25, 0] }
-      { element: '.column-4', opacity: [0, 1], translateY: [-25, 0] }
+      { element: '.frame--vcenter', opacity: [0, 2], translateY: [25, 0] }
+      { element: '#columns', opacity: [0, 1] }
+      { element: '.column-1', translateY: [25, 0] }
+      { element: '.column-2', translateY: [-25, 0] }
+      { element: '.column-3', translateY: [25, 0] }
+      { element: '.column-4', translateY: [-25, 0] }
     ]
   }
   {
@@ -44,11 +45,12 @@ module.exports = [
     stage: '#frame-6' # Out
     duration: '100%'
     actors: [
-      { element: '.frame--body', opacity: [2, 0], translateY: [0, -100] }
-      { element: '.column-1', opacity: [1, 0], translateY: [-75, -150] }
-      { element: '.column-2', opacity: [1, 0], translateY: [75, 150] }
-      { element: '.column-3', opacity: [1, 0], translateY: [-75, -150] }
-      { element: '.column-4', opacity: [1, 0], translateY: [75, 150] }
+      { element: '.frame--vcenter', opacity: [2, 0], translateY: [0, -100] }
+      { element: '#columns', opacity: [1, 0] }
+      { element: '.column-1', translateY: [-75, -150] }
+      { element: '.column-2', translateY: [75, 150] }
+      { element: '.column-3', translateY: [-75, -150] }
+      { element: '.column-4', translateY: [75, 150] }
     ]
   }
 ]

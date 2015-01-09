@@ -3,8 +3,12 @@
 .marketplace-frame
   padding (unit * 4)
 
+#columns
+  occupy()
+
 .artwork-columns
   position absolute
+  width 100%
   top 50%
   left 0
   padding (unit / 2) (unit / 4)
@@ -19,6 +23,7 @@
 
 .artwork
   display block
-  width 100%
-  block-margins(unit / 2)
-  padding 0 (unit / 4)
+  margin unit (unit / 2)
+  background-color gray-color
+  // Placeholder
+  height 350px

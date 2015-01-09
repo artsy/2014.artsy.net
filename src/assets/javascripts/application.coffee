@@ -1,11 +1,9 @@
 $ = require 'jquery'
-kubrick = require 'kubrick-js'
-timeline = require './timeline'
+Scroll = require './scroll'
 { isTouch } = require './device'
 
 $ ->
   if isTouch()
     $('body').addClass 'is-touch'
   else
-    kubrick timeline
-    $('body').addClass 'is-scroll'
+    scroll = new Scroll

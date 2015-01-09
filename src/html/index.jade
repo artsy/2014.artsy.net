@@ -10,8 +10,11 @@ html
     script( src= assets('javascripts/application.js') )
     script( src='//fast.fonts.net/jsapi/f7f47a40-b25b-44ee-9f9c-cfdfc8bb2741.js' )
   body
+    .grid: for col in [0, 0, 0, 0, 0]
+      .grid-col
+
     include partials/header
-    include partials/intro
+    include partials/introduction
     include partials/marketplace
     include partials/education
     include partials/global
