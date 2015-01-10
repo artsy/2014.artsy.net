@@ -13,10 +13,11 @@ html
 
     script( src= assets('javascripts/application.js') )
     script( src='//fast.fonts.net/jsapi/f7f47a40-b25b-44ee-9f9c-cfdfc8bb2741.js' )
-  body
+  body( data-state='loading' )
     .grid: for x in new Array(5)
       .grid-col
 
+    include partials/preloader
     include partials/header
     include partials/introduction
     include partials/main
