@@ -1,5 +1,6 @@
 $ = require 'jquery'
 Hammer = require 'hammerjs'
+Progress = require './progress'
 
 module.exports = class Carousel
   currentPage: 0
@@ -8,21 +9,27 @@ module.exports = class Carousel
   turnThreshold: 0
 
   constructor: ({ @$el }) ->
-    @$window = $(window)
-    $(document).scrollTop(0)
-    $(document).scrollLeft(0)
+    @reset()
 
     @pageCount = @$el.children().length
+    @$window = $(window)
     @width = @$window.width()
-
-    @$window.on 'resize', =>
-      @width = @$window.width()
-      # Reset to current page
-      @gotoPage @currentPage, true
 
     @bindEvents()
 
+    @progress = new Progress $el: $('#progress'), length: @pageCount
+    @progress.build(@currentPage)
+
+  reset: ->
+    $(document)
+      .scrollTop(0)
+      .scrollLeft(0)
+
   bindEvents: ->
+    @$window.on 'resize', =>
+      @width = @$window.width()
+      @gotoPage @currentPage, false # Reset to current page
+
     @hammer = new Hammer @$el[0]
     @hammer.on 'panleft panright', @onPan
     @hammer.on 'panend', @onPanEnd
@@ -62,3 +69,6 @@ module.exports = class Carousel
     # Update offset
     @offset = -(@currentPage * @width)
     @updateOffset @offset, snap
+
+    # Update progress
+    @progress.update @currentPage
