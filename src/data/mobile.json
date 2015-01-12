@@ -1,0 +1,31 @@
+{
+  "sections": {
+    "splash": {
+      "panes": [
+        {
+          "headline": "Annual Review 2014<br>Swipe to Continue",
+          "backdrop": "images/roxy-paine.jpg"
+        }
+      ]
+    },
+    "introduction": {
+      "panes": [
+        {
+          "headline": "We set out with a mission to make all the world’s art freely accessible to anyone with an Internet connection",
+          "backdrop": "images/marco-tirelli.jpg"
+        },
+        {
+          "headline": "To fulfill this mission we are building the largest public database of art for educational use&hellip;",
+          "backdrop": "images/edouard-manet.jpg"
+        },
+        {
+          "headline": "&hellip;and making it possible to find and collect art and design from galleries around the world—all in one place.",
+          "backdrop": "images/ryan-trecartin.jpg"
+        },
+        {
+          "headline": "Here’s how we did in 2014"
+        }
+      ]
+    }
+  }
+}

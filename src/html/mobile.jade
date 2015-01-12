@@ -1,5 +1,4 @@
-- sections = locals.copy.sections
-- introduction = sections.introduction
+- sections = locals.copy.mobile.sections
 
 mixin pane(options)
   .pane
@@ -10,17 +9,16 @@ mixin pane(options)
       .pane--backdrop( style="background-image: url(#{assets(options.backdrop)})" )
 
 #panes.panes
-  //- Initial pane
+  //- Splash
+  - pane = sections.splash.panes[0]
   .pane
     .pane--vcenter: .pane--vcenter-wrap
       img.pane--logo( src= assets('images/artsy.svg'), alt='Artsy' )
-      .pane--headline
-        | Annual Review 2014
-        br
-        | Swipe to Continue
-      .pane--backdrop( style="background-image: url(#{assets(introduction.images[0])})" )
+      .pane--headline!= pane.headline
+      .pane--backdrop( style="background-image: url(#{assets(pane.backdrop)})" )
       .pane--chevron &nbsp;
 
-  //- Introduction panes
-  for caption, i in introduction.captions
-    +pane({ headline: caption, backdrop: introduction.images[i + 1] })
+  //- Introduction
+  - panes = sections.introduction.panes
+  for pane in panes
+    +pane(pane)
