@@ -8,13 +8,10 @@ body.is-mobile
 
 #mobile
   overflow hidden
-
-#mobile
-.panes
   height 100%
 
-// Track
 .panes
+  height 100%
   white-space nowrap
   font-size 0
   vertical-align top
@@ -53,7 +50,17 @@ body.is-mobile
   vertical-align middle
 
 .pane--headline
-  font-size (headline-size / 1.5)
+  font-size (headline-size / 2)
+
+.pane--links
+  font-size (headline-size / 2)
+  margin-top unit
+  padding-top (unit / 2)
+  border-top 2px solid white
+  > a
+    display block
+    color white
+    text-decoration none
 
 .pane--logo
   display inline-block

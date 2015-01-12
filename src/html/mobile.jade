@@ -3,22 +3,44 @@
 mixin pane(options)
   .pane
     block
+    .pane--backdrop( style="background-image: url(#{assets(options.backdrop)})" )
     .pane--vcenter: .pane--vcenter-wrap
       .pane--headline
         != options.headline
-      .pane--backdrop( style="background-image: url(#{assets(options.backdrop)})" )
 
 #panes.panes
   //- Splash
   - pane = sections.splash.panes[0]
   .pane
+    .pane--backdrop( style="background-image: url(#{assets(pane.backdrop)})" )
     .pane--vcenter: .pane--vcenter-wrap
       img.pane--logo( src= assets('images/artsy.svg'), alt='Artsy' )
       .pane--headline!= pane.headline
-      .pane--backdrop( style="background-image: url(#{assets(pane.backdrop)})" )
       .pane--chevron &nbsp;
 
   //- Introduction
   - panes = sections.introduction.panes
   for pane in panes
     +pane(pane)
+
+  //- Galleries
+  - panes = sections.galleries.panes
+  for pane in panes
+    +pane(pane)
+
+  //- Museums
+  - panes = sections.museums.panes
+  for pane in panes
+    +pane(pane)
+
+  //- Yadda yadda...
+
+  //- Conclusion
+  - conclusion = sections.conclusion
+  .pane
+    .pane--backdrop
+    .pane--headline!= conclusion.message
+    .pane--links
+      for link in conclusion.links
+        a( href= link.href, target='_blank' )
+          = link.name

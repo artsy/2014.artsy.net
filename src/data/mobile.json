@@ -20,11 +20,50 @@
         },
         {
           "headline": "&hellip;and making it possible to find and collect art and design from galleries around the world—all in one place.",
-          "backdrop": "images/ryan-trecartin.jpg"
+          "backdrop": "images/louise-lawler.jpg"
         },
         {
           "headline": "Here’s how we did in 2014"
         }
+      ]
+    },
+    "galleries": {
+      "panes": [
+        {
+          "headline": "Galleries uploaded over 120,000 for sale works&hellip;"
+        },
+        {
+          "headline": "&hellip;and 1,2000 shows",
+          "backdrop": "images/richard-serra.jpg"
+        },
+        {
+          "headline": "We made 50,000 introductions between galleries and collectors."
+        }
+      ]
+    },
+    "museums": {
+      "panes": [
+        {
+          "headline": "Oui!<br>12 French museums join Artsy.",
+          "backdrop": "images/lourve.jpg"
+        },
+        {
+          "headline": "Galleries and Museums uploaded over 1,2000 shows&hellip;",
+          "backdrop": "images/ai-weiwei.jpg"
+        },
+        {
+          "headline": "&hellip;bringing access to more than 100,000 works from their collections",
+          "backdrop": "images/arcimboldo.jpg"
+        }
+      ]
+    },
+    "conclusion": {
+      "message": "Thank you everyone who made this possible. Galleries, Museums, Artists, Non-profits, Scholars, Writers, Designers & Technologists, And You.",
+      "links": [
+        { "name": "Download the Artsy App", "href": "https://www.artsy.net/" },
+        { "name": "Artsy for Galleries", "href": "https://www.artsy.net/" },
+        { "name": "Artsy for Institutions", "href": "https://www.artsy.net/" },
+        { "name": "Join the Team", "href": "https://www.artsy.net/" }
       ]
     }
   }
