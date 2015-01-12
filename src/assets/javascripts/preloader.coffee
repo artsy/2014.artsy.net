@@ -10,7 +10,7 @@ module.exports = class Preloader
   until: (selector, cb) ->
     imagesLoaded selector, =>
       @done()
-      cb()
+      cb?()
 
   done: ->
     @$el.attr 'data-state', 'done'
