@@ -1,10 +1,39 @@
 - sections = locals.copy.mobile.sections
 
-mixin pane(options)
+mixin backdrop(url)
+  .pane--backdrop-context: .pane--backdrop(
+    style=( url ? "background-image: url(#{assets(url)})" : undefined)
+  )
+
+mixin caption(caption)
+  .info
+    a.info--icon i
+    .info--pane
+      != caption
+
+mixin introPane(options)
   .pane
     block
-    .pane--backdrop( style="background-image: url(#{assets(options.backdrop)})" )
+
+    if options.caption
+      +caption(options.caption)
+
+    +backdrop(options.backdrop)
+
     .pane--vcenter: .pane--vcenter-wrap
+      .pane--headline
+        != options.headline
+
+mixin defaultPane(options)
+  .pane
+    block
+
+    if options.caption
+      +caption(options.caption)
+
+    +backdrop(options.backdrop)
+
+    .pane--body
       .pane--headline
         != options.headline
 
@@ -21,17 +50,17 @@ mixin pane(options)
   //- Introduction
   - panes = sections.introduction.panes
   for pane in panes
-    +pane(pane)
+    +introPane(pane)
 
   //- Galleries
   - panes = sections.galleries.panes
   for pane in panes
-    +pane(pane)
+    +defaultPane(pane)
 
   //- Museums
   - panes = sections.museums.panes
   for pane in panes
-    +pane(pane)
+    +defaultPane(pane)
 
   //- Yadda yadda...
 
