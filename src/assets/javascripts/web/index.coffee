@@ -1,6 +1,6 @@
 $ = require 'jquery'
 kubrick = require 'kubrick-js'
-Preloader = require './preloader'
+Preloader = require '../preloader'
 Backdrops = require './backdrops'
 timeline = require './timeline'
 
@@ -12,7 +12,7 @@ module.exports = class Web
     $(document).on 'keypress', (e) ->
       $('.grid').toggle() if e.which is 103
 
-    new Preloader().until '#frame-0', =>
+    new Preloader(application: 'web').until '#frame-0', =>
       @backdrops = new Backdrops $els: $('.frame--backdrop img')
 
   timeline: ->

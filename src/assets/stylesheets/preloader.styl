@@ -1,10 +1,21 @@
 @import 'common'
 
+#web
+#mobile
+  display none
+
 body
-  &[data-state='loading']
-    overflow hidden
-  &[data-state='done']
-    overflow visible
+  &[data-application='web']
+    #web
+      display block
+    &[data-state='loading']
+      overflow hidden
+    &[data-state='done']
+      overflow visible
+
+  &[data-application='mobile']
+    #mobile
+      display block
 
 .preloader
   occupy()

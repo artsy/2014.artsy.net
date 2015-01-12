@@ -5,18 +5,24 @@ base-unit = 20px
 unit = base-unit
 grid-cols = 5
 grid-offset = (unit * 4)
-
 grid-span(n)
   ((100% / grid-cols) * n)
+
+// Sizes
+caption-size = 40px
+headline-size = 40px
+description-size = 20px
+subheadline-size = 16px
+credit-size = 16px
+
+// Colors
+gray-color = #666
+purple-color = #6a0bc1
 
 // Z-map
 z-header = 100
 z-preloader = 200
 z-max = 9999
-
-// Colors
-gray-color = #666
-purple-color = #6a0bc1
 
 // Mixins
 antialiased()

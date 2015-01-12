@@ -2,9 +2,10 @@ $ = require 'jquery'
 imagesLoaded = require 'imagesloaded'
 
 module.exports = class Preloader
-  constructor: ->
+  constructor: ({ @application }) ->
     @$el = $('#preloader')
-    @$body = $('body')
+    (@$body = $('body'))
+      .attr 'data-application', @application
 
   until: (selector, cb) ->
     imagesLoaded selector, =>
