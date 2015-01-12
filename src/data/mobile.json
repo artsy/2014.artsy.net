@@ -1,0 +1,72 @@
+{
+  "sections": {
+    "splash": {
+      "panes": [
+        {
+          "headline": "Annual Review 2014<br>Swipe to Continue",
+          "backdrop": "images/roxy-paine.jpg"
+        }
+      ]
+    },
+    "introduction": {
+      "panes": [
+        {
+          "headline": "We set out with a mission to make all the world’s art freely accessible to anyone with an Internet connection",
+          "backdrop": "images/marco-tirelli.jpg",
+          "caption": "Marco Tirelli. Axel Vervoordt Gallery"
+        },
+        {
+          "headline": "To fulfill this mission we are building the largest public database of art for educational use&hellip;",
+          "backdrop": "images/edouard-manet.jpg"
+        },
+        {
+          "headline": "&hellip;and making it possible to find and collect art and design from galleries around the world—all in one place.",
+          "backdrop": "images/louise-lawler.jpg"
+        },
+        {
+          "headline": "Here’s how we did in 2014"
+        }
+      ]
+    },
+    "galleries": {
+      "panes": [
+        {
+          "headline": "Galleries uploaded over 120,000 for sale works&hellip;"
+        },
+        {
+          "headline": "&hellip;and 1,200 shows",
+          "backdrop": "images/richard-serra.jpg"
+        },
+        {
+          "headline": "We made 50,000 introductions between galleries and collectors."
+        }
+      ]
+    },
+    "museums": {
+      "panes": [
+        {
+          "headline": "Oui!<br>12 French museums join Artsy.",
+          "backdrop": "images/lourve.jpg"
+        },
+        {
+          "headline": "Galleries and Museums uploaded over 1,200 shows&hellip;",
+          "backdrop": "images/ai-weiwei.jpg",
+          "caption": "Ai Weiwei on Alcatraz by the For Site Foundation was one of the most popular shows on Artsy in 2014"
+        },
+        {
+          "headline": "&hellip;bringing access to more than 100,000 works from their collections",
+          "backdrop": "images/arcimboldo.jpg"
+        }
+      ]
+    },
+    "conclusion": {
+      "message": "Thank you everyone who made this possible. Galleries, Museums, Artists, Non-profits, Scholars, Writers, Designers & Technologists, And You.",
+      "links": [
+        { "name": "Download the Artsy App", "href": "https://www.artsy.net/" },
+        { "name": "Artsy for Galleries", "href": "https://www.artsy.net/" },
+        { "name": "Artsy for Institutions", "href": "https://www.artsy.net/" },
+        { "name": "Join the Team", "href": "https://www.artsy.net/" }
+      ]
+    }
+  }
+}
