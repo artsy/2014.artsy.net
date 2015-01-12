@@ -9,6 +9,8 @@ module.exports = class Carousel
 
   constructor: ({ @$el }) ->
     @$window = $(window)
+    $(document).scrollTop(0)
+    $(document).scrollLeft(0)
 
     @pageCount = @$el.children().length
     @width = @$window.width()
@@ -22,7 +24,6 @@ module.exports = class Carousel
 
   bindEvents: ->
     @hammer = new Hammer @$el[0]
-    @hammer.get('pan').set direction: Hammer.DIRECTION_ALL
     @hammer.on 'panleft panright', @onPan
     @hammer.on 'panend', @onPanEnd
 

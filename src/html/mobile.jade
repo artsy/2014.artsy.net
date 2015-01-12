@@ -7,8 +7,7 @@ mixin pane(options)
     .pane--vcenter: .pane--vcenter-wrap
       .pane--headline
         != options.headline
-      if options.backdrop
-        .pane--backdrop( style="background-image: url(#{assets(options.backdrop)})" )
+      .pane--backdrop( style="background-image: url(#{assets(options.backdrop)})" )
 
 #panes.panes
   //- Initial pane
