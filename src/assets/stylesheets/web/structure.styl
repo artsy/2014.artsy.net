@@ -13,20 +13,21 @@
   bottom (grid-offset / 2)
   left grid-offset
 
-.frame--subheadline
-  avant-garde()
-  font-size subheadline-size
+.frame--vcenter
   position absolute
-  top 0
-  right 0
+  top 50%
+  width 100%
+.frame--vcenter-wrap
+  transform translateY(-50%)
 
-.frame--caption
-  position absolute
-  top 20%
-  bottom 20%
-  left 0
-  width grid-span(3)
-  font-size caption-size
+.frame--layer
+  occupy()
+
+.frame--centering-context
+  translate-center()
+
+.frame--vertical-centering-context
+  translate-v-center()
 
 .frame--credit
   position absolute
@@ -36,11 +37,8 @@
   opacity 0
   font-size credit-size
 
-.frame--vcenter
-  position absolute
-  top 50%
-.frame--vcenter-wrap
-  transform translateY(-50%)
+.frame--caption
+  font-size caption-size
 
 .frame--headline
   margin-bottom unit
@@ -49,3 +47,15 @@
 .frame--description
   font-size description-size
   line-height 1.4
+
+.frame--backdrop
+  occupy()
+  gradient-overlay()
+  > img
+    display block
+    position absolute
+    top 50%
+    left 50%
+    opacity 0
+    &.is-ready
+      opacity 1

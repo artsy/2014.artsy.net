@@ -1,7 +1,7 @@
 @import 'common'
 
 for n in 1 2 3
-  #caption-{n}
+  #introduction-headline-{n}
     opacity 0
 
 .intro-chevron
@@ -15,12 +15,3 @@ for n in 1 2 3
   border 2px solid white
   border-width 0 2px 2px 0
   transform rotate(45deg)
-
-.frame--backdrop
-  occupy()
-  gradient-overlay()
-  > img
-    display block
-    position absolute
-    top 50%
-    left 50%

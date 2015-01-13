@@ -4,13 +4,12 @@
       "images": [
         "images/roxy-paine.jpg",
         "images/edouard-manet.jpg",
-        "images/marco-tirelli.jpg",
-        "images/ryan-trecartin.jpg"
+        "images/marco-tirelli.jpg"
       ],
-      "captions": [
-        "We set out with a mission to make all the world’s art freely accessible to anyone with an Internet connection",
-        "To fulfill this mission we are building the largest public database of art for educational use&hellip;",
-        "&hellip;and making it possible to find and collect art and design from galleries around the world—all in one place.",
+      "headlines": [
+        "We set out with a mission to make all the world’s art freely accessible to anyone with an Internet connection.",
+        "To fulfill this mission, we’re building the largest public database of art for educational use…",
+        "…and making it possible to find and collect art and design from galleries around the world—all in one place.",
         "Here’s how we did in 2014"
       ],
       "credits": [
@@ -28,37 +27,72 @@
         }
       ]
     },
-    "main": [
-      {
-        "subheadline": "A Growing Marketplace",
-        "headline": "Our gallery partners added over 100,000 for-sale works in 2014",
-        "description": "We created a place to explore and learn about one of the art world’s most important events."
-      },
-      {
-        "subheadline": "A Growing Marketplace",
-        "headline": "We made 50,000 introduction between galleries and collectors",
-        "description": null
-      },
-      {
-        "subheadline": "A Growing Marketplace",
-        "headline": "In 2014 we connected ×,×××,××× more users",
-        "description": null
-      },
-      {
-        "subheadline": "A Growing Marketplace",
-        "headline": "The average distance between galleries and collectors was 3200 miles",
-        "description": null
-      },
-      {
-        "subheadline": "A Growing Marketplace",
-        "headline": "Interactive Art Fairs",
-        "description": "In June, Artsy celebrated the 55th Venice Biennale with an in-depth look at 77 national pavilions and exhibitions, from Angola to Uruguay. We created a place to explore and learn about one of the art world’s most important events."
-      },
-      {
-        "subheadline": "A Growing Marketplace",
-        "headline": "The Art Genome Grows",
-        "description": "In June, Artsy celebrated the 55th Venice Biennale with an in-depth look at 77 national pavilions and exhibitions, from Angola to Uruguay. We created a place to explore and learn about one of the art world’s most important events."
-      }
-    ]
+    "galleries-and-museums-shared": {
+      "headline": "Galleries and Museums shared over 8,500 shows on Artsy",
+      "images": [null, null, null, null]
+    },
+    "galleries-uploaded-graph": {
+      "headline": "Galleries uploaded 80,000 for-sale works…",
+      "caption": "In the last month of 2014 galleries uploaded more for sale artworks than in the whole of 2013."
+    },
+    "introductions-made-graph": {
+      "headline": "…and we made 53,000 introductions between galleries and collectors.",
+      "caption": "In the last month of 2014 we made more introductions between galleries and collectors than what we did in the whole year of 2013."
+    },
+    "museums-and-institutions": {
+      "headline": "400 museums and institutions now share their shows and collections on Artsy.",
+      "description": "This year we welcomed some of the most distinguished museums in the world from The Museé de Louvre, Palais de Tokyo, …",
+      "backdrop": "images/lourve.jpg"
+    },
+    "educational-database": {
+      "headline": "From Michelangelo to Mondrian, Artsy’s educational database now contains over 230,000 artworks.",
+      "images": []
+    },
+    "added-categories": {
+      "headline": "We added over 100 categories to the Art Genome Project…",
+      "description": "The Art Genome Project is the classification system that maps the characteristics that connect artists, artworks, architecture, and design objects across history.",
+      "categories": [
+        { "name": "Japanese Photography", "images": [null, null, null, null] },
+        { "name": "Polychrome Sculpture", "images": [null, null, null, null] },
+        { "name": "Fractal-like / Kaleidoscopic", "images": [null, null, null, null] }
+      ]
+    },
+    "benefit-auctions-raised": {
+      "headline": "Benefit auctions raised more than $10.8m for the arts, AIDS research and more…",
+      "description": "Aperture Foundation, Brooklyn Artists Ball, Whitney Art Party, Watermill Center, Swiss Institute, Public Art Fund, Ballroom Marfa, and more. (others TWO &times; TWO for AIDS and Art, Independent Curators International, etc.)",
+      "images": [null, null, null, null]
+    },
+    "powered-by-artsy": {
+      "headline": "…powered by Artsy’s bidding technology.",
+      "description": "Bids could be placed on Artsy.net, Artsy’s app, or through dedicated bidding stations at the Auction events. Guests at the events could see new bids in real time.",
+      "images": []
+    },
+    "browse-and-collect-fairs": {
+      "headline": "In 2014 you could browse and collect from 37 art fairs on Artsy…",
+      "images": [null, null, null, null]
+    },
+    "mobile-app": {
+      "headline": "…and Artsy’s mobile app guided fair visitors to their favorite works and artists.",
+      "description": "Artworks saved through Artsy’s mobile app was displayed in real-time on 9-foot tall display screens throughout the fair. The displays also showed visitors which artists and exhibitors was trending at the fair.",
+      "video": ""
+    },
+    "partners-in-cities": {
+      "headline": "Artsy now has partners in more than 190 cities around the globe…"
+    },
+    "average-distance": {
+      "headline": "and the average distance between collectors and the work inquired on was 2,700 miles."
+    },
+    "joined-artsy": {
+      "headline": "This year, 34 great people have joined the Artsy Team working to make the art world accesible online."
+    },
+    "conclusion": {
+      "message": "<p>Thank you everyone who made this year possible.</p><p>Artists, Galleries, Museums, Institutions, Fairs, Students and Art Lovers, Writers, Designers & Technologists. And You.</p>",
+      "links": [
+        { "name": "Download the Artsy App", "href": "https://www.artsy.net/" },
+        { "name": "Artsy for Galleries", "href": "https://www.artsy.net/" },
+        { "name": "Artsy for Institutions", "href": "https://www.artsy.net/" },
+        { "name": "Join the Team", "href": "https://www.artsy.net/" }
+      ]
+    }
   }
 }

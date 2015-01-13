@@ -1,26 +1,91 @@
 @import 'common'
 
-#columns
-  occupy()
+.bisected-columns
+  translate-center()
+  width 100%
+.bisected-columns--column
+  float left
+  width 50%
+.bisected-columns--image
+  width 100%
+  height 300px
+  background-color gray-color
+  margin (unit / 2) 0
+  border 1px solid white
+
+.graph
+  width 400px
+  height @width
+  border 2px solid gray-color
+.graph--caption
+  position absolute
+  bottom grid-offset
+  right 0
+  width grid-span(2)
+  font-size caption-size
+
+.categories
+  position absolute
+  width 50%
+  top 0
+  right 0
+  bottom 0
+.category
+  overflow hidden
+  block-margins(unit / 4)
+.category-name
+  margin-bottom (unit / 2)
+  avant-garde()
+  font-size 13px
+.category-images
+  white-space nowrap
+.category-image
+  display inline-block
+  background-color gray-color
+  width 250px
+  height 150px
+  inline-block-margins(unit / 4)
 
 .artwork-columns
-  position absolute
+  translate-center()
   width 100%
-  top 50%
-  left 0
-  padding (unit / 2) (unit / 4)
-  transform translateY(-50%)
-  z-index 0
-
 .artwork-column
   float left
   width 25%
   &:last-child
     margin-right 0
-
 .artwork
   display block
   margin unit (unit / 2)
   background-color gray-color
   // Placeholder
   height 350px
+
+.image-wall
+  float right
+  width grid-span(3)
+  height 400px
+  margin-right grid-offset
+  font-size 0
+.image-wall--image
+  display inline-block
+  width 50%
+  height 50%
+  background-color gray-color
+  border 1px solid white
+
+.video-wall
+  float right
+  width grid-span(3)
+  height 400px
+  margin-right grid-offset
+  background-color gray-color
+
+.map
+  position absolute
+  position absolute
+  top (grid-offset / 2)
+  right grid-offset
+  bottom (grid-offset / 2)
+  left grid-offset
+  background-color gray-color
