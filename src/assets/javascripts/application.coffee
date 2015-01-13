@@ -1,4 +1,4 @@
-$ = require 'jquery'
+window.jQuery = $ = require 'jquery'
 Device = require './device'
 Web = require './web'
 Mobile = require './mobile'
