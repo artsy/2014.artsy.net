@@ -14,16 +14,16 @@ gulp.task('move:images', function() {
     .pipe(gulp.dest('build/images'));
 });
 
-var resize = function(name, options, done) {
+var resize = function(name, options) {
   var destination = 'src/assets/images/resized/' + name;
   gulp.src('src/assets/images/originals/*.jpg')
     .pipe(changed(destination))
-    .pipe(imageResize(options, done))
+    .pipe(imageResize(options))
     .pipe(imagemin({ progressive: true }))
     .pipe(gulp.dest(destination));
 };
 
-gulp.task('resize:images', function(done) {
+gulp.task('resize:images', function() {
   var quality = 0.9;
   resize('600x350', { width: 600, height: 350, quality: quality, crop: true, upscale: true });
   resize('960', { width: 960, height: 960, quality: quality, crop: true, upscale: false });
