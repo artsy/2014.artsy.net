@@ -1,7 +1,7 @@
 $ = require 'jquery'
 kubrick = require 'kubrick-js'
 Preloader = require '../preloader'
-Backdrops = require './backdrops'
+Backdrops = require '../backdrops'
 timeline = require './timeline'
 
 module.exports = class Web
