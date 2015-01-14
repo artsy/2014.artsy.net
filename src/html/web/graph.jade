@@ -1,4 +1,10 @@
-.frame--centering-context: .graph
-  img( src= imagePath(frame.image) )
+.frame--centering-context
+  .graph
+    img( src= imagePath(frame.graph.data) )
+    .graph--overlay
+      //-
+    .graph--key
+      img( src= imagePath(frame.graph.key) )
+
 .graph--caption
   = frame.caption

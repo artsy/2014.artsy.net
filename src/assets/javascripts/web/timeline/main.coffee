@@ -26,22 +26,22 @@ module.exports = [
     stage: '#frame-galleries-uploaded-graph', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
-      { element: '#frame-galleries-uploaded-graph .graph', opacity: opacity.in }
-      { element: '#frame-galleries-uploaded-graph .graph--caption', opacity: opacity.in }
+      { element: '.graph', opacity: opacity.in }
+      { element: '.graph--caption', opacity: opacity.in }
     ]
   }
   { # Hold
     stage: '#frame-galleries-uploaded-graph', duration: '100%', easing: 'linear'
     actors: [
-      # Animate bar graph
+      { element: '.graph--overlay', translateX: 400 }
     ]
   }
   { # Out
     stage: '#frame-galleries-uploaded-graph', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
-      { element: '#frame-galleries-uploaded-graph .graph', opacity: opacity.out }
-      { element: '#frame-galleries-uploaded-graph .graph--caption', opacity: opacity.out }
+      { element: '.graph', opacity: opacity.out }
+      { element: '.graph--caption', opacity: opacity.out }
     ]
   }
 
@@ -51,22 +51,23 @@ module.exports = [
     stage: '#frame-introductions-made-graph', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
-      { element: '#frame-introductions-made-graph .graph', opacity: opacity.in }
-      { element: '#frame-introductions-made-graph .graph--caption', opacity: opacity.in }
+      { element: '.graph', opacity: opacity.in }
+      { element: '.graph--caption', opacity: opacity.in }
     ]
   }
   { # Hold
     stage: '#frame-introductions-made-graph', duration: '100%', easing: 'linear'
     actors: [
-      # Animate bar graph
+      {
+        element: '.graph--overlay', translateX: 400 }
     ]
   }
   { # Out
     stage: '#frame-introductions-made-graph', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
-      { element: '#frame-introductions-made-graph .graph', opacity: opacity.out }
-      { element: '#frame-introductions-made-graph .graph--caption', opacity: opacity.out }
+      { element: '.graph', opacity: opacity.out }
+      { element: '.graph--caption', opacity: opacity.out }
     ]
   }
 

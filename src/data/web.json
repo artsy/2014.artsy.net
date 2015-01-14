@@ -39,12 +39,18 @@
     "galleries-uploaded-graph": {
       "headline": "Galleries uploaded 80,000 for-sale works…",
       "caption": "In the last month of 2014 galleries uploaded more for sale artworks than in the whole of 2013.",
-      "image": "inventory-graph.svg"
+      "graph": {
+        "data": "graph-inventory.svg",
+        "key": "graph-inventory_key.svg"
+      }
     },
     "introductions-made-graph": {
       "headline": "…and we made 53,000 introductions between galleries and collectors.",
       "caption": "In the last month of 2014 we made more introductions between galleries and collectors than what we did in the whole year of 2013.",
-      "image": "inquiries-graph.svg"
+      "graph": {
+        "data": "graph-inquiries.svg",
+        "key": "graph-inquiries_key.svg"
+      }
     },
     "museums-and-institutions": {
       "headline": "400 museums and institutions now share their shows and collections on Artsy.",
