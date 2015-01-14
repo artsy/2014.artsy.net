@@ -26,7 +26,7 @@ var resize = function(name, options, done) {
 gulp.task('resize:images', function(done) {
   var quality = 0.9;
   resize('600x350', { width: 600, height: 350, quality: quality, crop: true, upscale: true });
-  resize('960', { width: 960, height: 960, quality: quality, crop: true, upscale: true });
+  resize('960', { width: 960, height: 960, quality: quality, crop: true, upscale: false });
   resize('1920', { width: 1920, height: 1920, quality: quality, crop: false, upscale: false });
   resize('350w', { width: 350, quality: quality, crop: false, upscale: false });
 });
