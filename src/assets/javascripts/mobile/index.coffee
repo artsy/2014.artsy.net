@@ -2,6 +2,7 @@ $ = require 'jquery'
 Hammer = require 'hammerjs'
 Preloader = require '../preloader'
 Carousel = require './carousel'
+Backdrops = require '../backdrops'
 
 module.exports = class Mobile
   constructor: ->
@@ -10,6 +11,7 @@ module.exports = class Mobile
     new Preloader(application: 'mobile').until '.pane--backdrop'
 
     carousel = new Carousel $el: $('#panes')
+    backdrops = new Backdrops $els: $('.pane--backdrop img')
 
     $('.info').each ->
       hammer = new Hammer this

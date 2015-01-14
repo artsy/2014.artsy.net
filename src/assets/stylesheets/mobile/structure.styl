@@ -30,15 +30,17 @@ body.is-mobile
   overflow hidden
 
 .pane--backdrop
-  position absolute
-  top 0
-  right 0
-  bottom 0
-  left 0
-  background-size cover
-  background-position center center
+  occupy()
   z-index -1
   gradient-overlay()
+  > img
+    display block
+    position absolute
+    top 50%
+    left 50%
+    opacity 0
+    &.is-ready
+      opacity 1
 
 .pane--vcenter
 .pane--vcenter-wrap
