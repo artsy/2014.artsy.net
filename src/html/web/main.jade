@@ -19,11 +19,11 @@ mixin frame(id, span)
 +frame('galleries-and-museums-shared')
   #galleries-and-museums-shared--columns.frame--layer: .bisected-columns
     #galleries-and-museums-shared--column-0.bisected-columns--column
-      .bisected-columns--image
-      .bisected-columns--image
+      .bisected-columns--image: img( src= assets(frame.images[0]) )
+      .bisected-columns--image: img( src= assets(frame.images[1]) )
     #galleries-and-museums-shared--column-1.bisected-columns--column
-      .bisected-columns--image
-      .bisected-columns--image
+      .bisected-columns--image: img( src= assets(frame.images[2]) )
+      .bisected-columns--image: img( src= assets(frame.images[3]) )
 
 +frame('galleries-uploaded-graph')
   include graph

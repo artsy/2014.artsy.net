@@ -29,15 +29,22 @@
     },
     "galleries-and-museums-shared": {
       "headline": "Galleries and Museums shared over 8,500 shows on Artsy",
-      "images": [null, null, null, null]
+      "images": [
+        "images/cai-guo-qiang.jpg",
+        "images/ryan-trecartin.jpg",
+        "images/sui-jianguo.jpg",
+        "images/niamh-barry.jpg"
+      ]
     },
     "galleries-uploaded-graph": {
       "headline": "Galleries uploaded 80,000 for-sale works…",
-      "caption": "In the last month of 2014 galleries uploaded more for sale artworks than in the whole of 2013."
+      "caption": "In the last month of 2014 galleries uploaded more for sale artworks than in the whole of 2013.",
+      "image": "images/inventory-graph.svg"
     },
     "introductions-made-graph": {
       "headline": "…and we made 53,000 introductions between galleries and collectors.",
-      "caption": "In the last month of 2014 we made more introductions between galleries and collectors than what we did in the whole year of 2013."
+      "caption": "In the last month of 2014 we made more introductions between galleries and collectors than what we did in the whole year of 2013.",
+      "image": "images/inquiries-graph.svg"
     },
     "museums-and-institutions": {
       "headline": "400 museums and institutions now share their shows and collections on Artsy.",
