@@ -31,7 +31,7 @@ module.exports = [
     ]
   }
   { # Hold
-    stage: '#frame-galleries-uploaded-graph', duration: '100%', easing: 'linear'
+    stage: '#frame-galleries-uploaded-graph', duration: '200%', easing: 'linear'
     actors: [
       { element: '.graph--overlay', translateX: 400 }
     ]
@@ -56,7 +56,7 @@ module.exports = [
     ]
   }
   { # Hold
-    stage: '#frame-introductions-made-graph', duration: '100%', easing: 'linear'
+    stage: '#frame-introductions-made-graph', duration: '200%', easing: 'linear'
     actors: [
       {
         element: '.graph--overlay', translateX: 400 }
@@ -134,23 +134,28 @@ module.exports = [
     stage: '#frame-added-categories', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
+      { element: '#categories', translateY: [150, 50] }
       { element: '#category-0', opacity: [0, 1] }
       { element: '#category-1', opacity: [-0.25, 1] }
       { element: '#category-2', opacity: [-0.5, 1] }
+      { element: '#category-3', opacity: [-0.75, 1] }
     ]
   }
   { # Hold
     stage: '#frame-added-categories', duration: '100%', easing: 'linear'
     actors: [
+      { element: '#categories', translateY: [50, -50] }
     ]
   }
   { # Out
     stage: '#frame-added-categories', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
+      { element: '#categories', translateY: [-50, -150] }
       { element: '#category-0', opacity: [1, 0] }
       { element: '#category-1', opacity: [1, -0.25] }
       { element: '#category-2', opacity: [1, -0.5] }
+      { element: '#category-3', opacity: [1, -0.75] }
     ]
   }
 

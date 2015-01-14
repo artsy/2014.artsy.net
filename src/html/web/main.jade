@@ -44,18 +44,18 @@ mixin frame(id, span)
 +frame('benefit-auctions-raised')
   #benefit-auctions-raised--columns.frame--layer: .bisected-columns
     #benefit-auctions-raised--column-0.bisected-columns--column
-      .bisected-columns--image: img( src= imagePath(frame.images[2], '350w') )
-      .bisected-columns--image
+      .bisected-columns--image: .anchor-br: img( src= imagePath(frame.images[0], '350w') )
+      .bisected-columns--image: img( src= imagePath(frame.images[1], '350w') )
     #benefit-auctions-raised--column-1.bisected-columns--column
-      .bisected-columns--image: img( src= imagePath(frame.images[2], '600x350') )
+      .bisected-columns--image: img( src= imagePath(frame.images[2], '350w') )
       .bisected-columns--image: img( src= imagePath(frame.images[3], '350w') )
 
 +frame('powered-by-artsy')
   #powered-by-artsy--columns.frame--layer: .bisected-columns
     #powered-by-artsy--column-0.bisected-columns--column
-      .bisected-columns--image
+      .bisected-columns--image: img( src= imagePath(frame.images[0], '960') )
     #powered-by-artsy--column-1.bisected-columns--column
-      .bisected-columns--image
+      .bisected-columns--image: img( src= imagePath(frame.images[1], '960') )
 
 +frame('browse-and-collect-fairs')
   .frame--centering-context.span-full

@@ -30,10 +30,10 @@
     "galleries-and-museums-shared": {
       "headline": "Galleries and Museums shared over 8,500 shows on Artsy",
       "images": [
-        "cai-guo-qiang.jpg",
-        "ryan-trecartin.jpg",
-        "sui-jianguo.jpg",
-        "niamh-barry.jpg"
+        "aiweiwei-alcatraz.jpg",
+        "fish-skeleton.jpg",
+        "black-wall.jpg",
+        "niamh-berry.jpg"
       ]
     },
     "galleries-uploaded-graph": {
@@ -55,49 +55,93 @@
     "museums-and-institutions": {
       "headline": "400 museums and institutions now share their shows and collections on Artsy.",
       "description": "This year we welcomed some of the most distinguished museums in the world from The Museé de Louvre, Palais de Tokyo, …",
-      "backdrop": "lourve.jpg"
+      "backdrop": "musee-de-louvre.jpg"
     },
     "educational-database": {
       "headline": "From Michelangelo to Mondrian, Artsy’s educational database now contains over 230,000 artworks.",
       "images": [
-        "rene-magritte.jpg",
-        "constantin-brancusi.jpg",
-        "frida-kahlo.jpg",
-        "edouard-manet_bar.jpg",
-        "jean-michel-basquiat.jpg",
-        "louise-lawler.jpg",
-        "rembrandt.jpg",
-        "marcel-duchamp.jpg",
-        "mark-rothko.jpg",
-        "ai-weiwei_drop.jpg",
-        "rembrandt_anatomy.jpg",
-        "jan-van-eyck.jpg",
-        "pablo-picasso.jpg"
+        [
+          "ancient-snake.jpg",
+          "albers.jpg",
+          "rembrandt.jpg",
+          "manet.jpg"
+        ],
+        [
+          "gentileschi.jpg",
+          "magritte.jpg",
+          "alleyStreet.jpg",
+          "bosch.jpg"
+        ],
+        [
+          "khalo1.jpg",
+          "brancusi.jpg",
+          "ancient-reclining.jpg",
+          "rothko.jpg"
+        ],
+        [
+          "aiweiwei.jpg",
+          "picasso.jpg",
+          "duchamp.jpg"
+        ]
       ]
     },
     "added-categories": {
       "headline": "We added over 100 categories to the Art Genome Project…",
       "description": "The Art Genome Project is the classification system that maps the characteristics that connect artists, artworks, architecture, and design objects across history.",
       "categories": [
-        { "name": "Japanese Photography", "images": [null, null, null, null] },
-        { "name": "Polychrome Sculpture", "images": [null, null, null, null] },
-        { "name": "Fractal-like / Kaleidoscopic", "images": [null, null, null, null] }
+        {
+          "name": "Japanese Photography",
+          "images": [
+            "japanese-photo1.jpg",
+            "japanese-photo2.jpg",
+            "japanese-photo3.jpg"
+          ]
+        },
+        {
+          "name": "Polychrome Sculpture",
+          "images": [
+            "polychrome1.jpg",
+            "polychrome2.jpg",
+            "polychrome3.jpg",
+            "polychrome4.jpg"
+          ]
+        },
+        {
+          "name": "Fractal-like / Kaleidoscopic",
+          "images": [
+            "fractal1.jpg",
+            "fractal2.jpg",
+            "fractal3.jpg",
+            "fractal4.jpg"
+          ]
+        },
+        {
+          "name": "Ukiyo-e",
+          "images": [
+            "ukiyo1.jpg",
+            "ukiyo2.jpg",
+            "ukiyo3.jpg"
+          ]
+        }
       ]
     },
     "benefit-auctions-raised": {
       "headline": "Benefit auctions raised more than $10.8m for the arts, AIDS research and more…",
       "description": "Aperture Foundation, Brooklyn Artists Ball, Whitney Art Party, Watermill Center, Swiss Institute, Public Art Fund, Ballroom Marfa, and more. (others TWO &times; TWO for AIDS and Art, Independent Curators International, etc.)",
       "images": [
-        null,
-        null,
-        "stephen-petronio-company.jpg",
-        "marina-abramovic_petter-skavlan.jpg"
+        "chuck-close-jenny-holzer.jpg",
+        "dinner-table.jpg",
+        "dancers.jpg",
+        "marinaAbromovic.jpg"
       ]
     },
     "powered-by-artsy": {
       "headline": "…powered by Artsy’s bidding technology.",
       "description": "Bids could be placed on Artsy.net, Artsy’s app, or through dedicated bidding stations at the Auction events. Guests at the events could see new bids in real time.",
-      "images": []
+      "images": [
+        "bidding-kiosk.jpg",
+        "dinner-party.jpg"
+      ]
     },
     "browse-and-collect-fairs": {
       "headline": "In 2014 you could browse and collect from 37 art fairs on Artsy…",
