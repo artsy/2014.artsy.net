@@ -28,7 +28,8 @@
     "run-sequence": "^1.0.2",
     "gulp-rev-css-url": "0.0.10",
     "gulp-jade": "^0.10.0",
-    "gulp-image-resize": "^0.6.0"
+    "gulp-image-resize": "^0.6.0",
+    "gulp-imagemin": "^2.1.0"
   },
   "dependencies": {
     "jquery": "~2.1.3",
