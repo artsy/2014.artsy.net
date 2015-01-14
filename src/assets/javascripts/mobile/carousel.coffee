@@ -31,6 +31,8 @@ module.exports = class Carousel
       @gotoPage @currentPage, false # Reset to current page
 
     @hammer = new Hammer @$el[0]
+    @hammer.get('pan').set direction: Hammer.DIRECTION_ALL
+
     @hammer.on 'panleft panright', @onPan
     @hammer.on 'panend', @onPanEnd
 
@@ -40,8 +42,8 @@ module.exports = class Carousel
 
   onPanEnd: (e) =>
     if Math.abs(@distance / @width) > @turnThreshold
-      @currentPage++ if e.direction is 2
-      @currentPage-- if e.direction is 4
+      @currentPage++ if e.direction is Hammer.DIRECTION_LEFT
+      @currentPage-- if e.direction is Hammer.DIRECTION_RIGHT
       @gotoPage @currentPage, true
 
   prevPage: ->
