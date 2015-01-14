@@ -26,7 +26,7 @@ module.exports = [
     stage: '#frame-galleries-uploaded-graph', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
-      { element: '#frame-galleries-uploaded-graph .graph', opacity: opacity.in, translateY: [150, 0] }
+      { element: '#frame-galleries-uploaded-graph .graph', opacity: opacity.in }
       { element: '#frame-galleries-uploaded-graph .graph--caption', opacity: opacity.in }
     ]
   }
@@ -40,7 +40,7 @@ module.exports = [
     stage: '#frame-galleries-uploaded-graph', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
-      { element: '#frame-galleries-uploaded-graph .graph', opacity: opacity.out, translateY: [0, -150] }
+      { element: '#frame-galleries-uploaded-graph .graph', opacity: opacity.out }
       { element: '#frame-galleries-uploaded-graph .graph--caption', opacity: opacity.out }
     ]
   }
@@ -51,7 +51,7 @@ module.exports = [
     stage: '#frame-introductions-made-graph', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
-      { element: '#frame-introductions-made-graph .graph', opacity: opacity.in, translateY: [150, 0] }
+      { element: '#frame-introductions-made-graph .graph', opacity: opacity.in }
       { element: '#frame-introductions-made-graph .graph--caption', opacity: opacity.in }
     ]
   }
@@ -65,7 +65,7 @@ module.exports = [
     stage: '#frame-introductions-made-graph', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
-      { element: '#frame-introductions-made-graph .graph', opacity: opacity.out, translateY: [0, -150] }
+      { element: '#frame-introductions-made-graph .graph', opacity: opacity.out }
       { element: '#frame-introductions-made-graph .graph--caption', opacity: opacity.out }
     ]
   }
