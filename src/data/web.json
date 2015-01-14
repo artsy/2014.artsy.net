@@ -2,9 +2,9 @@
   "sections": {
     "introduction": {
       "images": [
-        "images/roxy-paine.jpg",
-        "images/edouard-manet.jpg",
-        "images/marco-tirelli.jpg"
+        "roxy-paine.jpg",
+        "edouard-manet.jpg",
+        "marco-tirelli.jpg"
       ],
       "headlines": [
         "We set out with a mission to make all the world’s art freely accessible to anyone with an Internet connection.",
@@ -30,30 +30,44 @@
     "galleries-and-museums-shared": {
       "headline": "Galleries and Museums shared over 8,500 shows on Artsy",
       "images": [
-        "images/cai-guo-qiang.jpg",
-        "images/ryan-trecartin.jpg",
-        "images/sui-jianguo.jpg",
-        "images/niamh-barry.jpg"
+        "cai-guo-qiang.jpg",
+        "ryan-trecartin.jpg",
+        "sui-jianguo.jpg",
+        "niamh-barry.jpg"
       ]
     },
     "galleries-uploaded-graph": {
       "headline": "Galleries uploaded 80,000 for-sale works…",
       "caption": "In the last month of 2014 galleries uploaded more for sale artworks than in the whole of 2013.",
-      "image": "images/inventory-graph.svg"
+      "image": "inventory-graph.svg"
     },
     "introductions-made-graph": {
       "headline": "…and we made 53,000 introductions between galleries and collectors.",
       "caption": "In the last month of 2014 we made more introductions between galleries and collectors than what we did in the whole year of 2013.",
-      "image": "images/inquiries-graph.svg"
+      "image": "inquiries-graph.svg"
     },
     "museums-and-institutions": {
       "headline": "400 museums and institutions now share their shows and collections on Artsy.",
       "description": "This year we welcomed some of the most distinguished museums in the world from The Museé de Louvre, Palais de Tokyo, …",
-      "backdrop": "images/lourve.jpg"
+      "backdrop": "lourve.jpg"
     },
     "educational-database": {
       "headline": "From Michelangelo to Mondrian, Artsy’s educational database now contains over 230,000 artworks.",
-      "images": []
+      "images": [
+        "rene-magritte.jpg",
+        "constantin-brancusi.jpg",
+        "frida-kahlo.jpg",
+        "edouard-manet_bar.jpg",
+        "jean-michel-basquiat.jpg",
+        "louise-lawler.jpg",
+        "rembrandt.jpg",
+        "marcel-duchamp.jpg",
+        "mark-rothko.jpg",
+        "ai-weiwei_drop.jpg",
+        "rembrandt_anatomy.jpg",
+        "jan-van-eyck.jpg",
+        "pablo-picasso.jpg"
+      ]
     },
     "added-categories": {
       "headline": "We added over 100 categories to the Art Genome Project…",

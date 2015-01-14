@@ -1,5 +1,6 @@
 #columns.frame--layer: .artwork-columns
-  for x, n in new Array(4)
-    .artwork-column( class="column-#{n}" )
-      for i in new Array(7)
-        .artwork
+  - columns = split(frame.images, 4)
+  for column, i in columns
+    .artwork-column( class="column-#{i}" )
+      for image in column
+        .artwork: img( src= imagePath(image, '350w') )

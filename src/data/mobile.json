@@ -4,7 +4,7 @@
       "panes": [
         {
           "headline": "Annual Review 2014<br>Swipe to Continue",
-          "backdrop": "images/roxy-paine.jpg"
+          "backdrop": "roxy-paine.jpg"
         }
       ]
     },
@@ -12,16 +12,16 @@
       "panes": [
         {
           "headline": "We set out with a mission to make all the world’s art freely accessible to anyone with an Internet connection",
-          "backdrop": "images/marco-tirelli.jpg",
+          "backdrop": "marco-tirelli.jpg",
           "caption": "Marco Tirelli. Axel Vervoordt Gallery"
         },
         {
           "headline": "To fulfill this mission we are building the largest public database of art for educational use&hellip;",
-          "backdrop": "images/edouard-manet.jpg"
+          "backdrop": "edouard-manet.jpg"
         },
         {
           "headline": "&hellip;and making it possible to find and collect art and design from galleries around the world—all in one place.",
-          "backdrop": "images/louise-lawler.jpg"
+          "backdrop": "louise-lawler.jpg"
         },
         {
           "headline": "Here’s how we did in 2014"
@@ -35,7 +35,7 @@
         },
         {
           "headline": "&hellip;and 1,200 shows",
-          "backdrop": "images/richard-serra.jpg"
+          "backdrop": "richard-serra.jpg"
         },
         {
           "headline": "We made 50,000 introductions between galleries and collectors."
@@ -46,16 +46,16 @@
       "panes": [
         {
           "headline": "Oui!<br>12 French museums join Artsy.",
-          "backdrop": "images/lourve.jpg"
+          "backdrop": "lourve.jpg"
         },
         {
           "headline": "Galleries and Museums uploaded over 1,200 shows&hellip;",
-          "backdrop": "images/ai-weiwei.jpg",
+          "backdrop": "ai-weiwei.jpg",
           "caption": "Ai Weiwei on Alcatraz by the For Site Foundation was one of the most popular shows on Artsy in 2014"
         },
         {
           "headline": "&hellip;bringing access to more than 100,000 works from their collections",
-          "backdrop": "images/arcimboldo.jpg"
+          "backdrop": "arcimboldo.jpg"
         }
       ]
     },
