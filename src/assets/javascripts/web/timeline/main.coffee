@@ -133,26 +133,23 @@ module.exports = [
     stage: '#frame-added-categories', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
-      { element: '#category-0', opacity: opacity.in, translateY: [-99, 0] }
-      { element: '#category-1', opacity: opacity.in, translateY: [-66, 0] }
-      { element: '#category-2', opacity: opacity.in, translateY: [-33, 0] }
+      { element: '#category-0', opacity: [0, 1] }
+      { element: '#category-1', opacity: [-0.25, 1] }
+      { element: '#category-2', opacity: [-0.5, 1] }
     ]
   }
   { # Hold
     stage: '#frame-added-categories', duration: '100%', easing: 'linear'
     actors: [
-      { element: '#category-0', translateY: [0, 33] }
-      { element: '#category-1', translateY: [0, 33] }
-      { element: '#category-2', translateY: [0, 33] }
     ]
   }
   { # Out
     stage: '#frame-added-categories', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
-      { element: '#category-0', opacity: opacity.out, translateY: [33, 66] }
-      { element: '#category-1', opacity: opacity.out, translateY: [33, 99] }
-      { element: '#category-2', opacity: opacity.out, translateY: [33, 132] }
+      { element: '#category-0', opacity: [1, 0] }
+      { element: '#category-1', opacity: [1, -0.25] }
+      { element: '#category-2', opacity: [1, -0.5] }
     ]
   }
 
