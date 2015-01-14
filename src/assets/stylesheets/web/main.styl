@@ -24,10 +24,11 @@
 .graph--caption
   position absolute
   bottom grid-offset
-  right 0
-  width grid-span(2)
+  right grid-offset
+  width grid-span(1)
   font-size caption-size
   padding-right grid-offset
+  translate-v-center()
 
 .categories
   position absolute
@@ -83,15 +84,14 @@
 .image-wall
   float right
   width grid-span(3)
-  height 400px
   margin-right grid-offset
   font-size 0
 .image-wall--image
   display inline-block
   width 50%
-  height 50%
-  background-color gray-color
-  border 1px solid white
+  > img
+    max-width 100%
+    max-height 100%
 
 .video-wall
   float right

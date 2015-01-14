@@ -44,11 +44,11 @@ mixin frame(id, span)
 +frame('benefit-auctions-raised')
   #benefit-auctions-raised--columns.frame--layer: .bisected-columns
     #benefit-auctions-raised--column-0.bisected-columns--column
-      .bisected-columns--image
+      .bisected-columns--image: img( src= imagePath(frame.images[2], '350w') )
       .bisected-columns--image
     #benefit-auctions-raised--column-1.bisected-columns--column
-      .bisected-columns--image
-      .bisected-columns--image
+      .bisected-columns--image: img( src= imagePath(frame.images[2], '600x350') )
+      .bisected-columns--image: img( src= imagePath(frame.images[3], '350w') )
 
 +frame('powered-by-artsy')
   #powered-by-artsy--columns.frame--layer: .bisected-columns
@@ -62,7 +62,7 @@ mixin frame(id, span)
     #browse-and-collect-fairs--image-wall.image-wall
       for image, i in frame.images
         .image-wall--image( id="image-wall--image-#{i}" )
-          //-
+          img( src= imagePath(frame.images[i], '600x350') )
 
 +frame('mobile-app')
   .frame--centering-context.span-full

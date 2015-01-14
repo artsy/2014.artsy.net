@@ -81,7 +81,12 @@
     "benefit-auctions-raised": {
       "headline": "Benefit auctions raised more than $10.8m for the arts, AIDS research and more…",
       "description": "Aperture Foundation, Brooklyn Artists Ball, Whitney Art Party, Watermill Center, Swiss Institute, Public Art Fund, Ballroom Marfa, and more. (others TWO &times; TWO for AIDS and Art, Independent Curators International, etc.)",
-      "images": [null, null, null, null]
+      "images": [
+        null,
+        null,
+        "stephen-petronio-company.jpg",
+        "marina-abramovic_petter-skavlan.jpg"
+      ]
     },
     "powered-by-artsy": {
       "headline": "…powered by Artsy’s bidding technology.",
@@ -90,7 +95,12 @@
     },
     "browse-and-collect-fairs": {
       "headline": "In 2014 you could browse and collect from 37 art fairs on Artsy…",
-      "images": [null, null, null, null]
+      "images": [
+        "unnamed-29.jpg",
+        "carsten-holler_booth.jpg",
+        "carsten-holler_booth.jpg",
+        "unnamed-29.jpg"
+      ]
     },
     "mobile-app": {
       "headline": "…and Artsy’s mobile app guided fair visitors to their favorite works and artists.",
