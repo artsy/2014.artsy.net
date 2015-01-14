@@ -5,11 +5,11 @@ var del = require('del');
 var path = require('path');
 var override = require('gulp-rev-css-url');
 
-gulp.task('rev', ['build:js', 'build:css', 'build:images'], function() {
+gulp.task('rev', ['build:js', 'build:css', 'build:images:production'], function() {
   return gulp.src([
       'build/stylesheets/application.css',
       'build/javascripts/application.js',
-      'build/images/*'
+      'build/images/**/*'
     ], { base: path.join(process.cwd(), 'build') })
     .pipe(rev())
     .pipe(override())
@@ -20,16 +20,6 @@ gulp.task('rev', ['build:js', 'build:css', 'build:images'], function() {
 
 gulp.task('rev:clean', ['rev'], function(done) {
   var manifest = JSON.parse(fs.readFileSync('build/rev-manifest.json', 'utf8'));
-  var clean = [
-    'build/javascripts/*',
-    'build/stylesheets/*',
-    'build/images/*'
-  ];
-
-  for (var filename in manifest) {
-    var ignore = '!build/' + manifest[filename];
-    clean.push(ignore);
-  }
-
-  del(clean, done);
+  var toClean = Object.keys(manifest).map(function(path) { return 'build/' + path; });
+  del(toClean, done);
 });

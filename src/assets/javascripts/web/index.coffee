@@ -12,9 +12,9 @@ module.exports = class Web
     $(document).on 'keypress', (e) ->
       $('.grid').toggle() if e.which is 103
 
-    new Preloader(application: 'web').until '#frame-0', =>
+    new Preloader(application: 'web').until '#frame-introduction', =>
       @backdrops = new Backdrops $els: $('.frame--backdrop img')
 
   timeline: ->
     kubrick timeline
-    $('#frame-0').show() # Force display of initial frame
+    $('#frame-introduction').show() # Force display of initial frame

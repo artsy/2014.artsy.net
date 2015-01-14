@@ -2,7 +2,7 @@
 
 mixin backdrop(url)
   .pane--backdrop-context: .pane--backdrop(
-    style=( url ? "background-image: url(#{assets(url)})" : undefined)
+    style=( url ? "background-image: url(#{imagePath(url, '960')})" : undefined)
   )
 
 mixin caption(caption)
@@ -44,9 +44,9 @@ mixin defaultPane(options)
   //- Splash
   - pane = sections.splash.panes[0]
   .pane
-    .pane--backdrop( style="background-image: url(#{assets(pane.backdrop)})" )
+    .pane--backdrop( style="background-image: url(#{imagePath(pane.backdrop, '960')})" )
     .pane--vcenter: .pane--vcenter-wrap
-      img.pane--logo( src= assets('images/artsy.svg'), alt='Artsy' )
+      img.pane--logo( src= imagePath('artsy.svg'), alt='Artsy' )
       .pane--headline!= pane.headline
       .pane--chevron &nbsp;
 

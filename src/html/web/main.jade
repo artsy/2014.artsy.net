@@ -1,29 +1,77 @@
-- main = locals.copy.web.sections.main
+- sections = locals.copy.web.sections
 
-mixin frame(n, options)
-  .frame( id="frame-#{n}" ): .frame--body
+mixin frame(id, span)
+  - frame = sections[id]
+  - span = span || 2
+
+  .frame( id="frame-#{id}" )
     block
-    .frame--subheadline= options.subheadline
-    .frame--vcenter.span-2: .frame--vcenter-wrap
-      .frame--headline
-        != options.headline
-      .frame--description
-        != options.description
 
-+frame(1, main[0])
-  #columns: include columns
+    .frame--body
+      .frame--vcenter: .frame--vcenter-wrap
+        if frame.headline
+          .frame--headline( class="span-#{span}" )
+            != frame.headline
+        if frame.description
+          .frame--description( class="span-#{span}" )
+            != frame.description
 
-+frame(2, main[1])
-  //- Nothing
++frame('galleries-and-museums-shared')
+  #galleries-and-museums-shared--columns.frame--layer: .bisected-columns
+    #galleries-and-museums-shared--column-0.bisected-columns--column
+      .bisected-columns--image: img( src= imagePath(frame.images[0], '600x350') )
+      .bisected-columns--image: img( src= imagePath(frame.images[1], '600x350') )
+    #galleries-and-museums-shared--column-1.bisected-columns--column
+      .bisected-columns--image: img( src= imagePath(frame.images[2], '600x350') )
+      .bisected-columns--image: img( src= imagePath(frame.images[3], '600x350') )
 
-+frame(3, main[2])
-  //- Nothing
++frame('galleries-uploaded-graph')
+  include graph
 
-+frame(4, main[3])
-  //- Nothing
++frame('introductions-made-graph')
+  include graph
 
-+frame(5, main[4])
-  //- Nothing
++frame('museums-and-institutions')
+  .frame--backdrop( id="museums-and-institutions-backdrop" )
+    img( src= imagePath(frame.backdrop, '1920') )
 
-+frame(6, main[5])
-  //- Nothing
++frame('educational-database', 3)
+  include columns
+
++frame('added-categories')
+  include categories
+
++frame('benefit-auctions-raised')
+  #benefit-auctions-raised--columns.frame--layer: .bisected-columns
+    #benefit-auctions-raised--column-0.bisected-columns--column
+      .bisected-columns--image: img( src= imagePath(frame.images[2], '350w') )
+      .bisected-columns--image
+    #benefit-auctions-raised--column-1.bisected-columns--column
+      .bisected-columns--image: img( src= imagePath(frame.images[2], '600x350') )
+      .bisected-columns--image: img( src= imagePath(frame.images[3], '350w') )
+
++frame('powered-by-artsy')
+  #powered-by-artsy--columns.frame--layer: .bisected-columns
+    #powered-by-artsy--column-0.bisected-columns--column
+      .bisected-columns--image
+    #powered-by-artsy--column-1.bisected-columns--column
+      .bisected-columns--image
+
++frame('browse-and-collect-fairs')
+  .frame--centering-context.span-full
+    #browse-and-collect-fairs--image-wall.image-wall
+      for image, i in frame.images
+        .image-wall--image( id="image-wall--image-#{i}" )
+          img( src= imagePath(frame.images[i], '600x350') )
+
++frame('mobile-app')
+  .frame--centering-context.span-full
+    #mobile-app--video-wall.video-wall
+
++frame('partners-in-cities')
+  #partners-in-cities.map
+
++frame('average-distance')
+  #average-distance.map
+
++frame('joined-artsy')

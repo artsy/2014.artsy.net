@@ -1,19 +1,18 @@
 - introduction = locals.copy.web.sections.introduction
 
-#frame-0.frame
+#frame-introduction.frame
   for image, i in introduction.images.reverse()
     //- Invert stacking order
-    .frame--backdrop( id="backdrop-#{(introduction.images.length - 1) - i}" )
-      img( src= assets(image) )
+    .frame--backdrop( id="introduction-backdrop-#{(introduction.images.length - 1) - i}" )
+      img( src= imagePath(image, '1920') )
 
   .frame--body
-    for caption, i in introduction.captions
-      .frame--caption( id="caption-#{i}" )
-        .frame--vcenter: .frame--vcenter-wrap
-          != caption
+    for headline, i in introduction.headlines
+      .frame--vcenter: .frame--vcenter-wrap
+        .frame--headline.span-3( id="introduction-headline-#{i}" )!= headline
 
     for credit, i in introduction.credits
-      .frame--credit( id="credit-#{i}" )
+      .frame--credit( id="introduction-credit-#{i}" )
         = credit.name
         if credit.title
           = ' '

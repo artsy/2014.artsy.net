@@ -1,0 +1,10 @@
+#categories.categories
+  .frame--vertical-centering-context
+    for category, i in frame.categories
+      .category( id='category-#{i}' )
+        .category-name
+          = category.name
+        .category-images
+          for image in category.images
+            .category-image
+              //-
