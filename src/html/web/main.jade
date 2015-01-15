@@ -67,6 +67,8 @@ mixin frame(id, span)
 +frame('mobile-app')
   .gradient-overlay: .frame--centering-context.span-full
     #mobile-app--video-wall.video-wall
+      video( src= assetsPath(frame.video.files.mp4), autoplay, loop )
+        img( src= imagePath(frame.video.cover, '960') )
 
 +frame('partners-in-cities')
   #partners-in-cities.map

@@ -155,7 +155,12 @@
     "mobile-app": {
       "headline": "…and Artsy’s mobile app guided fair visitors to their favorite works and artists.",
       "description": "Artworks saved through Artsy’s mobile app was displayed in real-time on 9-foot tall display screens throughout the fair. The displays also showed visitors which artists and exhibitors was trending at the fair.",
-      "video": ""
+      "video": {
+        "cover": "armory-columns_cover.jpg",
+        "files": {
+          "mp4": "videos/armory-columns.mp4"
+        }
+      }
     },
     "partners-in-cities": {
       "headline": "Artsy now has partners in more than 190 cities around the globe…"
