@@ -157,9 +157,10 @@
       "description": "Artworks saved through Artsy’s mobile app was displayed in real-time on 9-foot tall display screens throughout the fair. The displays also showed visitors which artists and exhibitors was trending at the fair.",
       "video": {
         "cover": "armory-columns_cover.jpg",
-        "files": {
-          "mp4": "videos/armory-columns.mp4"
-        }
+        "sources": [
+          { "type": "video/mp4", "src": "videos/armory-columns.mp4" },
+          { "type": "video/webm", "src": "videos/armory-columns.webm" }
+        ]
       }
     },
     "partners-in-cities": {

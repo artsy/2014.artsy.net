@@ -5,8 +5,6 @@ gulp.task('build:videos:production', function(done) {
 });
 
 gulp.task('move:videos', function() {
-  gulp.src([
-    'src/assets/videos/armory-columns.mp4'
-  ])
+  gulp.src('src/assets/videos/*.{mp4,webm}')
     .pipe(gulp.dest('build/videos'));
 });
