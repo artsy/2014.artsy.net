@@ -5,11 +5,12 @@ var del = require('del');
 var path = require('path');
 var override = require('gulp-rev-css-url');
 
-gulp.task('rev', ['build:js', 'build:css', 'build:images:production'], function() {
+gulp.task('rev', ['build:js', 'build:css', 'build:images:production', 'move:videos'], function() {
   return gulp.src([
       'build/stylesheets/application.css',
       'build/javascripts/application.js',
-      'build/images/**/*'
+      'build/images/**/*',
+      'build/videos/*'
     ], { base: path.join(process.cwd(), 'build') })
     .pipe(rev())
     .pipe(override())
