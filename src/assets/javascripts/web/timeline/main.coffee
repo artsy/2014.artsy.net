@@ -11,7 +11,9 @@ module.exports = [
   }
   { # Hold
     stage: '#frame-galleries-and-museums-shared', duration: '100%', easing: 'linear'
-    actors: transitions.bisectedColumnsHold('galleries-and-museums-shared')
+    actors: [
+      element: '.frame--vcenter', translateY: translateY.hold
+    ].concat(transitions.bisectedColumnsHold('galleries-and-museums-shared'))
   }
   { # Out
     stage: '#frame-galleries-and-museums-shared', duration: '100%', easing: 'linear'
@@ -33,6 +35,7 @@ module.exports = [
   { # Hold
     stage: '#frame-galleries-uploaded-graph', duration: '200%', easing: 'linear'
     actors: [
+      { element: '.frame--vcenter', translateY: translateY.hold }
       { element: '.graph--overlay', translateX: 400 }
     ]
   }
@@ -58,8 +61,8 @@ module.exports = [
   { # Hold
     stage: '#frame-introductions-made-graph', duration: '200%', easing: 'linear'
     actors: [
-      {
-        element: '.graph--overlay', translateX: 400 }
+      { element: '.frame--vcenter', translateY: translateY.hold }
+      { element: '.graph--overlay', translateX: 400 }
     ]
   }
   { # Out
@@ -83,6 +86,7 @@ module.exports = [
   { # Hold
     stage: '#frame-museums-and-institutions', duration: '100%', easing: 'linear'
     actors: [
+      { element: '.frame--vcenter', translateY: translateY.hold }
       { element: '#museums-and-institutions-backdrop', scale: [1.05, 1.1] }
     ]
   }
@@ -110,6 +114,7 @@ module.exports = [
   { # Hold
     stage: '#frame-educational-database', duration: '100%', easing: 'linear'
     actors: [
+      { element: '.frame--vcenter', translateY: translateY.hold }
       { element: '.column-0', translateY: [0, 75] }
       { element: '.column-1', translateY: [0, -75] }
       { element: '.column-2', translateY: [0, 75] }
@@ -144,6 +149,7 @@ module.exports = [
   { # Hold
     stage: '#frame-added-categories', duration: '100%', easing: 'linear'
     actors: [
+      { element: '.frame--vcenter', translateY: translateY.hold }
       { element: '#categories', translateY: [50, -50] }
     ]
   }
@@ -169,7 +175,9 @@ module.exports = [
   }
   { # Hold
     stage: '#frame-benefit-auctions-raised', duration: '100%', easing: 'linear'
-    actors: transitions.bisectedColumnsHold('benefit-auctions-raised')
+    actors: [
+      { element: '.frame--vcenter', translateY: translateY.hold }
+    ].concat(transitions.bisectedColumnsHold('benefit-auctions-raised'))
   }
   { # Out
     stage: '#frame-benefit-auctions-raised', duration: '100%', easing: 'linear'
@@ -188,7 +196,9 @@ module.exports = [
   }
   { # Hold
     stage: '#frame-powered-by-artsy', duration: '100%', easing: 'linear'
-    actors: transitions.bisectedColumnsHold('powered-by-artsy')
+    actors: [
+      { element: '.frame--vcenter', translateY: translateY.hold }
+    ].concat(transitions.bisectedColumnsHold('powered-by-artsy'))
   }
   { # Out
     stage: '#frame-powered-by-artsy', duration: '100%', easing: 'linear'
@@ -212,6 +222,7 @@ module.exports = [
   { # Hold
     stage: '#frame-browse-and-collect-fairs', duration: '100%', easing: 'linear'
     actors: [
+      { element: '.frame--vcenter', translateY: translateY.hold }
     ]
   }
   { # Out
@@ -237,6 +248,7 @@ module.exports = [
   { # Hold
     stage: '#frame-mobile-app', duration: '100%', easing: 'linear'
     actors: [
+      { element: '.frame--vcenter', translateY: translateY.hold }
     ]
   }
   { # Out
@@ -259,6 +271,7 @@ module.exports = [
   { # Hold
     stage: '#frame-partners-in-cities', duration: '100%', easing: 'linear'
     actors: [
+      { element: '.frame--vcenter', translateY: translateY.hold }
     ]
   }
   { # Out
@@ -279,6 +292,7 @@ module.exports = [
   { # Hold
     stage: '#frame-average-distance', duration: '100%', easing: 'linear'
     actors: [
+      { element: '.frame--vcenter', translateY: translateY.hold }
       # Animate map
     ]
   }
@@ -301,6 +315,7 @@ module.exports = [
   { # Hold
     stage: '#frame-joined-artsy', duration: '100%', easing: 'linear'
     actors: [
+      { element: '.frame--vcenter', translateY: translateY.hold }
     ]
   }
   { # Out

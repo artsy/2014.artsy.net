@@ -1,5 +1,5 @@
 module.exports =
-  translateY: in: [50, 0], out: [0, -50]
+  translateY: in: [30, 10], hold: [10, -10], out: [-10, -30]
 
   opacity: in: [0, 1], out: [1, 0]
 
