@@ -13,6 +13,11 @@ gulp.task('clean:images', function(done) {
   del('build/images/*', done);
 });
 
+
+gulp.task('clean:videos', function(done) {
+  del('build/videos/*', done);
+});
+
 gulp.task('teardown', function(done) {
   del('build', done);
 });
