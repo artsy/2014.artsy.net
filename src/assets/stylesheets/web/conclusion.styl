@@ -1,0 +1,57 @@
+@import 'common'
+
+#frame-conclusion
+  text-align center
+
+.conclusion-headline
+  width 400px
+  margin auto
+
+.conclusion-links
+  margin (unit * 4) 0
+  avant-garde()
+  font-size 13px
+.conclusion-link
+  position relative
+  display inline-block
+  padding (unit / 2) 0
+  margin 0 unit
+  color white
+  &:after
+    display block
+    content ''
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    height 2px
+    background-color white
+    opacity 0
+    transition all 0.125s
+  &:hover:after
+    background-color purple-color
+    transform translateY(-(unit / 4))
+    opacity 1
+
+.conclusion-share
+  margin (unit * 6)
+  > h3
+    font-size 15px
+    font-weight normal
+    text-transform uppercase
+    letter-spacing 2px
+
+.conclusion-share--facebook
+.conclusion-share--twitter
+  display inline-block
+  margin 0 (unit / 2)
+  width (unit * 3)
+  height @width
+  line-height @width
+  vertical-align middle
+  border 2px solid white
+  border-radius 50%
+  transition border-color 0.25s
+  cursor pointer
+  &:hover
+    border-color purple-color

@@ -173,9 +173,9 @@
       "headline": "This year, 34 great people have joined the Artsy Team working to make the art world accesible online."
     },
     "conclusion": {
-      "message": "<p>Thank you everyone who made this year possible.</p><p>Artists, Galleries, Museums, Institutions, Fairs, Students and Art Lovers, Writers, Designers & Technologists. And You.</p>",
+      "message": "Thank you everyone who made this year possible.",
       "links": [
-        { "name": "Download the Artsy App", "href": "https://www.artsy.net/" },
+        { "name": "Visit Artsy.net", "href": "https://www.artsy.net/" },
         { "name": "Artsy for Galleries", "href": "https://www.artsy.net/" },
         { "name": "Artsy for Institutions", "href": "https://www.artsy.net/" },
         { "name": "Join the Team", "href": "https://www.artsy.net/" }

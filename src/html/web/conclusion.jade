@@ -1,0 +1,16 @@
+- conclusion = locals.copy.web.sections.conclusion
+
+#frame-conclusion.frame
+  .frame--body: .frame--vcenter: .frame--vcenter-wrap
+    .conclusion-headline.frame--headline
+      = conclusion.message
+
+    .conclusion-links
+      for link in conclusion.links
+        a.conclusion-link( href= link.href, target='_blank' )
+          = link.name
+
+    .conclusion-share
+      h3 Share this
+      a.conclusion-share--facebook F
+      a.conclusion-share--twitter T
