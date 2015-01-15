@@ -17,7 +17,7 @@ mixin frame(id, span)
             != frame.description
 
 +frame('galleries-and-museums-shared')
-  #galleries-and-museums-shared--columns.frame--layer: .bisected-columns
+  #galleries-and-museums-shared--columns.frame--layer.gradient-overlay: .bisected-columns
     #galleries-and-museums-shared--column-0.bisected-columns--column
       .bisected-columns--image: img( src= imagePath(frame.images[0], '600x350') )
       .bisected-columns--image: img( src= imagePath(frame.images[1], '600x350') )
@@ -42,7 +42,7 @@ mixin frame(id, span)
   include categories
 
 +frame('benefit-auctions-raised')
-  #benefit-auctions-raised--columns.frame--layer: .bisected-columns
+  #benefit-auctions-raised--columns.frame--layer.gradient-overlay: .bisected-columns
     #benefit-auctions-raised--column-0.bisected-columns--column
       .bisected-columns--image: .anchor-br: img( src= imagePath(frame.images[0], '350w') )
       .bisected-columns--image: img( src= imagePath(frame.images[1], '350w') )
@@ -51,21 +51,21 @@ mixin frame(id, span)
       .bisected-columns--image: img( src= imagePath(frame.images[3], '350w') )
 
 +frame('powered-by-artsy')
-  #powered-by-artsy--columns.frame--layer: .bisected-columns
+  #powered-by-artsy--columns.frame--layer.gradient-overlay: .bisected-columns
     #powered-by-artsy--column-0.bisected-columns--column
       .bisected-columns--image: img( src= imagePath(frame.images[0], '960') )
     #powered-by-artsy--column-1.bisected-columns--column
       .bisected-columns--image: img( src= imagePath(frame.images[1], '960') )
 
 +frame('browse-and-collect-fairs')
-  .frame--centering-context.span-full
+  .gradient-overlay: .frame--centering-context.span-full
     #browse-and-collect-fairs--image-wall.image-wall
       for image, i in frame.images
         .image-wall--image( id="image-wall--image-#{i}" )
           img( src= imagePath(frame.images[i], '600x350') )
 
 +frame('mobile-app')
-  .frame--centering-context.span-full
+  .gradient-overlay: .frame--centering-context.span-full
     #mobile-app--video-wall.video-wall
 
 +frame('partners-in-cities')
