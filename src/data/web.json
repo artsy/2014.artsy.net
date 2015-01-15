@@ -27,8 +27,8 @@
         }
       ]
     },
-    "galleries-and-museums-shared": {
-      "headline": "Galleries and Museums shared over 8,500 shows on Artsy",
+    "galleries-shared": {
+      "headline": "Galleries shared over 8,000** shows and over 80,000 for-sale artworks on Artsy…,",
       "images": [
         "aiweiwei-alcatraz.jpg",
         "fish-skeleton.jpg",
@@ -36,20 +36,16 @@
         "niamh-berry.jpg"
       ]
     },
-    "galleries-uploaded-graph": {
-      "headline": "Galleries uploaded 80,000 for-sale works…",
-      "caption": "In the last month of 2014 galleries uploaded more for sale artworks than in the whole of 2013.",
+    "inquiries-graph": {
+      "headline": "…and collectors inquired on over five and half billion dollars of art.",
+      "caption": {
+        "headline": "Cumulative Artwork Inquiries",
+        "body": "In the last month of 2014 we made more introductions between galleries and collectors than what we did in the whole year of 2013."
+      },
       "graph": {
-        "data": "graph-inventory.svg",
-        "key": "graph-inventory_key.svg"
-      }
-    },
-    "introductions-made-graph": {
-      "headline": "…and we made 53,000 introductions between galleries and collectors.",
-      "caption": "In the last month of 2014 we made more introductions between galleries and collectors than what we did in the whole year of 2013.",
-      "graph": {
-        "data": "graph-inquiries.svg",
-        "key": "graph-inquiries_key.svg"
+        "data": "graph-inquiries_data.svg",
+        "grid": "graph-inquiries_grid.svg",
+        "labels": "graph-inquiries_labels.svg"
       }
     },
     "museums-and-institutions": {

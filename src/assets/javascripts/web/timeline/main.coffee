@@ -1,74 +1,75 @@
 { translateY, opacity } = transitions = require './transitions'
 
 module.exports = [
-  # galleries-and-museums-shared
+  # galleries-shared
 
   { # In
-    stage: '#frame-galleries-and-museums-shared', duration: '100%', easing: 'linear'
+    stage: '#frame-galleries-shared', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
-    ].concat(transitions.bisectedColumnsIn('galleries-and-museums-shared'))
+    ].concat(transitions.bisectedColumnsIn('galleries-shared'))
   }
   { # Hold
-    stage: '#frame-galleries-and-museums-shared', duration: '100%', easing: 'linear'
+    stage: '#frame-galleries-shared', duration: '100%', easing: 'linear'
     actors: [
       element: '.frame--vcenter', translateY: translateY.hold
-    ].concat(transitions.bisectedColumnsHold('galleries-and-museums-shared'))
+    ].concat(transitions.bisectedColumnsHold('galleries-shared'))
   }
   { # Out
-    stage: '#frame-galleries-and-museums-shared', duration: '100%', easing: 'linear'
+    stage: '#frame-galleries-shared', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
-    ].concat(transitions.bisectedColumnsOut('galleries-and-museums-shared'))
+    ].concat(transitions.bisectedColumnsOut('galleries-shared'))
   }
 
-  # galleries-uploaded-graph
+  # inquiries-graph
 
   { # In
-    stage: '#frame-galleries-uploaded-graph', duration: '100%', easing: 'linear'
+    stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
     actors: [
-      { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
+      { element: '.frame--vcenter', opacity: opacity.in, translateY: [30, 20] }
       { element: '.graph', opacity: opacity.in }
       { element: '.graph--caption', opacity: opacity.in }
     ]
   }
-  { # Hold
-    stage: '#frame-galleries-uploaded-graph', duration: '200%', easing: 'linear'
+
+  { # Progress
+    stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
     actors: [
-      { element: '.frame--vcenter', translateY: translateY.hold }
-      { element: '.graph--overlay', translateX: 400 }
+      { element: '.frame--vcenter', translateY: [20, 10] }
+      { element: '#graph-overlay--data', translateX: [0, 103] }
+      { element: '#graph-overlay--label_2012', opacity: opacity.out }
     ]
   }
-  { # Out
-    stage: '#frame-galleries-uploaded-graph', duration: '100%', easing: 'linear'
+  { # Progress
+    stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
     actors: [
-      { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
-      { element: '.graph', opacity: opacity.out }
-      { element: '.graph--caption', opacity: opacity.out }
+      { element: '.frame--vcenter', translateY: [10, 0] }
+      { element: '#graph-overlay--data', translateX: [103, 206] }
+      { element: '#graph-overlay--label_2013', opacity: opacity.out }
+    ]
+  }
+  { # Progress
+    stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
+    actors: [
+      { element: '.frame--vcenter', translateY: [0, -10] }
+      { element: '#graph-overlay--data', translateX: [206, 309] }
+      { element: '#graph-overlay--label_2014', opacity: opacity.out }
+    ]
+  }
+  { # Progress
+    stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
+    actors: [
+      { element: '.frame--vcenter', translateY: [-10, -20] }
+      { element: '#graph-overlay--data', translateX: [309, 412] }
+      { element: '#graph-overlay--label_2015', opacity: opacity.out }
     ]
   }
 
-  # introductions-made-graph
-
-  { # In
-    stage: '#frame-introductions-made-graph', duration: '100%', easing: 'linear'
-    actors: [
-      { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
-      { element: '.graph', opacity: opacity.in }
-      { element: '.graph--caption', opacity: opacity.in }
-    ]
-  }
-  { # Hold
-    stage: '#frame-introductions-made-graph', duration: '200%', easing: 'linear'
-    actors: [
-      { element: '.frame--vcenter', translateY: translateY.hold }
-      { element: '.graph--overlay', translateX: 400 }
-    ]
-  }
   { # Out
-    stage: '#frame-introductions-made-graph', duration: '100%', easing: 'linear'
+    stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
     actors: [
-      { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
+      { element: '.frame--vcenter', opacity: opacity.out, translateY: [-20, -30] }
       { element: '.graph', opacity: opacity.out }
       { element: '.graph--caption', opacity: opacity.out }
     ]

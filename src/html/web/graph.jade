@@ -1,10 +1,15 @@
 .frame--centering-context
   .graph
     img( src= imagePath(frame.graph.data) )
-    .graph--overlay
-      //-
-    .graph--key
-      img( src= imagePath(frame.graph.key) )
+    #graph-overlay--data
+    img( src= imagePath(frame.graph.grid) )
+    img( src= imagePath(frame.graph.labels) )
+
+    #graph-overlay--label_2012
+    #graph-overlay--label_2013
+    #graph-overlay--label_2014
+    #graph-overlay--label_2015
 
 .graph--caption
-  = frame.caption
+  h3= frame.caption.headline
+  p= frame.caption.body

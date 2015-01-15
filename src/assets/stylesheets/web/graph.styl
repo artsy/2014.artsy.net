@@ -1,0 +1,62 @@
+@import 'common'
+
+graph-width = 400px
+graph-height = 500px
+
+.graph
+  position relative
+  width graph-width
+  height graph-height
+  > img
+    occupy()
+
+#graph-overlay--data
+  position absolute
+  top 0
+  bottom (unit * 2)
+  width 312px
+  background-color black
+  left 44px
+  &:after
+    display block
+    content ''
+    position absolute
+    top 0
+    left -103px
+    bottom 0
+    width 103px
+    background linear-gradient(left, transparent, 50% black)
+
+
+#graph-overlay--label_2012
+#graph-overlay--label_2013
+#graph-overlay--label_2014
+#graph-overlay--label_2015
+  position absolute
+  width 40px
+  height 30px
+  bottom (@height / 2)
+  background-color black
+
+#graph-overlay--label_2012
+  left 26px
+#graph-overlay--label_2013
+  left 128px
+#graph-overlay--label_2014
+  left 232px
+#graph-overlay--label_2015
+  left 332px
+
+.graph--caption
+  position absolute
+  bottom grid-offset
+  right grid-offset
+  width grid-span(1.5)
+  padding-right grid-offset
+  translate-v-center()
+  > h3
+    avant-garde()
+    font-size 13px
+    font-weight normal
+  > p
+    font-size description-size

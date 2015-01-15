@@ -16,19 +16,16 @@ mixin frame(id, span)
           .frame--description( class="span-#{span}" )
             != frame.description
 
-+frame('galleries-and-museums-shared')
-  #galleries-and-museums-shared--columns.frame--layer.gradient-overlay: .bisected-columns
-    #galleries-and-museums-shared--column-0.bisected-columns--column
++frame('galleries-shared')
+  #galleries-shared--columns.frame--layer.gradient-overlay: .bisected-columns
+    #galleries-shared--column-0.bisected-columns--column
       .bisected-columns--image: img( src= imagePath(frame.images[0], '600x350') )
       .bisected-columns--image: img( src= imagePath(frame.images[1], '600x350') )
-    #galleries-and-museums-shared--column-1.bisected-columns--column
+    #galleries-shared--column-1.bisected-columns--column
       .bisected-columns--image: img( src= imagePath(frame.images[2], '600x350') )
       .bisected-columns--image: img( src= imagePath(frame.images[3], '600x350') )
 
-+frame('galleries-uploaded-graph')
-  include graph
-
-+frame('introductions-made-graph')
++frame('inquiries-graph')
   include graph
 
 +frame('museums-and-institutions')
