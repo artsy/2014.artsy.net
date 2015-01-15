@@ -1,5 +1,5 @@
 $ = require 'jquery'
-Hammer = require 'hammerjs'
+attachFastClick = require 'fastclick'
 Preloader = require '../preloader'
 Carousel = require './carousel'
 Backdrops = require '../backdrops'
@@ -8,12 +8,16 @@ module.exports = class Mobile
   constructor: ->
     $('body').addClass 'is-mobile'
 
-    new Preloader(application: 'mobile').until '.pane--backdrop'
+    preloader = new Preloader application: 'mobile'
+    preloader.until '.pane--backdrop'
 
     carousel = new Carousel $el: $('#panes')
     backdrops = new Backdrops $els: $('.pane--backdrop img')
 
-    $('.info').each ->
-      hammer = new Hammer this
-      hammer.on 'tap', (e) ->
-        $(e.target).closest('.pane').toggleClass 'is-captioned'
+    @bindEvents()
+
+  bindEvents: ->
+    attachFastClick document.body
+
+    $('.info').on 'click', (e) ->
+      $(e.target).closest('.pane').toggleClass 'is-captioned'
