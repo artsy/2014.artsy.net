@@ -1,7 +1,7 @@
 - sections = locals.copy.mobile.sections
 
 mixin backdrop(url)
-  .pane--backdrop
+  .pane--backdrop-context: .pane--backdrop
     if url
       img( src= imagePath(url, '960') )
 
