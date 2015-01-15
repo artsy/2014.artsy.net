@@ -159,10 +159,10 @@ module.exports = [
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
       { element: '#categories', translateY: [-50, -150] }
-      { element: '#category-0', opacity: [1, 0] }
-      { element: '#category-1', opacity: [1, -0.25] }
-      { element: '#category-2', opacity: [1, -0.5] }
-      { element: '#category-3', opacity: [1, -0.75] }
+      { element: '#category-0', opacity: [1, -0.75]}
+      { element: '#category-1', opacity: [1, -0.5] }
+      { element: '#category-2', opacity: [1, -0.25] }
+      { element: '#category-3', opacity: [1, 0] }
     ]
   }
 
