@@ -32,6 +32,14 @@ gulp.task('resize:images', function() {
     "high": 0.8
   };
 
+  // Mobile:
+
+  // Backdrops
+  resize('mobile/backdrops', '2x', {
+    // Leave dimensions alone ...for now...
+    quality: quality.high, crop: false, upscale: false
+  });
+
   // Web:
 
   // Backdrops
