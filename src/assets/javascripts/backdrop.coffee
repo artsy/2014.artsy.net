@@ -3,11 +3,10 @@ imagesLoaded = require 'imagesloaded'
 module.exports = class Backdrop
   constructor: ({ @$el, @$window, @$body }) ->
     # Wait for images to load before scaling
-    @$el.imagesLoaded =>
-      @scale()
+    @$el.imagesLoaded => @scale()
 
   scale: ->
-    [width, height] = dimensions = @dimensions()
+    { width, height } = dimensions = @dimensions()
 
     @$el
       .addClass('is-ready')
@@ -18,18 +17,19 @@ module.exports = class Backdrop
 
   dimensions: ->
     if @$el.is ':visible'
-      [@$el.outerWidth(), @$el.outerHeight()]
+      width: @$el.outerWidth(), height: @$el.outerHeight()
     else
       $clone = @$el.clone()
       $clone.css 'visibility', 'hidden'
       @$body.append $clone
-      dimensions = [$clone.outerWidth(), $clone.outerHeight()]
+      dimensions = width: $clone.outerWidth(), height: $clone.outerHeight()
       $clone.remove()
       dimensions
 
-  factor: ([width, height]) ->
+  factor: (dimensions) ->
+    { width, height } = dimensions
     ratio = width / height
     viewportRatio = @$window.width() / @$window.height()
     direction = if viewportRatio > ratio then 'width' else 'height'
-    factor = @$window[direction]() / @$el[direction]()
+    factor = @$window[direction]() / dimensions[direction]
     Math.ceil(factor * 100) / 100
