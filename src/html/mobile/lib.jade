@@ -1,0 +1,19 @@
+mixin backdrop(url)
+  .pane--backdrop-context: .pane--backdrop
+    if url
+      img( src= imagePath(url, 'mobile/backdrops', '2x') )
+
+mixin pane(options)
+  .pane
+    block
+
+    //- if options.caption
+    //-   .info
+    //-     a.info--icon i
+    //-     .info--pane
+    //-       != options.caption
+
+    +backdrop(options.backdrop)
+
+    .pane--body
+      != options.headline

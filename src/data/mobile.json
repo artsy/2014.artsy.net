@@ -1,71 +1,90 @@
 {
   "sections": {
     "splash": {
-      "panes": [
-        {
-          "headline": "Annual Review 2014<br>Swipe to Continue",
-          "backdrop": "roxy-paine.jpg"
-        }
-      ]
+      "backdrop": "aiWeiWei.jpg"
     },
-    "introduction": {
-      "panes": [
-        {
-          "headline": "We set out with a mission to make all the world’s art freely accessible to anyone with an Internet connection",
-          "backdrop": "marco-tirelli.jpg",
-          "caption": "Marco Tirelli. Axel Vervoordt Gallery"
-        },
-        {
-          "headline": "To fulfill this mission we are building the largest public database of art for educational use&hellip;",
-          "backdrop": "edouard-manet.jpg"
-        },
-        {
-          "headline": "&hellip;and making it possible to find and collect art and design from galleries around the world—all in one place.",
-          "backdrop": "niamh-berry.jpg"
-        },
-        {
-          "headline": "Here’s how we did in 2014"
-        }
-      ]
-    },
-    "galleries": {
-      "panes": [
-        {
-          "headline": "Galleries uploaded over 120,000 for sale works&hellip;"
-        },
-        {
-          "headline": "&hellip;and 1,200 shows",
-          "backdrop": "aiweiwei-alcatraz.jpg"
-        },
-        {
-          "headline": "We made 50,000 introductions between galleries and collectors."
-        }
-      ]
-    },
-    "museums": {
-      "panes": [
-        {
-          "headline": "Oui!<br>12 French museums join Artsy.",
-          "backdrop": "musee-de-louvre.jpg"
-        },
-        {
-          "headline": "Galleries and Museums uploaded over 1,200 shows&hellip;",
-          "backdrop": "aiweiwei-alcatraz.jpg",
-          "caption": "Ai Weiwei on Alcatraz by the For Site Foundation was one of the most popular shows on Artsy in 2014"
-        },
-        {
-          "headline": "&hellip;bringing access to more than 100,000 works from their collections",
-          "backdrop": "rembrandt.jpg"
-        }
-      ]
-    },
+    "main": [
+      {
+        "headline": "We set out with a mission to make all the world’s art freely accessible to anyone with an Internet connection.",
+        "backdrop": "aiWeiWei.jpg",
+        "credit": "Ai Weiwei, <em>With Wind</em>, 2014, FOR-SITE Foundation"
+      },
+      {
+        "headline": "To fulfill this mission, we’re building the largest public database of art for educational use…",
+        "backdrop": "manet.jpg",
+        "credit": "Édouard Manet, <em>Luncheon on the Grass (Le Déjeuner sur l'herbe)</em>, 1863, Musée d'Orsay, Paris"
+      },
+      {
+        "headline": "…and making it possible to find and collect art and design from galleries around the world—all in one place.",
+        "backdrop": "wall.jpg",
+        "credit": "Marco Tirelli, Axel Vervoordt Gallery, Antwerp"
+      },
+      {
+        "headline": "Here’s how we did in 2014"
+      },
+      {
+        "headline": "Galleries shared over 8,000** shows and over 80,000 for-sale artworks on Artsy…,",
+        "backdrop": "gallery.jpg"
+      },
+      {
+        "headline": "…and collectors inquired on over $5.5 billion of art.",
+        "backdrop": ""
+      },
+      {
+        "headline": "400 museums and institutions now share their exhibitions and collections on Artsy…",
+        "backdrop": "museums.jpg"
+      },
+      {
+        "headline": "…building an educational database of over 230,000 artworks.",
+        "backdrop": "database.jpg"
+      },
+      {
+        "headline": "We added over 100 categories to the Art Genome Project…",
+        "backdrop": "artgenome.jpg"
+      },
+      {
+        "headline": "…and we supported emerging curators together with the Rauschenberg Foundation.",
+        "backdrop": "rauschenberg.jpg",
+        "credit": "Robert Rauschenberg, Monogram, 1955–1959 ©Robert Rauschenberg Foundation"
+      },
+      {
+        "headline": "Benefit auctions on Artsy helped raise more than $10.8 million for the arts, AIDS research, and more…",
+        "backdrop": "auctions.jpg"
+      },
+      {
+        "headline": "Artsy’s technology made bidding easy, whether you were in room or on the other side of the globe.",
+        "backdrop": "auctionskiosk.jpg"
+      },
+      {
+        "headline": "Artsy covered 37 fairs around the world—allowing collectors to browse the works before fairs opened…",
+        "backdrop": "artfair.jpg"
+      },
+      {
+        "headline": "…and Artsy’s mobile app guided fair visitors to their favorite works and artists.",
+        "backdrop": "artfairTech.jpg"
+      },
+      {
+        "headline": "Artsy now has partners in 82 countries…",
+        "backdrop": ""
+      },
+      {
+        "headline": "…and the average distance between collector and seller is now 2,700 miles",
+        "backdrop": ""
+      },
+      {
+        "headline": "We’re bringing together galleries, fairs, museums, and auctions, so that anyone can access all the world’s art.",
+        "backdrop": "bringingtogether.jpg",
+        "credit": "Richard Serra, Backdoor Pipeline, 2010. Courtesty of Gagosian Gallery"
+      }
+    ],
     "conclusion": {
-      "message": "Thank you everyone who made this possible. Galleries, Museums, Artists, Non-profits, Scholars, Writers, Designers & Technologists, And You.",
+      "message": "Thank you everyone who made this possible.",
+      "backdrop": "conclusion.jpg",
       "links": [
-        { "name": "Download the Artsy App", "href": "https://www.artsy.net/" },
-        { "name": "Artsy for Galleries", "href": "https://www.artsy.net/" },
-        { "name": "Artsy for Institutions", "href": "https://www.artsy.net/" },
-        { "name": "Join the Team", "href": "https://www.artsy.net/" }
+        { "name": "Visit Artsy.net", "href": "https://www.artsy.net/" },
+        { "name": "Artsy for Galleries", "href": "https://www.artsy.net/gallery-partnerships" },
+        { "name": "Artsy for Institutions", "href": "https://www.artsy.net/pdf/institutions-overview.pdf" },
+        { "name": "Join the Team", "href": "https://www.artsy.net/about/jobs" }
       ]
     }
   }

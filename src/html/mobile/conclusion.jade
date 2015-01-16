@@ -1,0 +1,12 @@
+- conclusion = locals.copy.mobile.sections.conclusion
+
+.pane
+  .pane--backdrop
+    //-
+
+  .pane--body
+    != conclusion.message
+    .pane--links
+      for link in conclusion.links
+        a( href= link.href, target='_blank' )
+          = link.name

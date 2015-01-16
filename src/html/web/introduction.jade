@@ -13,15 +13,6 @@
 
     for credit, i in introduction.credits
       .frame--credit( id="introduction-credit-#{i}" )
-        = credit.name
-        if credit.title
-          = ' '
-          em
-            = credit.title
-          if credit.year
-            | , #{credit.year}.
-        if credit.place
-          = ' '
-          = credit.place
+        != credit
 
   .intro-chevron &nbsp;

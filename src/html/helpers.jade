@@ -1,3 +1,6 @@
 - function assetsPath(path) { return (locals.assets && locals.assets[path]) || path }
 
-- function imagePath(name, kind) { return assetsPath('images/' + (kind ? (kind + '/1x/') : '') + name) }
+- function imagePath(name, kind, size) {
+-   size = size || '1x'
+-   return assetsPath('images/' + (kind ? (kind + '/' + size + '/') : '') + name)
+- }

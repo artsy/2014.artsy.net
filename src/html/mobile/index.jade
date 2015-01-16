@@ -1,78 +1,9 @@
-- sections = locals.copy.mobile.sections
-
-mixin backdrop(url)
-  .pane--backdrop-context: .pane--backdrop
-    if url
-      img( src= imagePath(url, '960') )
-
-mixin caption(caption)
-  .info
-    a.info--icon i
-    .info--pane
-      != caption
-
-mixin introPane(options)
-  .pane
-    block
-
-    if options.caption
-      +caption(options.caption)
-
-    +backdrop(options.backdrop)
-
-    .pane--vcenter: .pane--vcenter-wrap
-      .pane--headline
-        != options.headline
-
-mixin defaultPane(options)
-  .pane
-    block
-
-    if options.caption
-      +caption(options.caption)
-
-    +backdrop(options.backdrop)
-
-    .pane--body
-      .pane--headline
-        != options.headline
+include lib
 
 #progress.progress
   //- Rendered client-side
 
 #panes.panes
-  //- Splash
-  - pane = sections.splash.panes[0]
-  .pane
-    +backdrop(pane.backdrop)
-    .pane--vcenter: .pane--vcenter-wrap
-      img.pane--logo( src= imagePath('artsy.svg'), alt='Artsy' )
-      .pane--headline!= pane.headline
-      .pane--chevron &nbsp;
-
-  //- Introduction
-  - panes = sections.introduction.panes
-  for pane in panes
-    +introPane(pane)
-
-  //- Galleries
-  - panes = sections.galleries.panes
-  for pane in panes
-    +defaultPane(pane)
-
-  //- Museums
-  - panes = sections.museums.panes
-  for pane in panes
-    +defaultPane(pane)
-
-  //- Yadda yadda...
-
-  //- Conclusion
-  - conclusion = sections.conclusion
-  .pane
-    .pane--backdrop
-    .pane--headline!= conclusion.message
-    .pane--links
-      for link in conclusion.links
-        a( href= link.href, target='_blank' )
-          = link.name
+  include splash
+  include main
+  include conclusion

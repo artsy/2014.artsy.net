@@ -61,11 +61,11 @@ occupy(position = absolute)
   bottom 0
   left 0
 
-gradient-overlay(position = absolute, color = black)
+gradient-overlay(position = absolute, color = black, from = top)
   &:after
     display block
     content ''
-    background linear-gradient(transparent, rgba(color, 0.5))
+    background linear-gradient(from, transparent, rgba(color, 0.5))
     occupy(position)
 
 translate-v-center()

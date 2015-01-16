@@ -33,34 +33,22 @@ body.is-mobile
 .pane--backdrop
   occupy()
   z-index -1
-  gradient-overlay()
+  gradient-overlay(absolute, black, bottom)
   > img
     display block
     position absolute
     top 50%
     left 50%
     opacity 0
+    transition opacity 0.5s
     &.is-ready
       opacity 1
 
-.pane--vcenter
-.pane--vcenter-wrap
-  width 100%
-  height 100%
-.pane--vcenter
-  display table
-.pane--vcenter-wrap
-  display table-cell
-  vertical-align middle
-
 .pane--body
-  position absolute
-  bottom 15%
-
-.pane--headline
   font-size (headline-size / 2)
 
 .pane--links
+  float left
   font-size (headline-size / 2)
   margin-top unit
   padding-top (unit / 2)

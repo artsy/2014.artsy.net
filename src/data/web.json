@@ -13,24 +13,9 @@
         "marco-tirelli.jpg"
       ],
       "credits": [
-        {
-          "name": "Ai Weiwei",
-          "title": "With Wind",
-          "year": "2014",
-          "place": "FOR-SITE Foundation"
-        },
-        {
-          "name": "Édouard Manet",
-          "title": "Luncheon on the Grass (Le Déjeuner sur l'herbe)",
-          "year": "1863",
-          "place": "Musée d'Orsay, Paris"
-        },
-        {
-          "name": "Marco Tirelli",
-          "title": null,
-          "year": null,
-          "place": "Axel Vervoordt Gallery, Antwerp"
-        }
+        "Ai Weiwei, <em>With Wind</em>, 2014, FOR-SITE Foundation",
+        "Édouard Manet, <em>Luncheon on the Grass (Le Déjeuner sur l'herbe)</em>, 1863, Musée d'Orsay, Paris",
+        "Marco Tirelli, Axel Vervoordt Gallery, Antwerp"
       ]
     },
     "galleries-shared": {
