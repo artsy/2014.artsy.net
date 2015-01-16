@@ -1,3 +1,4 @@
+$ = require 'jquery'
 { translateY, opacity } = transitions = require './transitions'
 
 module.exports = [
@@ -27,41 +28,65 @@ module.exports = [
   { # In
     stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
     actors: [
-      { element: '.frame--vcenter', opacity: opacity.in, translateY: [30, 20] }
+      { element: '.frame--vcenter', opacity: opacity.in, translateY: [30, 24] }
       { element: '.graph', opacity: opacity.in }
       { element: '.graph--caption', opacity: opacity.in }
     ]
   }
 
-  { # Progress
+  { # Progress Data
     stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
     actors: [
-      { element: '.frame--vcenter', translateY: [20, 10] }
+      { element: '.frame--vcenter', translateY: [24, 18] }
       { element: '#graph-overlay--data', translateX: [0, 103] }
+    ]
+  }
+  { # Progress Label
+    stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
+    actors: [
+      { element: '.frame--vcenter', translateY: [18, 12] }
       { element: '#graph-overlay--label_2012', opacity: opacity.out }
     ]
   }
-  { # Progress
+  { # Progress Data
     stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
     actors: [
-      { element: '.frame--vcenter', translateY: [10, 0] }
+      { element: '.frame--vcenter', translateY: [12, 6] }
       { element: '#graph-overlay--data', translateX: [103, 206] }
+    ]
+  }
+  { # Progress Label
+    stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
+    actors: [
+      { element: '.frame--vcenter', translateY: [6, 0] }
       { element: '#graph-overlay--label_2013', opacity: opacity.out }
     ]
   }
-  { # Progress
+  { # Progress Data
     stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
     actors: [
-      { element: '.frame--vcenter', translateY: [0, -10] }
+      { element: '.frame--vcenter', translateY: [0, -6] }
       { element: '#graph-overlay--data', translateX: [206, 309] }
+    ]
+  }
+  { # Progress Label
+    stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
+    actors: [
+      { element: '.frame--vcenter', translateY: [-6, -12] }
       { element: '#graph-overlay--label_2014', opacity: opacity.out }
     ]
   }
-  { # Progress
+  { # Progress Data
     stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
     actors: [
-      { element: '.frame--vcenter', translateY: [-10, -20] }
+      { element: '.frame--vcenter', translateY: [-12, -18] }
       { element: '#graph-overlay--data', translateX: [309, 412] }
+    ]
+  }
+  { # Progress Label
+    stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
+    actors: [
+      { element: '.frame--vcenter', translateY: [-18, -24] }
       { element: '#graph-overlay--label_2015', opacity: opacity.out }
     ]
   }
@@ -69,7 +94,7 @@ module.exports = [
   { # Out
     stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
     actors: [
-      { element: '.frame--vcenter', opacity: opacity.out, translateY: [-20, -30] }
+      { element: '.frame--vcenter', opacity: opacity.out, translateY: [-24, -30] }
       { element: '.graph', opacity: opacity.out }
       { element: '.graph--caption', opacity: opacity.out }
     ]
@@ -81,21 +106,23 @@ module.exports = [
     stage: '#frame-museums-and-institutions', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
-      { element: '#museums-and-institutions-backdrop', opacity: opacity.in, scale: [1, 1.05] }
+      { element: '.frame--backdrop-credit', opacity: opacity.in }
+      { element: '.frame--backdrop', opacity: opacity.in, scale: [1, 1.05] }
     ]
   }
   { # Hold
     stage: '#frame-museums-and-institutions', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
-      { element: '#museums-and-institutions-backdrop', scale: [1.05, 1.1] }
+      { element: '.frame--backdrop', scale: [1.05, 1.1] }
     ]
   }
   { # Out
     stage: '#frame-museums-and-institutions', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
-      { element: '#museums-and-institutions-backdrop', opacity: opacity.out, scale: [1.1, 1.15] }
+      { element: '.frame--backdrop-credit', opacity: opacity.out }
+      { element: '.frame--backdrop', opacity: opacity.out, scale: [1.1, 1.15] }
     ]
   }
 
@@ -166,25 +193,51 @@ module.exports = [
     ]
   }
 
+  # rauschenberg-foundation
+
+  { # In
+    stage: '#frame-rauschenberg-foundation', duration: '100%', easing: 'linear'
+    actors: [
+      { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
+      { element: '.single-image--context', opacity: opacity.in }
+    ]
+  }
+  { # Hold
+    stage: '#frame-rauschenberg-foundation', duration: '100%', easing: 'linear'
+    actors: [
+      { element: '.frame--vcenter', translateY: translateY.hold }
+    ]
+  }
+  { # Out
+    stage: '#frame-rauschenberg-foundation', duration: '100%', easing: 'linear'
+    actors: [
+      { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
+      { element: '.single-image--context', opacity: opacity.out }
+    ]
+  }
+
   # benefit-auctions-raised
 
   { # In
     stage: '#frame-benefit-auctions-raised', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
-    ].concat(transitions.bisectedColumnsIn('benefit-auctions-raised'))
+      { element: '.frame--backdrop', opacity: opacity.in, scale: [1, 1.05] }
+    ]
   }
   { # Hold
     stage: '#frame-benefit-auctions-raised', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
-    ].concat(transitions.bisectedColumnsHold('benefit-auctions-raised'))
+      { element: '.frame--backdrop', scale: [1.05, 1.1] }
+    ]
   }
   { # Out
     stage: '#frame-benefit-auctions-raised', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
-    ].concat(transitions.bisectedColumnsOut('benefit-auctions-raised'))
+      { element: '.frame--backdrop', opacity: opacity.out, scale: [1.1, 1.15] }
+    ]
   }
 
   # powered-by-artsy
@@ -193,19 +246,21 @@ module.exports = [
     stage: '#frame-powered-by-artsy', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
-    ].concat(transitions.bisectedColumnsIn('powered-by-artsy'))
+      { element: '.single-image--context', opacity: opacity.in }
+    ]
   }
   { # Hold
     stage: '#frame-powered-by-artsy', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
-    ].concat(transitions.bisectedColumnsHold('powered-by-artsy'))
+    ]
   }
   { # Out
     stage: '#frame-powered-by-artsy', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
-    ].concat(transitions.bisectedColumnsOut('powered-by-artsy'))
+      { element: '.single-image--context', opacity: opacity.out }
+    ]
   }
 
   # browse-and-collect-fairs
@@ -266,7 +321,7 @@ module.exports = [
     stage: '#frame-partners-in-cities', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
-      { element: '#partners-in-cities', opacity: opacity.in }
+      { element: '.map', opacity: opacity.in }
     ]
   }
   { # Hold
@@ -294,35 +349,40 @@ module.exports = [
     stage: '#frame-average-distance', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
-      # Animate map
     ]
   }
   { # Out
     stage: '#frame-average-distance', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
-      { element: '#average-distance', opacity: opacity.out }
+      { element: '.map', opacity: opacity.out }
     ]
   }
 
-  # joined-artsy
+  # bringing-together
 
   { # In
-    stage: '#frame-joined-artsy', duration: '100%', easing: 'linear'
+    stage: '#frame-bringing-together', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
+      { element: '.frame--backdrop-credit', opacity: opacity.in }
+      { element: '.frame--backdrop', opacity: opacity.in, scale: [1, 1.05] }
     ]
   }
   { # Hold
-    stage: '#frame-joined-artsy', duration: '100%', easing: 'linear'
+    stage: '#frame-bringing-together', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
+      { element: '.frame--vcenter', translateY: translateY.hold }
+      { element: '.frame--backdrop', scale: [1.05, 1.1] }
     ]
   }
   { # Out
-    stage: '#frame-joined-artsy', duration: '100%', easing: 'linear'
+    stage: '#frame-bringing-together', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
+      { element: '.frame--backdrop-credit', opacity: opacity.out }
+      { element: '.frame--backdrop', opacity: opacity.out, scale: [1.1, 1.15] }
     ]
   }
 ]

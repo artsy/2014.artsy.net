@@ -1,36 +1,40 @@
 @import 'common'
 
+.single-image--context
+  position absolute
+  top (grid-offset / 2)
+  right grid-offset
+  bottom (grid-offset / 2)
+  left grid-offset
+.single-image
+  width grid-span(3)
+  translate-v-center()
+  right 0
+.single-image--image
+  width 100%
+.single-image--credit
+  margin-top unit
+  text-align left
+  color darken(white, 50%)
+
 .bisected-columns
   translate-center()
   width 100%
 .bisected-columns--column
   float left
   width 50%
+  position relative
   &:first-child
     text-align right
-
 .bisected-columns--image
-  position relative
   width 100%
-  height 300px
   margin (unit / 2) 0
   padding 0 (unit / 4)
   > img
     max-width 100%
-    max-height 100%
-    background-color gray-color
 
 .gradient-overlay
   gradient-overlay()
-
-.anchor-bl
-  position absolute
-  bottom 0
-  left 0
-.anchor-br
-  position absolute
-  bottom 0
-  right 0
 
 .categories
   position absolute
@@ -62,27 +66,14 @@
 .artwork-column
   float left
   width 25%
+  text-align center
   &:last-child
     margin-right 0
 .artwork
   display block
   margin unit (unit / 2)
   > img
-    max-width 100%
-
-.image-wrap
-  display inline-block
-  position relative
-  &:after
-    display block
-    content ''
-    border 1px solid rgba(white, 0.0625)
-    occupy()
-
-.image-wrap--image
-  max-width 100%
-  max-height 100%
-  background-color gray-color
+    width 100%
 
 .image-wall
   float right
@@ -111,4 +102,7 @@
   right grid-offset
   bottom (grid-offset / 2)
   left grid-offset
-  background-color gray-color
+  > img
+  > svg
+    width 100%
+    height 100%

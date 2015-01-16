@@ -1,6 +1,11 @@
 - conclusion = locals.copy.web.sections.conclusion
 
 #frame-conclusion.frame
+  .frame--backdrop
+    img( src= imagePath(conclusion.backdrop.src, 'web/backdrops') )
+  .conclusion-credit.frame--backdrop-credit
+    != conclusion.backdrop.credit
+
   .frame--body: .frame--vcenter: .frame--vcenter-wrap
     .conclusion-headline.frame--headline
       = conclusion.message
@@ -12,5 +17,7 @@
 
     .conclusion-share
       h3 Share this
-      a.conclusion-share--facebook F
-      a.conclusion-share--twitter T
+      a.conclusion-share--facebook
+        img( src= imagePath('facebook.svg'), alt='F' )
+      a.conclusion-share--twitter
+        img( src= imagePath('twitter.svg'), alt='T' )

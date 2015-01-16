@@ -1,36 +1,18 @@
 - sections = locals.copy.web.sections
 
-mixin frame(id, span)
-  - frame = sections[id]
-  - span = span || 2
-
-  .frame( id="frame-#{id}" )
-    block
-
-    .frame--body
-      .frame--vcenter: .frame--vcenter-wrap
-        if frame.headline
-          .frame--headline( class="span-#{span}" )
-            != frame.headline
-        if frame.description
-          .frame--description( class="span-#{span}" )
-            != frame.description
-
-+frame('galleries-shared')
++frame('galleries-shared', 3)
   #galleries-shared--columns.frame--layer.gradient-overlay: .bisected-columns
     #galleries-shared--column-0.bisected-columns--column
-      .bisected-columns--image: img( src= imagePath(frame.images[0], '600x350') )
-      .bisected-columns--image: img( src= imagePath(frame.images[1], '600x350') )
+      .bisected-columns--image: img( src= imagePath(frame.images[0], 'web/crops') )
+      .bisected-columns--image: img( src= imagePath(frame.images[1], 'web/crops') )
     #galleries-shared--column-1.bisected-columns--column
-      .bisected-columns--image: img( src= imagePath(frame.images[2], '600x350') )
-      .bisected-columns--image: img( src= imagePath(frame.images[3], '600x350') )
+      .bisected-columns--image: img( src= imagePath(frame.images[2], 'web/crops') )
+      .bisected-columns--image: img( src= imagePath(frame.images[3], 'web/crops') )
 
 +frame('inquiries-graph')
   include graph
 
-+frame('museums-and-institutions')
-  .frame--backdrop( id="museums-and-institutions-backdrop" )
-    img( src= imagePath(frame.backdrop, '1920') )
++frame('museums-and-institutions', 3)
 
 +frame('educational-database', 3)
   include columns
@@ -38,28 +20,20 @@ mixin frame(id, span)
 +frame('added-categories')
   include categories
 
-+frame('benefit-auctions-raised')
-  #benefit-auctions-raised--columns.frame--layer.gradient-overlay: .bisected-columns
-    #benefit-auctions-raised--column-0.bisected-columns--column
-      .bisected-columns--image: .anchor-br: img( src= imagePath(frame.images[0], '350w') )
-      .bisected-columns--image: img( src= imagePath(frame.images[1], '350w') )
-    #benefit-auctions-raised--column-1.bisected-columns--column
-      .bisected-columns--image: img( src= imagePath(frame.images[2], '350w') )
-      .bisected-columns--image: img( src= imagePath(frame.images[3], '350w') )
++frame('rauschenberg-foundation', 3)
+  +single-image(frame.image)
 
-+frame('powered-by-artsy')
-  #powered-by-artsy--columns.frame--layer.gradient-overlay: .bisected-columns
-    #powered-by-artsy--column-0.bisected-columns--column
-      .bisected-columns--image: img( src= imagePath(frame.images[0], '960') )
-    #powered-by-artsy--column-1.bisected-columns--column
-      .bisected-columns--image: img( src= imagePath(frame.images[1], '960') )
++frame('benefit-auctions-raised', 3)
 
-+frame('browse-and-collect-fairs')
++frame('powered-by-artsy', 3)
+  +single-image(frame.image)
+
++frame('browse-and-collect-fairs', 3)
   .gradient-overlay: .frame--centering-context.span-full
     #browse-and-collect-fairs--image-wall.image-wall
       for image, i in frame.images
         .image-wall--image( id="image-wall--image-#{i}" )
-          img( src= imagePath(frame.images[i], '600x350') )
+          img( src= imagePath(frame.images[i], 'web/crops') )
 
 +frame('mobile-app')
   .gradient-overlay: .frame--centering-context.span-full
@@ -67,12 +41,13 @@ mixin frame(id, span)
       video( autoplay, loop )
         for source in frame.video.sources
           source( src= assetsPath(source.src), type= source.type )
-        img( src= imagePath(frame.video.cover, '960') )
+        //- Todo:
+        //- img( src= imagePath(frame.video.cover, '960') )
 
 +frame('partners-in-cities')
-  #partners-in-cities.map
+  .map: img( src= imagePath('world.svg') )
 
 +frame('average-distance')
-  #average-distance.map
+  .map: img( src= imagePath('world.svg') )
 
-+frame('joined-artsy')
++frame('bringing-together', 4)

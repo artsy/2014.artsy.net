@@ -5,17 +5,17 @@ module.exports =
 
   bisectedColumnsIn: (id) -> [
     { element: "##{id}--columns", opacity: [0, 1] }
-    { element: "##{id}--column-0", translateY: [50, 25] }
-    { element: "##{id}--column-1", translateY: [-25, 0] }
+    { element: "##{id}--column-0", translateY: [10, 5] }
+    { element: "##{id}--column-1", translateY: [-10, -5] }
   ]
 
   bisectedColumnsHold: (id) -> [
-    { element: "##{id}--column-0", translateY: [25, 0] }
-    { element: "##{id}--column-1", translateY: [0, 25] }
+    { element: "##{id}--column-0", translateY: [5, -5] }
+    { element: "##{id}--column-1", translateY: [-5, 5] }
   ]
 
   bisectedColumnsOut: (id) -> [
     { element: "##{id}--columns", opacity: [1, 0] }
-    { element: "##{id}--column-0", translateY: [0, -10] }
-    { element: "##{id}--column-1", translateY: [25, 50] }
+    { element: "##{id}--column-0", translateY: [-5, -10] }
+    { element: "##{id}--column-1", translateY: [5, 10] }
   ]

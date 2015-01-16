@@ -1,12 +1,3 @@
 - function assetsPath(path) { return (locals.assets && locals.assets[path]) || path }
 
-- function imagePath(name, size) { return assetsPath('images/' + (size ? 'resized/' + size + '/' : '') + name) }
-
-- function split(a, n) {
--   var len = a.length,out = [], i = 0;
--   while (i < len) {
--     var size = Math.ceil((len - i) / n--);
--     out.push(a.slice(i, i += size));
--   }
--   return out;
-- }
+- function imagePath(name, kind) { return assetsPath('images/' + (kind ? (kind + '/1x/') : '') + name) }

@@ -4,7 +4,7 @@
   for image, i in introduction.images.reverse()
     //- Invert stacking order
     .frame--backdrop( id="introduction-backdrop-#{(introduction.images.length - 1) - i}" )
-      img( src= imagePath(image, '1920') )
+      img( src= imagePath(image, 'web/backdrops') )
 
   .frame--body
     for headline, i in introduction.headlines

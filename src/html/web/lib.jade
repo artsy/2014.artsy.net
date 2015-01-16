@@ -1,0 +1,29 @@
+mixin frame(id, span)
+  - frame = sections[id]
+  - span = span || 2
+
+  .frame( id="frame-#{id}" )
+    block
+
+    if frame.backdrop
+      .frame--backdrop
+        img( src= imagePath(frame.backdrop.src, 'web/backdrops') )
+      if frame.backdrop.credit
+        .frame--backdrop-credit
+          != frame.backdrop.credit
+
+    .frame--body
+      .frame--vcenter: .frame--vcenter-wrap
+        if frame.headline
+          .frame--headline( class="span-#{span}" )
+            != frame.headline
+        if frame.description
+          .frame--description.span-2
+            != frame.description
+
+mixin single-image(image)
+  .single-image--context: .single-image
+    img.single-image--image( src= imagePath(image.src, 'web/singles') )
+    if image.credit
+      .single-image--credit
+        != image.credit

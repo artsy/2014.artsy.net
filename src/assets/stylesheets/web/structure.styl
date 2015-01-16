@@ -34,8 +34,15 @@
   bottom (unit * 2)
   left 0
   width grid-span(2)
-  opacity 0
   font-size credit-size
+
+.frame--backdrop-credit
+  position absolute
+  right (unit * 2)
+  bottom @right
+  left @right
+  text-align right
+  color rgba(white, 0.75)
 
 .frame--caption
   font-size caption-size
