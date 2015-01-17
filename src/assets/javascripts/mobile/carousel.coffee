@@ -11,7 +11,7 @@ module.exports = class Carousel
   constructor: ({ @$el }) ->
     @reset()
 
-    @pageCount = @$el.children().length
+    @pageCount = (@$panes = @$el.children()).length
     @$window = $(window)
     @width = @$window.width()
 
@@ -71,6 +71,9 @@ module.exports = class Carousel
     # Update offset
     @offset = -(@currentPage * @width)
     @updateOffset @offset, snap
+
+    # Notify pane
+    @$panes.removeClass('is-active').eq(@currentPage).addClass('is-active')
 
     # Update progress
     @progress.update @currentPage

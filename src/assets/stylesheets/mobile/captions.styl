@@ -1,13 +1,17 @@
 @import 'common'
 
-.pane.is-captioned
-  .pane--backdrop
-    transform rotateX(-35deg) translateY(-20%)
-  .pane--info-pane
-    opacity 1
-    transform translateY(0)
-  .pane--info-icon
-    opacity 0
+.pane
+  &.is-captioned
+    .pane--backdrop
+      transform rotateX(-35deg) translateY(-20%)
+    .pane--info-pane
+      opacity 1
+      transform translateY(0)
+    .pane--info-icon
+      opacity 0 !important
+  &.is-active
+    .pane--info-icon
+      opacity 1
 
 .pane--backdrop-context
   occupy()
@@ -42,6 +46,7 @@
   vertical-align middle
   cursor pointer
   transition opacity 0.5s
+  opacity 0
   > img
     vertical-align top
     width 100%
