@@ -30,10 +30,12 @@ body.is-mobile
   padding 10%
   overflow hidden
 
+.pane--overlay
+  gradient-overlay()
+
 .pane--backdrop
   occupy()
   z-index -1
-  gradient-overlay(absolute, black, bottom)
   > img
     display block
     position absolute

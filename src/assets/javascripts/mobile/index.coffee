@@ -19,5 +19,12 @@ module.exports = class Mobile
   bindEvents: ->
     attachFastClick document.body
 
-    $('.info').on 'click', (e) ->
-      $(e.target).closest('.pane').toggleClass 'is-captioned'
+    $('.pane--info').on 'click', (e) ->
+      e.preventDefault()
+      e.stopPropagation()
+      ($pane = $(e.target).closest('.pane')).addClass 'is-captioned'
+
+      $(document).one 'click', (e) ->
+        e.preventDefault()
+        $pane.removeClass 'is-captioned'
+        false

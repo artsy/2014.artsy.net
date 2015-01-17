@@ -5,7 +5,7 @@ dot-size = (unit / 3)
 .progress
   position absolute
   right unit
-  bottom 5%
+  bottom (unit * 2)
   left unit
   height dot-size
   font-size 0
@@ -13,6 +13,7 @@ dot-size = (unit / 3)
   z-index z-progress
   text-align center
   transform translate3d(0, 0, 0)
+  pointer-events none
 
 .progress--dot
   display inline-block

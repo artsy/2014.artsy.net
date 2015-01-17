@@ -4,4 +4,5 @@ Web = require './web'
 Mobile = require './mobile'
 
 $ ->
-  if Device.isTouch() then new Mobile else new Web
+  # if Device.isTouch() then new Mobile else new Web
+  new Mobile

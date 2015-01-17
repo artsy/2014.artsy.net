@@ -2,16 +2,18 @@ mixin backdrop(url)
   .pane--backdrop-context: .pane--backdrop
     if url
       img( src= imagePath(url, 'mobile/backdrops', '2x') )
+  .pane--overlay
 
 mixin pane(options)
   .pane
     block
 
-    //- if options.caption
-    //-   .info
-    //-     a.info--icon i
-    //-     .info--pane
-    //-       != options.caption
+    if options.credit
+      .pane--info
+        a.pane--info-icon: img( src= imagePath('info.svg') )
+        .pane--info-pane
+          a.pane--close-icon: img( src= imagePath('close.svg') )
+          p!= options.credit
 
     +backdrop(options.backdrop)
 
