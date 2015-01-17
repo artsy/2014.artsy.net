@@ -1,6 +1,21 @@
 $ = require 'jquery'
 { translateY, opacity } = transitions = require './transitions'
 
+paths = []
+done = false
+$container = null
+$ ->
+  $container = $('#connections')
+  $paths = $('#paths').children()
+  for path in $paths
+    $path = $(path)
+    length = path.getTotalLength()
+    $path.css {
+      'stroke-dasharray': length
+      'stroke-dashoffset': length
+    }
+    paths.push $path: $path, length: length
+
 module.exports = [
   # galleries-shared
 
@@ -343,12 +358,23 @@ module.exports = [
     stage: '#frame-average-distance', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
+      { element: '#connections', opacity: opacity.in }
     ]
   }
   { # Hold
     stage: '#frame-average-distance', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
+      {
+        element: '#connections', callback: (progress, duration) ->
+          index = Math.floor(progress * (paths.length - 1) / 100)
+          fadeIn = paths.slice(0, index)
+          fadeOut = paths.slice(index + 1, paths.length)
+          for path in fadeIn
+            path.$path.css 'stroke-dashoffset', 0
+          for path in fadeOut
+            path.$path.css 'stroke-dashoffset', path.length
+      }
     ]
   }
   { # Out
@@ -356,6 +382,7 @@ module.exports = [
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
       { element: '.map', opacity: opacity.out }
+      { element: '#connections', opacity: opacity.out }
     ]
   }
 
