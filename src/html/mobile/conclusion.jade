@@ -5,7 +5,7 @@
     //-
 
   .pane--body
-    != conclusion.message
+    p!= conclusion.message
     .pane--links
       for link in conclusion.links
         a( href= link.href, target='_blank' )
