@@ -1,7 +1,18 @@
 module.exports =
-  translateY: in: [30, 10], hold: [10, -10], out: [-10, -30]
+  translateY:
+    in: [30, 10]
+    hold: [10, -10]
+    out: [-10, -30]
 
-  opacity: in: [0, 1], out: [1, 0]
+  opacity:
+    in: [0, 1]
+    out: [1, 0]
+
+  backdropScale:
+    a: [1, 1.05]
+    b: [1.05, 1.1]
+    c: [1.1, 1.15]
+    d: [1.15, 1.2]
 
   bisectedColumnsIn: (id) -> [
     { element: "##{id}--columns", opacity: [0, 1] }

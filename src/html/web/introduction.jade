@@ -1,16 +1,21 @@
 - introduction = locals.copy.web.sections.introduction
 
 #frame-introduction.frame
+  #header-proxy
+    //-
+
   for image, i in introduction.images.reverse()
     //- Invert stacking order
     .frame--backdrop( id="introduction-backdrop-#{(introduction.images.length - 1) - i}" )
       img( src= imagePath(image, 'web/backdrops') )
 
   .frame--body
+    .frame--vcenter: .frame--vcenter-wrap
+      img.introduction--logo( src= imagePath('artsy.svg'), alt='Artsy' )
+
     for headline, i in introduction.headlines
       .frame--vcenter: .frame--vcenter-wrap
         .frame--headline.span-3( id="introduction-headline-#{i}" )!= headline
-
     for credit, i in introduction.credits
       .frame--credit( id="introduction-credit-#{i}" )
         != credit
