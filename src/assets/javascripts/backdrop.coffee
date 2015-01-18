@@ -8,12 +8,14 @@ module.exports = class Backdrop
   scale: ->
     { width, height } = dimensions = @dimensions()
 
-    @$el
-      .addClass('is-ready')
-      .css
-        transform: "scale(#{@factor(dimensions)})"
-        marginTop: -(height / 2)
-        marginLeft: -(width / 2)
+    setTimeout =>
+      @$el
+        .addClass('is-ready')
+        .css
+          transform: "scale(#{@factor(dimensions)})"
+          marginTop: -(height / 2)
+          marginLeft: -(width / 2)
+    , 1
 
   dimensions: ->
     if @$el.is ':visible'
