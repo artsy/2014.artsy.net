@@ -162,11 +162,11 @@
         ]
       }
     },
-    "partners-in-cities": {
-      "headline": "Artsy now has partners in 82 countries…"
-    },
-    "average-distance": {
-      "headline": "…and the average distance between collector and seller is now 2,700 miles"
+    "map": {
+      "headlines": [
+        "Artsy now has partners in 82 countries…",
+        "…and the average distance between collector and seller is now 2,700 miles"
+      ]
     },
     "bringing-together": {
       "headline": "We’re bringing together galleries, fairs, museums, and auctions, so that anyone can access all the world’s art.",

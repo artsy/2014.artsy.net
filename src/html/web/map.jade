@@ -1,0 +1,11 @@
+- map = locals.copy.web.sections.map
+
+#frame-map.frame
+  .map
+    img( src= imagePath('world.svg') )
+    #connections: include ../../assets/images/connections.svg
+
+  .frame--body
+    for headline, i in map.headlines
+      .frame--vcenter: .frame--vcenter-wrap
+        .frame--headline.span-2( id="map-headline-#{i}" )!= headline

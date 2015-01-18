@@ -1,20 +1,11 @@
 $ = require 'jquery'
 { translateY, opacity } = transitions = require './transitions'
 
-paths = []
-done = false
-$container = null
-$ ->
-  $container = $('#connections')
-  $paths = $('#paths').children()
-  for path in $paths
-    $path = $(path)
-    length = path.getTotalLength()
-    $path.css {
-      'stroke-dasharray': length
-      'stroke-dashoffset': length
-    }
-    paths.push $path: $path, length: length
+# Setup map
+Map = require '../map'
+mapTransitioned = false
+map = null
+$ -> map = new Map $paths: $('#paths path')
 
 module.exports = [
   # galleries-shared
@@ -330,59 +321,50 @@ module.exports = [
     ]
   }
 
-  # partners-in-cities
+  # map
 
   { # In
-    stage: '#frame-partners-in-cities', duration: '100%', easing: 'linear'
+    stage: '#frame-map', duration: '100%', easing: 'linear'
     actors: [
-      { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
+      { element: '#map-headline-0', opacity: opacity.in, translateY: translateY.in }
       { element: '.map', opacity: opacity.in }
     ]
   }
   { # Hold
-    stage: '#frame-partners-in-cities', duration: '100%', easing: 'linear'
+    stage: '#frame-map', duration: '100%', easing: 'linear'
     actors: [
-      { element: '.frame--vcenter', translateY: translateY.hold }
-    ]
-  }
-  { # Out
-    stage: '#frame-partners-in-cities', duration: '100%', easing: 'linear'
-    actors: [
-      { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
-    ]
-  }
-
-  # average-distance
-
-  { # In
-    stage: '#frame-average-distance', duration: '100%', easing: 'linear'
-    actors: [
-      { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
-      { element: '#connections', opacity: opacity.in }
-    ]
-  }
-  { # Hold
-    stage: '#frame-average-distance', duration: '100%', easing: 'linear'
-    actors: [
-      { element: '.frame--vcenter', translateY: translateY.hold }
+      { element: '#map-headline-0', translateY: translateY.hold }
       {
         element: '#connections', callback: (progress, duration) ->
-          index = Math.floor(progress * (paths.length - 1) / 100)
-          fadeIn = paths.slice(0, index)
-          fadeOut = paths.slice(index + 1, paths.length)
-          for path in fadeIn
-            path.$path.css 'stroke-dashoffset', 0
-          for path in fadeOut
-            path.$path.css 'stroke-dashoffset', path.length
+          unless mapTransitioned
+            $(this).addClass 'is-transitioning'
+            mapTransitioned = true
       }
     ]
   }
-  { # Out
-    stage: '#frame-average-distance', duration: '100%', easing: 'linear'
+  { # Out (headline-0)
+    stage: '#frame-map', duration: '100%', easing: 'linear'
     actors: [
-      { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
+      { element: '#map-headline-0', opacity: opacity.out, translateY: translateY.out }
+    ]
+  }
+  { # In (headline-1)
+    stage: '#frame-map', duration: '100%', easing: 'linear'
+    actors: [
+      { element: '#map-headline-1', opacity: opacity.in, translateY: translateY.in }
+    ]
+  }
+  { # Hold
+    stage: '#frame-map', duration: '100%', easing: 'linear'
+    actors: [
+      { element: '#map-headline-1', translateY: translateY.hold }
+    ]
+  }
+  { # Out
+    stage: '#frame-map', duration: '100%', easing: 'linear'
+    actors: [
+      { element: '#map-headline-1', opacity: opacity.out, translateY: translateY.out }
       { element: '.map', opacity: opacity.out }
-      { element: '#connections', opacity: opacity.out }
     ]
   }
 
