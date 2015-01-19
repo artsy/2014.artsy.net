@@ -1,0 +1,79 @@
+@import 'common'
+
+// Grotesque overrides to present the page
+// as a continuous scroll
+body.is-scroll
+  // General
+  #web
+  .frames
+  .frame
+    height 100%
+
+  .frame
+    position relative
+    overflow hidden
+    border-bottom 1px solid rgba(white, 0.25)
+
+  // Introduction
+  #frame-introduction
+    height 500%
+    .frame--body
+      occupy()
+    .intro-chevron
+      display none
+
+  for n in 0 1 2 3
+    #introduction-backdrop-{n}
+      height 20%
+      overflow hidden
+      top (20% * n)
+    #introduction-headline-{n}
+    #introduction-credit-{n}
+      opacity 1
+    #introduction-credit-{n}
+      margin-left grid-offset
+      margin-bottom (grid-offset / 2)
+      bottom (100% - (n * 20) - 20)
+
+  for n in 1 2 3 4 5
+    #frame-introduction .frame--vcenter:nth-child({n})
+      position relative
+      height 20%
+      width 100%
+      > .frame--vcenter-wrap
+        position absolute
+        top 50%
+        width 100%
+        > .frame--headline
+          margin 0 grid-offset
+  #frame-introduction .frame--vcenter:nth-child(5)
+    text-align center
+    .frame--headline
+      margin 0 auto !important
+
+  // Graph
+  #graph-overlay--label_2012
+  #graph-overlay--label_2013
+  #graph-overlay--label_2014
+  #graph-overlay--label_2015
+  #graph-overlay--data
+    display none
+
+  // Map
+  for n in 0 1
+    #map-headline-{n}
+      opacity 1
+    #frame-map .frame--vcenter:nth-child({n + 1})
+      position relative
+      height 50%
+      width 100%
+      > .frame--vcenter-wrap
+        position absolute
+        top 50%
+        width 100%
+        > .frame--headline
+          margin 0 auto
+          text-align center
+  #connections path
+    stroke-dashoffset 0 !important
+    transition none
