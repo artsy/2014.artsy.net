@@ -59,11 +59,13 @@
 .frame--backdrop
   occupy()
   gradient-overlay()
+  background-color black
   > img
     display block
     position absolute
     top 50%
     left 50%
     opacity 0
+    transition opacity 0.5s
     &.is-ready
       opacity 1
