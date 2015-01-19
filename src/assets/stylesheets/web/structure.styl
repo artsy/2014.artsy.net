@@ -15,11 +15,13 @@
   left grid-offset
 
 .frame--vcenter
-  position absolute
-  top 50%
   width 100%
+  height 100%
+.frame--vcenter
+  display table
 .frame--vcenter-wrap
-  transform translateY(-50%)
+  display table-cell
+  vertical-align middle
 
 .frame--layer
   occupy()

@@ -10,11 +10,11 @@
       img( src= imagePath(image, 'web/backdrops') )
 
   .frame--body
-    .frame--vcenter: .frame--vcenter-wrap
+    .frame--layer: .frame--vcenter: .frame--vcenter-wrap
       img.introduction--logo( src= imagePath('artsy.svg'), alt='Artsy' )
 
     for headline, i in introduction.headlines
-      .frame--vcenter: .frame--vcenter-wrap
+      .frame--layer: .frame--vcenter: .frame--vcenter-wrap
         .frame--headline.span-3( id="introduction-headline-#{i}" )!= headline
     for credit, i in introduction.credits
       .frame--credit( id="introduction-credit-#{i}" )
