@@ -2,26 +2,26 @@
   "sections": {
     "introduction": {
       "headlines": [
-        "We set out with a mission to make all the world’s art freely accessible to anyone with an Internet connection.",
+        "Artsy’s mission is to make all the world’s art accessible to anyone with an internet connection.",
         "To fulfill this mission, we’re building the largest public database of art for educational use…",
-        "…and making it possible to find and collect art and design from galleries around the world—all in one place.",
-        "Here’s how we did in 2014"
+        "...and making it easier to buy art from galleries and auctions around the world—all in one place.",
+        "Here’s how we did in 2014:"
       ],
       "images": [
         "aiWeiWei.jpg",
-        "RoxyPaine-MarianneBoesky1.jpg",
+        "RoxyPaine-MarianneBoesky2.jpg",
         "edouard-manet.jpg",
         "marco-tirelli.jpg"
       ],
       "credits": [
-        "Ai Weiwei, <em>With Wind</em>, 2014, FOR-SITE Foundation",
-        "Roxy Paine, Marianne Boesky Gallery",
-        "Édouard Manet, <em>Luncheon on the Grass (Le Déjeuner sur l'herbe)</em>, 1863, Musée d'Orsay, Paris",
-        "Marco Tirelli, Axel Vervoordt Gallery, Antwerp"
+        "Ai Weiwei, <em>With Wind</em>, 2014<br>FOR-SITE Foundation",
+        "Roxy Paine, <em>Scrutiny</em>, 2014<br>Marianne Boesky Gallery",
+        "Édouard Manet, <em>Luncheon on the Grass (Le Déjeuner sur l’herbe)</em>, 1863<br>Musée d’Orsay, Paris",
+        "Marco Tirelli<br>Axel Vervoordt Gallery"
       ]
     },
     "galleries-shared": {
-      "headline": "Galleries shared over 8,000** shows and over 80,000 for-sale artworks on Artsy…,",
+      "headline": " Galleries shared 8,369 shows and over 80,000 for-sale artworks on Artsy…",
       "images": [
         "hope.jpg",
         "doukoupel.jpg",
@@ -30,10 +30,10 @@
       ]
     },
     "inquiries-graph": {
-      "headline": "…and collectors inquired on over $5.5 billion of art.",
+      "headline": "...and collectors inquired on over five and a half billion dollars of art.",
       "caption": {
         "headline": "Artwork Inquiries",
-        "body": "In the last month of 2014, we made more introductions between galleries and collectors than what we did in the whole year of 2013."
+        "body": "In the final month of 2014, Artsy made more introductions between galleries and collectors than in the whole of 2013, representing an estimated five and a half billion dollars of art. "
       },
       "graph": {
         "data": "graph-inquiries_data.svg",
@@ -43,14 +43,14 @@
     },
     "museums-and-institutions": {
       "headline": "400 museums and institutions now share their exhibitions and collections on Artsy…",
-      "description": "This year we welcomed some of the most distinguished museums in the world from Musée du Louvre, Musée du Quai Branly, Fondation Cartier, Palais de Tokyo, Van Gogh Museum, Stedelijk Museum, and more.",
+      "description": "In December, we launched “<a href='https://www.artsy.net/feature/museums-of-france' target='_blank'>Museums of France</a>,” featuring Musée du Louvre, Grand Palais, Fondation Cartier, Musée du quai Branly, Palais de Tokyo, Jeu de Paume, and more.",
       "backdrop": {
         "src": "musee-de-louvre2.jpg",
-        "credit": "Cour Napoléon et pyramide (Napoleon courtyard and pyramid) ©2013 Musée du Louvre / Olivier Ouadah"
+        "credit": "Photo: Cour Napoléon et pyramide © 2013 Musée du Louvre / Olivier Ouadah"
       }
     },
     "educational-database": {
-      "headline": "…building an educational database of over 230,000 artworks.",
+      "headline": "…growing our educational database to over 230,000 artworks.",
       "images": [
         [
           "gentileschi.jpg",
@@ -82,8 +82,8 @@
       ]
     },
     "added-categories": {
-      "headline": "We added over 100 categories to the Art Genome Project…",
-      "description": "The Art Genome Project is the classification system that maps the characteristics that connect artists, artworks, architecture, and design objects across history.",
+      "headline": "We added over 100 categories to The Art Genome Project...",
+      "description": "The Art Genome Project is the classification system that powers Artsy. It maps the characteristics that connect artists, artworks, architecture, and design objects across history.",
       "categories": [
         {
           "name": "Polychrome Sculpture",
@@ -122,30 +122,30 @@
       ]
     },
     "rauschenberg-foundation": {
-      "headline": "…and we supported emerging curators together with the Rauschenberg Foundation.",
-      "description": "Students in 78 cities across 5 continents to created exhibition proposals for the Rauschenberg Foundation Emerging Curator Competition on Artsy.",
+      "headline": "…and we supported emerging curators together with the Robert Rauschenberg Foundation.",
+      "description": "Students in 78 cities across five continents created exhibition proposals for the <a href='https://www.artsy.net/feature/robert-rauschenberg-emerging-curator-winner-nicole-bray' target='_blank'>Rauschenberg Foundation Emerging Curator Competition</a> using Artsy’s educational database.",
       "image": {
         "src": "rauschenberg.jpg",
-        "credit": "Robert Rauschenberg, Monogram, 1955–1959 ©Robert Rauschenberg Foundation"
+        "credit": "Robert Rauschenberg, <em>Monogram</em>, 1955–1959. ©Robert Rauschenberg Foundation"
       }
     },
     "benefit-auctions-raised": {
       "headline": "Benefit auctions on Artsy helped raise more than $10.8 million for the arts, AIDS research, and more…",
-      "description": "Aperture Foundation, Brooklyn Artists Ball, Whitney Art Party, Watermill Center, Swiss Institute, Public Art Fund, Ballroom Marfa, and more. (others TWO × TWO for AIDS and Art, Independent Curators International, etc.)",
+      "description": "This year we partnered with Aperture Foundation, Ballroom Marfa, Brooklyn Artists Ball, Independent Curators International, Public Art Fund, Swiss Institute, TWO × TWO for AIDS and Art, Watermill Center, and Whitney Art Party, among others.",
       "backdrop": {
         "src": "wide-room-shot.jpg"
       }
     },
     "powered-by-artsy": {
-      "headline": "Artsy’s technology made bidding easy, whether you were in room or on the other side of the globe.",
-      "description": "Bids could be placed on Artsy.net, Artsy’s app, or through dedicated bidding stations at the Auction events. Guests at the events could see new bids in real time.",
+      "headline": "…and our technology made bidding easy, whether you were in the room or on the other side of the globe.",
+      "description": "Guests could bid on their phones or the Artsy Kiosks, and watch bids coming in from around the world on Artsy’s projection screens.",
       "image": {
         "src": "bidding-kiosk.jpg"
       }
     },
     "browse-and-collect-fairs": {
-      "headline": "Artsy covered 37 fairs around the world—allowing collectors to browse the works before fairs opened…",
-      "description": "In 2014, we partnered with Art Toronto, ArtBo, Contemporary Istanbul, 1:54 Contemporary African Art Fair, Design Miami, The Armory Show, NADA Miami Beach, PULSE Miami, and more.",
+      "headline": "In 2014 you could browse and collect from 37 art fairs on Artsy a week before they opened…",
+      "description": "In 2014 we partnered with Art Toronto, ArtRio, 1:54 Contemporary African Art Fair, Design Miami/, The Armory Show, NADA Miami Beach, PULSE Miami Beach, and more.",
       "images": [
         "red-blue2.jpg",
         "art-basel.jpg",
@@ -154,8 +154,7 @@
       ]
     },
     "mobile-app": {
-      "headline": "…and Artsy’s mobile app guided fair visitors to their favorite works and artists.",
-      "description": "Artworks saved through Artsy’s mobile app were displayed in real-time on 9-foot tall display screens throughout the fair. The displays also showed visitors which artists and exhibitors were trending at the fair.",
+      "headline": "…while Artsy’s mobile app guided fair visitors to their favorite works and artists.",
       "video": {
         "cover": "armory-columns_cover.jpg",
         "sources": [
@@ -166,22 +165,22 @@
     },
     "map": {
       "headlines": [
-        "Artsy now has partners in 82 countries…",
-        "…and the average distance between collector and seller is now 2,700 miles"
+        "Artsy now partners with galleries and museums in 82 countries…",
+        "…and the average distance between collector and seller is 2,700 miles."
       ]
     },
     "bringing-together": {
-      "headline": "We’re bringing together galleries, fairs, museums, and auctions, so that anyone can access all the world’s art.",
+      "headline": "2014 brought us one step closer to making art accessible to anyone with an internet connection.",
       "backdrop": {
         "src": "richard-serra.jpg",
-        "credit": "Richard Serra, Backdoor Pipeline, 2010. Courtesty of Gagosian Gallery"
+        "credit": "Richard Serra, <em>Backdoor Pipeline</em>, 2010. Courtesty of Gagosian Gallery"
       }
     },
     "conclusion": {
-      "message": "Thank you everyone who made this year possible.",
+      "message": "Thank you to everyone who made this year possible.",
       "backdrop": {
         "src": "anthony-mcall.jpg",
-        "credit": "Anthony McCall, Line Describing a Cone, 1973. Courtesty of the artist and Sprüth Magers"
+        "credit": "Anthony McCall, <em>Line Describing a Cone</em>, 1973. Courtesty of the artist and Sprüth Magers"
       },
       "links": [
         { "name": "Visit Artsy.net", "href": "https://www.artsy.net/" },
