@@ -1,7 +1,7 @@
 $ = require 'jquery'
 
 module.exports = class Share
-  title: 'See Artsy’s 2014 Year in Review'
+  text: 'See Artsy’s 2014 Year in Review by the Numbers'
   href: 'http://2014.artsy.net'
 
   constructor: ({ @$twitter, @$facebook }) ->
@@ -33,5 +33,5 @@ module.exports = class Share
     window.open url, 'facebook', opts
 
   twitter: (opts) =>
-    url = "https://twitter.com/intent/tweet?original_referer=#{@href}&text=#{@title}:&url=#{@href}&via=artsy"
+    url = "https://twitter.com/intent/tweet?original_referer=#{@href}&text=#{@text}:&url=#{@href}&via=artsy"
     window.open url, 'twitter', opts
