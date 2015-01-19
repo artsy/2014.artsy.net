@@ -7,7 +7,8 @@ var aws = {
   key: process.env.AWS_KEY,
   secret: process.env.AWS_SECRET,
   bucket: process.env.S3_BUCKET,
-  distributionId: process.env.DISTRIBUTION_ID
+  distributionId: process.env.DISTRIBUTION_ID,
+  patternIndex: /^index\.html$/
 };
 
 gulp.task('deploy', ['compress'], function() {
