@@ -48,7 +48,7 @@ module.exports = [
     ]
   }
   { # Progress Label
-    stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
+    stage: '#frame-inquiries-graph', duration: '50%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', translateY: [18, 12] }
       { element: '#graph-overlay--label_2012', opacity: opacity.out }
@@ -62,7 +62,7 @@ module.exports = [
     ]
   }
   { # Progress Label
-    stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
+    stage: '#frame-inquiries-graph', duration: '50%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', translateY: [6, 0] }
       { element: '#graph-overlay--label_2013', opacity: opacity.out }
@@ -76,7 +76,7 @@ module.exports = [
     ]
   }
   { # Progress Label
-    stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
+    stage: '#frame-inquiries-graph', duration: '50%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', translateY: [-6, -12] }
       { element: '#graph-overlay--label_2014', opacity: opacity.out }
@@ -90,7 +90,7 @@ module.exports = [
     ]
   }
   { # Progress Label
-    stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
+    stage: '#frame-inquiries-graph', duration: '50%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', translateY: [-18, -24] }
       { element: '#graph-overlay--label_2015', opacity: opacity.out }
