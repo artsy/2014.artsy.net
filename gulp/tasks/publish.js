@@ -6,7 +6,7 @@ var cloudfront = require("gulp-cloudfront");
 var aws = {
   key: process.env.AWS_KEY,
   secret: process.env.AWS_SECRET,
-  bucket: process.env.S3_BUCKET
+  bucket: process.env.S3_BUCKET,
   distributionId: process.env.DISTRIBUTION_ID
 };
 
