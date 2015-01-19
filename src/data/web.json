@@ -86,20 +86,20 @@
       "description": "The Art Genome Project is the classification system that powers Artsy. It maps the characteristics that connect artists, artworks, architecture, and design objects across history.",
       "categories": [
         {
+          "name": "Ukiyo-e",
+          "images": [
+            "ukiyo1.jpg",
+            "ukiyo2.jpg",
+            "ukiyo3.jpg"
+          ]
+        },
+        {
           "name": "Polychrome Sculpture",
           "images": [
             "polychrome1.jpg",
             "polychrome2.jpg",
             "polychrome3.jpg",
             "polychrome4.jpg"
-          ]
-        },
-        {
-          "name": "Ukiyo-e",
-          "images": [
-            "ukiyo1.jpg",
-            "ukiyo2.jpg",
-            "ukiyo3.jpg"
           ]
         },
         {
