@@ -18,6 +18,6 @@ gulp.task('deploy', ['compress'], function() {
     .pipe(publisher.publish())
     .pipe(publisher.sync())
     .pipe(publisher.cache())
-    .pipe(awspublish.reporter())
-    .pipe(cloudfront(aws));
+    .pipe(awspublish.reporter());
+    // .pipe(cloudfront(aws));
 });
