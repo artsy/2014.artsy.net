@@ -3,6 +3,7 @@ attachFastClick = require 'fastclick'
 Preloader = require '../preloader'
 Carousel = require './carousel'
 Backdrops = require '../backdrops'
+Share = require '../share'
 
 module.exports = class Mobile
   constructor: ->
@@ -25,3 +26,5 @@ module.exports = class Mobile
     $('.pane--info').on 'click', (e) ->
       e.stopPropagation()
       $(e.currentTarget).closest('.pane').toggleClass 'is-captioned'
+
+    new Share $facebook: $('.pane--share_facebook'), $twitter: $('.pane--share_twitter')
