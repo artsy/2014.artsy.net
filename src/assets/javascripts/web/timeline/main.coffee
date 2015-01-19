@@ -1,5 +1,5 @@
 $ = require 'jquery'
-{ translateY, opacity } = transitions = require './transitions'
+{ translateY, opacity, backdropScale } = transitions = require './transitions'
 
 # Setup map
 Map = require '../map'
@@ -113,14 +113,14 @@ module.exports = [
     actors: [
       { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
       { element: '.frame--backdrop-credit', opacity: opacity.in }
-      { element: '.frame--backdrop', opacity: opacity.in, scale: [1, 1.05] }
+      { element: '.frame--backdrop', opacity: opacity.in, scale: backdropScale.a }
     ]
   }
   { # Hold
     stage: '#frame-museums-and-institutions', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
-      { element: '.frame--backdrop', scale: [1.05, 1.1] }
+      { element: '.frame--backdrop', scale: backdropScale.b }
     ]
   }
   { # Out
@@ -128,7 +128,7 @@ module.exports = [
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
       { element: '.frame--backdrop-credit', opacity: opacity.out }
-      { element: '.frame--backdrop', opacity: opacity.out, scale: [1.1, 1.15] }
+      { element: '.frame--backdrop', opacity: opacity.out, scale: backdropScale.c }
     ]
   }
 
@@ -228,21 +228,21 @@ module.exports = [
     stage: '#frame-benefit-auctions-raised', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
-      { element: '.frame--backdrop', opacity: opacity.in, scale: [1, 1.05] }
+      { element: '.frame--backdrop', opacity: opacity.in, scale: backdropScale.a }
     ]
   }
   { # Hold
     stage: '#frame-benefit-auctions-raised', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
-      { element: '.frame--backdrop', scale: [1.05, 1.1] }
+      { element: '.frame--backdrop', scale: backdropScale.b }
     ]
   }
   { # Out
     stage: '#frame-benefit-auctions-raised', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
-      { element: '.frame--backdrop', opacity: opacity.out, scale: [1.1, 1.15] }
+      { element: '.frame--backdrop', opacity: opacity.out, scale: backdropScale.c }
     ]
   }
 
@@ -375,7 +375,7 @@ module.exports = [
     actors: [
       { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
       { element: '.frame--backdrop-credit', opacity: opacity.in }
-      { element: '.frame--backdrop', opacity: opacity.in, scale: [1, 1.05] }
+      { element: '.frame--backdrop', opacity: opacity.in, scale: backdropScale.a }
     ]
   }
   { # Hold
@@ -383,7 +383,7 @@ module.exports = [
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
       { element: '.frame--vcenter', translateY: translateY.hold }
-      { element: '.frame--backdrop', scale: [1.05, 1.1] }
+      { element: '.frame--backdrop', scale: backdropScale.b }
     ]
   }
   { # Out
@@ -391,7 +391,7 @@ module.exports = [
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
       { element: '.frame--backdrop-credit', opacity: opacity.out }
-      { element: '.frame--backdrop', opacity: opacity.out, scale: [1.1, 1.15] }
+      { element: '.frame--backdrop', opacity: opacity.out, scale: backdropScale.c }
     ]
   }
 ]

@@ -1,3 +1,17 @@
+device = require '../../device'
+
+generateScalingValues = ->
+  if device.isFirefox()
+    a: [1, 1]
+    b: [1, 1]
+    c: [1, 1]
+    d: [1, 1]
+  else
+    a: [1, 1.05]
+    b: [1.05, 1.1]
+    c: [1.1, 1.15]
+    d: [1.15, 1.2]
+
 module.exports =
   translateY:
     in: [30, 10]
@@ -8,11 +22,7 @@ module.exports =
     in: [0, 1]
     out: [1, 0]
 
-  backdropScale:
-    a: [1, 1.05]
-    b: [1.05, 1.1]
-    c: [1.1, 1.15]
-    d: [1.15, 1.2]
+  backdropScale: generateScalingValues()
 
   bisectedColumnsIn: (id) -> [
     { element: "##{id}--columns", opacity: [0, 1] }
