@@ -4,7 +4,7 @@
       "headlines": [
         "Artsy’s mission is to make all the world’s art accessible to anyone with an internet connection.",
         "To fulfill this mission, we’re building the largest public database of art for educational use…",
-        "...and making it easier to buy art from galleries and auctions around the world—all in one place.",
+        "…and making it easier to buy art from galleries and auctions around the world—all in one place.",
         "Here’s how we did in 2014:"
       ],
       "images": [
@@ -21,7 +21,7 @@
       ]
     },
     "galleries-shared": {
-      "headline": " Galleries shared 8,369 shows and over 80,000 for-sale artworks on Artsy…",
+      "headline": "Galleries shared 8,369 shows and over 80,000 for-sale artworks on Artsy…",
       "images": [
         "hope.jpg",
         "doukoupel.jpg",
@@ -30,7 +30,7 @@
       ]
     },
     "inquiries-graph": {
-      "headline": "...and collectors inquired on over five and a half billion dollars of art.",
+      "headline": "…and collectors inquired on over five and a half billion dollars of art.",
       "caption": {
         "headline": "Artwork Inquiries",
         "body": "In the final month of 2014, Artsy made more introductions between galleries and collectors than in the whole of 2013, representing an estimated five and a half billion dollars of art. "
@@ -82,7 +82,7 @@
       ]
     },
     "added-categories": {
-      "headline": "We added over 100 categories to The Art Genome Project...",
+      "headline": "We added over 100 categories to The Art Genome Project…",
       "description": "The Art Genome Project is the classification system that powers Artsy. It maps the characteristics that connect artists, artworks, architecture, and design objects across history.",
       "categories": [
         {
