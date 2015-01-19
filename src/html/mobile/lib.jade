@@ -10,9 +10,9 @@ mixin pane(options)
 
     if options.credit
       .pane--info
-        a.pane--info-icon: img( src= imagePath('info.svg') )
+        a.pane--info-icon: img( src= imagePath('mobile_info.svg') )
         .pane--info-pane
-          a.pane--close-icon: img( src= imagePath('close.svg') )
+          a.pane--close-icon: img( src= imagePath('mobile_close.svg') )
           p!= options.credit
 
     +backdrop(options.backdrop)

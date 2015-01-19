@@ -27,11 +27,11 @@ body.is-mobile
   height 100%
   vertical-align top
   white-space normal
-  padding 10%
   overflow hidden
 
 .pane--overlay
   gradient-overlay()
+  z-index 0
 
 .pane--backdrop
   occupy()
@@ -47,6 +47,9 @@ body.is-mobile
       opacity 1
 
 .pane--body
+  occupy()
+  z-index 2
+  padding 10%
   font-size (headline-size / 1.75)
   > p
     clearfix()
@@ -87,3 +90,19 @@ body.is-mobile
   border 2px solid white
   border-width 2px 2px 0 0
   transform rotate(45deg)
+
+.pane--share
+  position absolute
+  bottom 15%
+  right 10%
+  text-align center
+  > h3
+    font-size 12px
+    font-weight normal
+    text-transform uppercase
+    letter-spacing 2px
+  > a
+    display inline-block
+    width (unit * 2)
+    height @width
+    margin 0 (unit / 4)

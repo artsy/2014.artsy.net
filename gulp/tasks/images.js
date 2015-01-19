@@ -19,7 +19,7 @@ gulp.task('move:images', function() {
 
 var resize = function(source, version, options) {
   var destination = 'src/assets/images/resized/' + source + '/' + version;
-  gulp.src('src/assets/images/originals/' + source + '/' + '*.jpg')
+  gulp.src('src/assets/images/originals/' + source + '/' + '*.{jpg,png}')
     .pipe(changed(destination))
     .pipe(imageResize(options))
     .pipe(imagemin({ progressive: true }))

@@ -1,12 +1,19 @@
 - conclusion = locals.copy.mobile.sections.conclusion
 
 .pane
-  .pane--backdrop
-    //-
+  +backdrop(conclusion.backdrop)
 
   .pane--body
     p!= conclusion.message
+
     .pane--links
       for link in conclusion.links
         a( href= link.href, target='_blank' )
           = link.name
+
+    .pane--share
+      h3 Share this
+      a.pane--share_facebook
+        img( src= imagePath('mobile_facebook.svg'), alt='F' )
+      a.pane--share_twitter
+        img( src= imagePath('mobile_twitter.svg'), alt='T' )
