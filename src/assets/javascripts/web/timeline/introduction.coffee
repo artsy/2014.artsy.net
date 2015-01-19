@@ -1,5 +1,5 @@
 $ = require 'jquery'
-{ opacity, backdropScale } = require './transitions'
+{ opacity, translateY, backdropScale } = require './transitions'
 
 # Setup header
 $header = null
@@ -22,66 +22,93 @@ module.exports = [
       }
     ]
   }
-  {
+  { # In
     stage: '#frame-introduction', duration: '100%', easing: 'linear'
     actors: [
       { element: '#introduction-backdrop-1', scale: backdropScale.b }
-      { element: '#introduction-headline-0', opacity: opacity.in, translateY: [30, 0] }
+      { element: '#introduction-headline-0', opacity: opacity.in, translateY: translateY.in }
       { element: '#introduction-credit-1', opacity: opacity.in }
     ]
   }
-  {
+  { # Hold
     stage: '#frame-introduction', duration: '100%', easing: 'linear', key: true
     actors: [
-      { element: '#introduction-backdrop-1', scale: backdropScale.c, opacity: opacity.out }
+      { element: '#introduction-backdrop-1', scale: backdropScale.c }
+      { element: '#introduction-headline-0', translateY: translateY.hold }
+    ]
+  }
+  { # Out
+    stage: '#frame-introduction', duration: '100%', easing: 'linear'
+    actors: [
+      { element: '#introduction-backdrop-1', scale: backdropScale.d, opacity: opacity.out }
       { element: '#introduction-backdrop-2', scale: backdropScale.a }
-      { element: '#introduction-headline-0', opacity: opacity.out, translateY: [0, -30] }
+      { element: '#introduction-headline-0', opacity: opacity.out, translateY: translateY.out }
       { element: '#introduction-credit-1', opacity: opacity.out }
     ]
   }
-  {
+  { # In
     stage: '#frame-introduction', duration: '100%', easing: 'linear'
     actors: [
       { element: '#introduction-backdrop-2', scale: backdropScale.b }
-      { element: '#introduction-headline-1', opacity: opacity.in, translateY: [30, 0] }
+      { element: '#introduction-headline-1', opacity: opacity.in, translateY: translateY.in }
       { element: '#introduction-credit-2', opacity: opacity.in }
     ]
   }
-  {
+  { # Hold
     stage: '#frame-introduction', duration: '100%', easing: 'linear', key: true
     actors: [
-      { element: '#introduction-backdrop-2', scale: backdropScale.c, opacity: opacity.out }
+      { element: '#introduction-backdrop-2', scale: backdropScale.c }
+      { element: '#introduction-headline-1', translateY: translateY.hold }
+    ]
+  }
+  { # Out
+    stage: '#frame-introduction', duration: '100%', easing: 'linear'
+    actors: [
+      { element: '#introduction-backdrop-2', scale: backdropScale.d, opacity: opacity.out }
       { element: '#introduction-backdrop-3', scale: backdropScale.a }
-      { element: '#introduction-headline-1', opacity: opacity.out, translateY: [0, -30] }
+      { element: '#introduction-headline-1', opacity: opacity.out, translateY: translateY.out }
       { element: '#introduction-credit-2', opacity: opacity.out }
     ]
   }
-  {
+  { # In
     stage: '#frame-introduction', duration: '100%', easing: 'linear'
     actors: [
       { element: '#introduction-backdrop-3', scale: backdropScale.b }
-      { element: '#introduction-headline-2', opacity: opacity.in, translateY: [30, 0] }
+      { element: '#introduction-headline-2', opacity: opacity.in, translateY: translateY.in }
       { element: '#introduction-credit-3', opacity: opacity.in }
     ]
   }
-  {
+  { # Hold
     stage: '#frame-introduction', duration: '100%', easing: 'linear', key: true
     actors: [
-      { element: '#introduction-backdrop-3', scale: backdropScale.c, opacity: opacity.out }
-      { element: '#introduction-headline-2', opacity: opacity.out, translateY: [0, -30] }
+      { element: '#introduction-backdrop-3', scale: backdropScale.c }
+      { element: '#introduction-headline-2', translateY: translateY.hold }
+    ]
+  }
+  { # Out
+    stage: '#frame-introduction', duration: '100%', easing: 'linear'
+    actors: [
+      { element: '#introduction-backdrop-3', scale: backdropScale.d, opacity: opacity.out }
+      { element: '#introduction-headline-2', opacity: opacity.out, translateY: translateY.out }
       { element: '#introduction-credit-3', opacity: opacity.out }
     ]
   }
-  {
+  { # In
     stage: '#frame-introduction', duration: '100%', easing: 'linear'
     actors: [
-      { element: '#introduction-headline-3', opacity: opacity.in, translateY: [30, 0] }
+      { element: '#introduction-headline-3', opacity: opacity.in, translateY: translateY.in }
     ]
   }
-  {
+  { # Hold
     stage: '#frame-introduction', duration: '100%', easing: 'linear', key: true
     actors: [
-      { element: '#introduction-headline-3', opacity: opacity.out, translateY: [0, -30] }
+      { element: '#introduction-headline-3', translateY: translateY.hold }
+    ]
+  }
+  { # Out
+    stage: '#frame-introduction', duration: '100%', easing: 'linear'
+    actors: [
+      { element: '#introduction-headline-3', opacity: opacity.out, translateY: translateY.out }
     ]
   }
 ]
