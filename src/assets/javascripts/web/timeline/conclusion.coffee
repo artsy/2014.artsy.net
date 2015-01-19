@@ -10,7 +10,7 @@ module.exports = [
     ]
   }
   { # Hold
-    stage: '#frame-conclusion', duration: '100%', easing: 'linear'
+    stage: '#frame-conclusion', duration: '100%', easing: 'linear', key: true
     actors: [
     ]
   }

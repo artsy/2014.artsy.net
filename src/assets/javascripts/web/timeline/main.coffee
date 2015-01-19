@@ -17,7 +17,7 @@ module.exports = [
     ].concat(transitions.bisectedColumnsIn('galleries-shared'))
   }
   { # Hold
-    stage: '#frame-galleries-shared', duration: '100%', easing: 'linear'
+    stage: '#frame-galleries-shared', duration: '100%', easing: 'linear', key: true
     actors: [
       element: '.frame--vcenter', translateY: translateY.hold
     ].concat(transitions.bisectedColumnsHold('galleries-shared'))
@@ -98,7 +98,7 @@ module.exports = [
   }
 
   { # Out
-    stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear'
+    stage: '#frame-inquiries-graph', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: [-24, -30] }
       { element: '.graph', opacity: opacity.out }
@@ -117,7 +117,7 @@ module.exports = [
     ]
   }
   { # Hold
-    stage: '#frame-museums-and-institutions', duration: '100%', easing: 'linear'
+    stage: '#frame-museums-and-institutions', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
       { element: '.frame--backdrop', scale: [1.05, 1.1] }
@@ -146,7 +146,7 @@ module.exports = [
     ]
   }
   { # Hold
-    stage: '#frame-educational-database', duration: '100%', easing: 'linear'
+    stage: '#frame-educational-database', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
       { element: '.column-0', translateY: [0, 75] }
@@ -181,7 +181,7 @@ module.exports = [
     ]
   }
   { # Hold
-    stage: '#frame-added-categories', duration: '100%', easing: 'linear'
+    stage: '#frame-added-categories', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
       { element: '#categories', translateY: [50, -50] }
@@ -209,7 +209,7 @@ module.exports = [
     ]
   }
   { # Hold
-    stage: '#frame-rauschenberg-foundation', duration: '100%', easing: 'linear'
+    stage: '#frame-rauschenberg-foundation', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
     ]
@@ -232,7 +232,7 @@ module.exports = [
     ]
   }
   { # Hold
-    stage: '#frame-benefit-auctions-raised', duration: '100%', easing: 'linear'
+    stage: '#frame-benefit-auctions-raised', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
       { element: '.frame--backdrop', scale: [1.05, 1.1] }
@@ -256,7 +256,7 @@ module.exports = [
     ]
   }
   { # Hold
-    stage: '#frame-powered-by-artsy', duration: '100%', easing: 'linear'
+    stage: '#frame-powered-by-artsy', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
     ]
@@ -282,7 +282,7 @@ module.exports = [
     ]
   }
   { # Hold
-    stage: '#frame-browse-and-collect-fairs', duration: '100%', easing: 'linear'
+    stage: '#frame-browse-and-collect-fairs', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
     ]
@@ -308,7 +308,7 @@ module.exports = [
     ]
   }
   { # Hold
-    stage: '#frame-mobile-app', duration: '100%', easing: 'linear'
+    stage: '#frame-mobile-app', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
     ]
@@ -331,7 +331,7 @@ module.exports = [
     ]
   }
   { # Hold
-    stage: '#frame-map', duration: '100%', easing: 'linear'
+    stage: '#frame-map', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '#map-headline-0', translateY: translateY.hold }
       {
@@ -355,7 +355,7 @@ module.exports = [
     ]
   }
   { # Hold
-    stage: '#frame-map', duration: '100%', easing: 'linear'
+    stage: '#frame-map', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '#map-headline-1', translateY: translateY.hold }
     ]
@@ -379,7 +379,7 @@ module.exports = [
     ]
   }
   { # Hold
-    stage: '#frame-bringing-together', duration: '100%', easing: 'linear'
+    stage: '#frame-bringing-together', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
       { element: '.frame--vcenter', translateY: translateY.hold }

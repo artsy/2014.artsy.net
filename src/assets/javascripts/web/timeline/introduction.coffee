@@ -7,7 +7,7 @@ $ -> $header = $('.header')
 
 module.exports = [
   {
-    stage: '#frame-introduction', duration: '100%', easing: 'linear'
+    stage: '#frame-introduction', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '#introduction-backdrop-0', opacity: opacity.out, scale: backdropScale.a }
       { element: '#introduction-backdrop-1', scale: backdropScale.a }
@@ -31,7 +31,7 @@ module.exports = [
     ]
   }
   {
-    stage: '#frame-introduction', duration: '100%', easing: 'linear'
+    stage: '#frame-introduction', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '#introduction-backdrop-1', scale: backdropScale.c, opacity: opacity.out }
       { element: '#introduction-backdrop-2', scale: backdropScale.a }
@@ -48,7 +48,7 @@ module.exports = [
     ]
   }
   {
-    stage: '#frame-introduction', duration: '100%', easing: 'linear'
+    stage: '#frame-introduction', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '#introduction-backdrop-2', scale: backdropScale.c, opacity: opacity.out }
       { element: '#introduction-backdrop-3', scale: backdropScale.a }
@@ -65,7 +65,7 @@ module.exports = [
     ]
   }
   {
-    stage: '#frame-introduction', duration: '100%', easing: 'linear'
+    stage: '#frame-introduction', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '#introduction-backdrop-3', scale: backdropScale.c, opacity: opacity.out }
       { element: '#introduction-headline-2', opacity: opacity.out, translateY: [0, -30] }
@@ -79,7 +79,7 @@ module.exports = [
     ]
   }
   {
-    stage: '#frame-introduction', duration: '100%', easing: 'linear'
+    stage: '#frame-introduction', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '#introduction-headline-3', opacity: opacity.out, translateY: [0, -30] }
     ]
