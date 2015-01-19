@@ -4,6 +4,8 @@
   &.is-captioned
     .pane--backdrop
       transform rotateX(-35deg) translateY(-20%)
+    .pane--backdrop-overlay
+      opacity 1
     .pane--info-pane
       opacity 1
       transform translateY(0)
@@ -18,11 +20,14 @@
   perspective 1500
   perspective-origin 50% 50%
   z-index -1
-
 .pane--backdrop
   transition transform 0.5s
   transition-timing-function ios-timing-function
   backface-visibility hidden
+.pane--backdrop-overlay
+  gradient-overlay()
+  opacity 0
+  transition opacity 0.5s
 
 .pane--info
   position absolute
@@ -35,7 +40,7 @@
 .pane--info-icon
   display block
   position absolute
-  width unit
+  width 25px
   height @width
   bottom (-(unit / 2))
   left 0
@@ -52,9 +57,9 @@
 
 .pane--close-icon
   display block
-  width (unit * 1.5)
+  width 46px
   height @width
-  margin unit auto
+  margin (unit * 2) auto
   > img
     vertical-align top
     width 100%
