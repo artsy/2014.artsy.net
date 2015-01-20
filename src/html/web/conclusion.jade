@@ -17,7 +17,11 @@
 
     .conclusion-share
       h3 Share this
-      a.conclusion-share--facebook
-        img( src= imagePath('bf.svg'), alt='F' )
-      a.conclusion-share--twitter
-        img( src= imagePath('twt.svg'), alt='T' )
+      .conclusion-share--facebook
+        a: img( src= imagePath('bf.svg'), alt='F' )
+        .facebook-count
+          //- Rendered client-side
+      .conclusion-share--twitter
+        a: img( src= imagePath('twt.svg'), alt='T' )
+        .twitter-count
+          //- Rendered client-side

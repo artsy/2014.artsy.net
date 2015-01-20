@@ -50,11 +50,15 @@
   margin 0 (unit / 2)
   width (unit * 3)
   height @width
-  line-height @width
   vertical-align middle
   border 2px solid white
   border-radius 50%
   transition border-color 0.25s
   cursor pointer
+  > a
+    line-height @width
   &:hover
     border-color purple-color
+  .facebook-count
+  .twitter-count
+    line-height (unit * 2)

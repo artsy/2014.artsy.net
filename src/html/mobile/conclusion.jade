@@ -13,7 +13,11 @@
 
     .pane--share
       h3 Share this
-      a.pane--share_facebook
-        img( src= imagePath('mobile_bf.svg'), alt='F' )
-      a.pane--share_twitter
-        img( src= imagePath('mobile_twt.svg'), alt='T' )
+      .pane--share_facebook
+        a: img( src= imagePath('mobile_bf.svg'), alt='F' )
+        .facebook-count
+          //- Rendered client-side
+      .pane--share_twitter
+        a: img( src= imagePath('mobile_twt.svg'), alt='T' )
+        .twitter-count
+          //- Rendered client-side

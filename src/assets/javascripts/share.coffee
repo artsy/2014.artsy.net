@@ -13,6 +13,8 @@ module.exports = class Share
       e.preventDefault()
       @popUp @facebook
 
+    @getCounts()
+
   popUp: (callback) ->
     width = 750
     height = 400
@@ -35,3 +37,10 @@ module.exports = class Share
   twitter: (opts) =>
     url = "https://twitter.com/intent/tweet?original_referer=#{@href}&text=#{@text}:&url=#{@href}&via=artsy"
     window.open url, 'twitter', opts
+
+  getCounts: ->
+    $.get "http://api.facebook.com/restserver.php?method=links.getStats&urls[]=#{@href}", (response) ->
+      $('.facebook-count').text($(response).find('share_count').text() or '...')
+
+    $.getJSON "http://urls.api.twitter.com/1/urls/count.json?url=#{@href}&callback=?", (response) ->
+      $('.twitter-count').text(response?.count or '...')
