@@ -2,4 +2,4 @@
   for column, i in frame.images
     .artwork-column( class="column-#{i}" )
       for image in column
-        .artwork: img( src= imagePath(image, 'web/columns') )
+        .artwork: img( data-src= imagePath(image, 'web/columns') )

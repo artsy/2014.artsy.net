@@ -3,11 +3,11 @@
 +frame('galleries-shared', 3)
   #galleries-shared--columns.frame--layer.gradient-overlay: .bisected-columns
     #galleries-shared--column-0.bisected-columns--column
-      .bisected-columns--image: img( src= imagePath(frame.images[0], 'web/crops') )
-      .bisected-columns--image: img( src= imagePath(frame.images[1], 'web/crops') )
+      .bisected-columns--image: img( data-src= imagePath(frame.images[0], 'web/crops') )
+      .bisected-columns--image: img( data-src= imagePath(frame.images[1], 'web/crops') )
     #galleries-shared--column-1.bisected-columns--column
-      .bisected-columns--image: img( src= imagePath(frame.images[2], 'web/crops') )
-      .bisected-columns--image: img( src= imagePath(frame.images[3], 'web/crops') )
+      .bisected-columns--image: img( data-src= imagePath(frame.images[2], 'web/crops') )
+      .bisected-columns--image: img( data-src= imagePath(frame.images[3], 'web/crops') )
 
 +frame('inquiries-graph')
   include graph
@@ -33,7 +33,7 @@
     #browse-and-collect-fairs--image-wall.image-wall
       for image, i in frame.images
         .image-wall--image( id="image-wall--image-#{i}" )
-          img( src= imagePath(frame.images[i], 'web/crops') )
+          img( data-src= imagePath(frame.images[i], 'web/crops') )
 
 +frame('mobile-app')
   .gradient-overlay: .frame--centering-context.span-full
@@ -41,8 +41,7 @@
       video( autoplay, loop )
         for source in frame.video.sources
           source( src= assetsPath(source.src), type= source.type )
-        //- Todo:
-        //- img( src= imagePath(frame.video.cover, '960') )
+        img( data-src= imagePath(frame.video.cover, 'web/singles') )
 
 include map
 

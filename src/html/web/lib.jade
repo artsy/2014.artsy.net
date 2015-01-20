@@ -7,7 +7,7 @@ mixin frame(id, span)
 
     if frame.backdrop
       .frame--backdrop
-        img( src= imagePath(frame.backdrop.src, 'web/backdrops') )
+        img( data-src= imagePath(frame.backdrop.src, 'web/backdrops') )
       if frame.backdrop.credit
         .frame--backdrop-credit
           != frame.backdrop.credit
@@ -23,7 +23,7 @@ mixin frame(id, span)
 
 mixin single-image(image)
   .single-image--context: .single-image
-    img.single-image--image( src= imagePath(image.src, 'web/singles') )
+    img.single-image--image( data-src= imagePath(image.src, 'web/singles') )
     if image.credit
       .single-image--credit
         != image.credit

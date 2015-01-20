@@ -7,7 +7,7 @@
   for image, i in introduction.images.reverse()
     //- Invert stacking order
     .frame--backdrop( id="introduction-backdrop-#{(introduction.images.length - 1) - i}" )
-      img( src= imagePath(image, 'web/backdrops') )
+      img( data-src= imagePath(image, 'web/backdrops') )
 
   .frame--body
     .frame--layer: .frame--vcenter: .frame--vcenter-wrap
