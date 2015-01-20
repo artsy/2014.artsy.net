@@ -15,7 +15,7 @@
       ],
       "credits": [
         "Ai Weiwei, <em>With Wind</em>, 2014<br>FOR-SITE Foundation",
-        "Roxy Paine, <em>Scrutiny</em>, 2014<br>Marianne Boesky Gallery",
+        "Roxy Paine, <em>Scrutiny</em>, 2014 (detail)<br>Marianne Boesky Gallery",
         "Édouard Manet, <em>Luncheon on the Grass (Le Déjeuner sur l’herbe)</em>, 1863<br>Musée d’Orsay, Paris",
         "Marco Tirelli<br>Axel Vervoordt Gallery"
       ]
@@ -33,7 +33,7 @@
       "headline": "…and collectors inquired on over five and a half billion dollars of art.",
       "caption": {
         "headline": "Artwork Inquiries",
-        "body": "In the final month of 2014, Artsy made more introductions between galleries and collectors than in the whole of 2013, representing an estimated five and a half billion dollars of art."
+        "body": "In the final month of 2014, Artsy made more introductions between galleries and collectors than in the whole of 2013. Over the full year, collectors inquired on an estimated five and a half billion dollars of art."
       },
       "graph": {
         "data": "graph-inquiries_data.svg",
@@ -145,7 +145,7 @@
     },
     "browse-and-collect-fairs": {
       "headline": "In 2014 you could browse and collect from 37 art fairs on Artsy a week before they opened…",
-      "description": "In 2014 we partnered with Art Toronto, ArtRio, 1:54 Contemporary African Art Fair, Design Miami/, The Armory Show, NADA Miami Beach, PULSE Miami Beach, and more.",
+      "description": "In 2014 we partnered with Art Toronto, ArtRio, 1:54 Contemporary African Art Fair, Design Miami/, The Armory Show, Art Stage Singapore, ARCOmadrid, ArtBo, and more.",
       "images": [
         "red-blue2.jpg",
         "art-basel.jpg",
@@ -156,7 +156,7 @@
     "mobile-app": {
       "headline": "…while Artsy’s mobile app guided fair visitors to their favorite works and artists.",
       "video": {
-        "cover": "armory-columns_cover.jpg",
+        "cover": "artsy-columns_cover.jpg",
         "sources": [
           { "type": "video/mp4", "src": "videos/armory-columns.mp4" },
           { "type": "video/webm", "src": "videos/armory-columns.webm" }
