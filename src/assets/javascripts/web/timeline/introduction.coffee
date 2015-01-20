@@ -27,7 +27,7 @@ module.exports = [
     actors: [
       { element: '#introduction-backdrop-1', scale: backdropScale.b }
       { element: '#introduction-headline-0', opacity: opacity.in, translateY: translateY.in }
-      { element: '#introduction-credit-1', opacity: [0, 0.5] }
+      { element: '#introduction-credit-1', opacity: [0, 0.6] }
     ]
   }
   { # Hold
