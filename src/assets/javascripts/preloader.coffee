@@ -10,6 +10,13 @@ module.exports = class Preloader
 
     if @application is 'mobile' then @kill.web() else @kill.mobile()
 
+    @setImages()
+
+  setImages: ->
+    $('img[data-src]').each ->
+      src = ($img = $(this)).data('src')
+      $img.attr 'src', src
+
   kill:
     mobile: -> $('#mobile').remove()
     web: -> $('#web').remove()
