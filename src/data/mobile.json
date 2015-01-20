@@ -35,7 +35,7 @@
       {
         "headline": "400 museums and institutions now share their exhibitions and collections on Artsy…",
         "backdrop": "museums.jpg",
-        "credit": "In December, we launched “<a href='https://www.artsy.net/feature/museums-of-france' target='_blank'>Museums of France</a>,” featuring Musée du Louvre, Grand Palais, Fondation Cartier, Musée du quai Branly, Palais de Tokyo, Jeu de Paume, and more.<br><br>Photo: Cour Napoléon et pyramide © 2013 Musée du Louvre / Olivier Ouadah"
+        "credit": "In December, we launched “<a href='https://www.artsy.net/feature/museums-of-france' target='_blank'>Museums of France</a>,” featuring Musée du Louvre, Grand Palais, Fondation Cartier, Musée du quai Branly, Palais de Tokyo, Jeu de Paume, and more.<br><br>Photo: <em>Cour Napoléon et pyramide</em> © 2013 Musée du Louvre / Olivier Ouadah"
       },
       {
         "headline": "…growing our educational database to over 230,000 artworks.",
@@ -49,7 +49,7 @@
       {
         "headline": "…and we supported emerging curators together with the Robert Rauschenberg Foundation.",
         "backdrop": "rauschenberg.jpg",
-        "credit": "Students in 78 cities across five continents created exhibition proposals for the <a href='https://www.artsy.net/feature/robert-rauschenberg-emerging-curator-winner-nicole-bray' target='_blank'>Rauschenberg Foundation Emerging Curator Competition</a> using Artsy’s educational database.<br><br>Robert Rauschenberg, <em>Monogram</em>, 1955–1959. ©Robert Rauschenberg Foundation"
+        "credit": "Students in 78 cities across five continents created exhibition proposals for the <a href='https://www.artsy.net/feature/robert-rauschenberg-emerging-curator-winner-nicole-bray' target='_blank'>Robert Rauschenberg Emerging Curator Competition</a> using Artsy’s educational database.<br><br>Robert Rauschenberg, <em>Monogram</em>, 1955–1959. ©Robert Rauschenberg Foundation"
       },
       {
         "headline": "Benefit auctions on Artsy helped raise more than $10.8 million for the arts, AIDS research, and more…",
@@ -64,7 +64,7 @@
       {
         "headline": "In 2014 you could browse and collect from 37 art fairs on Artsy a week before they opened…",
         "backdrop": "artfair.jpg",
-        "credit": "In 2014 we partnered with Art Toronto, ArtRio, 1:54 Contemporary African Art Fair, Design Miami/, The Armory Show, Art Stage Singapore, ARCOmadrid, ArtBo, and more."
+        "credit": "In 2014 we partnered with Art Toronto, ArtRio, 1:54 Contemporary African Art Fair, Design Miami/, The Armory Show, Art Stage Singapore, ARCOmadrid, ARTBO, and more."
       },
       {
         "headline": "…while Artsy’s mobile app guided fair visitors to their favorite works and artists.",
@@ -81,13 +81,13 @@
       {
         "headline": "2014 brought us one step closer to making art accessible to anyone with an internet connection.",
         "backdrop": "bringingtogether.jpg",
-        "credit": "Richard Serra, <em>Backdoor Pipeline</em>, 2010. Courtesty of Gagosian Gallery"
+        "credit": "Richard Serra, <em>Backdoor Pipeline</em>, 2010. Courtesy of Gagosian Gallery"
       }
     ],
     "conclusion": {
       "message": "Thank you to everyone who made this year possible.",
       "backdrop": "conclusion.jpg",
-      "credit": "Anthony McCall, <em>Line Describing a Cone</em>, 1973. Courtesty of the artist and Sprüth Magers",
+      "credit": "Anthony McCall, <em>Line Describing a Cone</em>, 1973. Courtesy of the artist and Sprüth Magers",
       "links": [
         { "name": "Visit Artsy.net", "href": "https://www.artsy.net/" },
         { "name": "Artsy for Galleries", "href": "https://www.artsy.net/gallery-partnerships" },
