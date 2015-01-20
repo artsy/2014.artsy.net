@@ -13,7 +13,7 @@ gulp.task('deploy', ['compress'], function() {
 
   return gulp.src('./build/**/*')
     .pipe(publisher.publish())
-    .pipe(publisher.sync())
+    // .pipe(publisher.sync()) // Temporarily disable sync
     .pipe(publisher.cache())
     .pipe(awspublish.reporter());
 });
