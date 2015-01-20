@@ -20,6 +20,8 @@ module.exports = class Carousel
     @progress = new Progress $el: $('#progress'), length: @pageCount
     @progress.build(@currentPage)
 
+    @activateCurrentPane()
+
   reset: ->
     $(document)
       .scrollTop(0)
@@ -73,7 +75,10 @@ module.exports = class Carousel
     @updateOffset @offset, snap
 
     # Notify pane
-    @$panes.removeClass('is-active').eq(@currentPage).addClass('is-active')
+    @activateCurrentPane()
 
     # Update progress
     @progress.update @currentPage
+
+  activateCurrentPane: ->
+    @$panes.removeClass('is-active').eq(@currentPage).addClass('is-active')

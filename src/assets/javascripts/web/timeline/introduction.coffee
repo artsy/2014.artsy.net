@@ -11,7 +11,7 @@ module.exports = [
     actors: [
       { element: '#introduction-backdrop-0', opacity: opacity.out, scale: backdropScale.a }
       { element: '#introduction-backdrop-1', scale: backdropScale.a }
-      { element: '#introduction-credit-0', opacity: [0, 0] } # Hidden for now
+      { element: '#introduction-credit-0', opacity: opacity.out }
       { element: '.intro-chevron', rotate: [45, 45], opacity: -1, translateY: -10 }
       { element: '.introduction--logo', opacity: opacity.out, translateY: [0, -30] }
       {

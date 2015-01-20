@@ -1,7 +1,8 @@
 {
   "sections": {
     "splash": {
-      "backdrop": "aiWeiWei.jpg"
+      "backdrop": "aiWeiWei.jpg",
+      "credit": "Ai Weiwei, <em>With Wind</em>, 2014<br>FOR-SITE Foundation"
     },
     "main": [
       {

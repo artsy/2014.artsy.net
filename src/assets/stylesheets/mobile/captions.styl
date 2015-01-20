@@ -11,6 +11,8 @@
       transform translateY(0)
     .pane--info-icon
       opacity 0 !important
+    .pane--bottom
+      opacity 0
   &.is-active
     .pane--info-icon
       opacity 1
@@ -79,3 +81,6 @@
   opacity 0
   transform translateY(unit)
   transition opacity 0.25s, transform 0.25s
+
+.pane--bottom
+  transition opacity 0.5s

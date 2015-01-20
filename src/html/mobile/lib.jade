@@ -6,16 +6,19 @@ mixin backdrop(url)
     .pane--backdrop-overlay
   .pane--overlay
 
+mixin credit(credit)
+  .pane--info
+    a.pane--info-icon: img( src= imagePath('mobile_info.svg') )
+    .pane--info-pane
+      a.pane--close-icon: img( src= imagePath('mobile_close.svg') )
+      p!= credit
+
 mixin pane(options)
   .pane
     block
 
     if options.credit
-      .pane--info
-        a.pane--info-icon: img( src= imagePath('mobile_info.svg') )
-        .pane--info-pane
-          a.pane--close-icon: img( src= imagePath('mobile_close.svg') )
-          p!= options.credit
+      +credit(options.credit)
 
     +backdrop(options.backdrop)
 
