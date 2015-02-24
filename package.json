@@ -5,7 +5,6 @@
     ]
   },
   "devDependencies": {
-    "browser-sync": "^1.8.3",
     "browserify": "~3.36.0",
     "coffeeify": "~0.6.0",
     "connect": "~2.14.3",
